@@ -1,12 +1,14 @@
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Header from './Pages/Components/Header/Header';
+import Home from './Pages/Components/Home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to code clinic</h1>
-      <h2>please use git pull command in your vs code terminal to get update file in your local computer which was updated by other developers</h2>
-      <br />
-      <button class="btn btn-primary">Daisy Apaa</button>
+    <div className="container mx-auto">
+      <Header></Header>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+      </Routes>
     </div>
   );
 }
