@@ -5,7 +5,7 @@ import Footer from './Pages/SharedPage/Footer/Footer';
 
 function App() {
   return (
-    <div className="container mx-auto">
+    <div className="md:container mx-auto">
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
