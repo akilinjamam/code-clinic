@@ -8,8 +8,8 @@ const ContactUs = () => {
     }, [])
     return (
         <div className='mt-10 '>
-            <h1 className='text-4xl'>Contact ours Developers: {developers?.length}</h1>
-            <div className='grid gap-5 grid-cols-3 mt-10 mb-5' >
+            <h1 className='text-4xl text-center font-semibold'>Contact our Developers</h1>
+            <div className='grid gap-5 justify-center lg:grid-cols-3 md:grid-cols-2 mt-10 mb-5' >
                 {
                     developers?.map(developer => <ContactCard
                         key={developer.id}
