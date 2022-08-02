@@ -22,8 +22,8 @@ const About = () => {
         <h2 className="text-4xl font-bold lg:text-fuchsia-700">
           A Student Will Learn
         </h2>
-        <div class="flex flex-col w-full lg:flex-row mt-5">
-          <div class="grid flex-grow card rounded-box place-items-center items-start">
+        <div className="flex flex-col w-full lg:flex-row mt-5">
+          <div className="grid flex-grow card rounded-box place-items-center items-start">
             <h1 className="text-3xl font-bold underline">Back-End</h1>
             <div className="mt-5">
               <ul className="flex flex-col gap-2">
@@ -34,8 +34,8 @@ const About = () => {
               </ul>
             </div>
           </div>
-          <div class="divider lg:divider-horizontal"></div>
-          <div class="grid flex-grow card rounded-box place-items-center items-start">
+          <div className="divider lg:divider-horizontal"></div>
+          <div className="grid flex-grow card rounded-box place-items-center items-start">
             <h1 className="text-3xl font-bold underline">Back-End</h1>
             <div className="">
               <ul className="flex flex-col gap-2">

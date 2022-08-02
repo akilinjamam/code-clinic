@@ -11,9 +11,9 @@ import Learn from "./Pages/Learnlanguage/Learn";
 import Language from "./Pages/Learnlanguage/Component/Language";
 import NotFound from "./Pages/SharedPage/NotFound/NotFound";
 import Courses from "./Pages/Components/Courses/Courses";
-import HtmlCourse from "./Pages/Components/Courses/HtmlCourse";
-import JavascriptCourse from "./Pages/Components/Courses/JavascriptCourse";
-import Cpp from "./Pages/Components/Courses/Cpp";
+import HtmlCourse from "./Pages/Components/Courses/HtmlCourse/HtmlCourse";
+import JavascriptCourse from "./Pages/Components/Courses/JavascriptCourse/JavascriptCourse";
+import Cpp from "./Pages/Components/Courses/CppCourse/Cpp";
 
 function App() {
   return (

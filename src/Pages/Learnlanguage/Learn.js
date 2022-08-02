@@ -18,8 +18,8 @@ const Learn = () => {
   };
 
   return (
-    <div class="hero mt-10 bg-base-100 justify-center lg:justify-start">
-      <div class="hero-content flex-col lg:flex-row lg:fle">
+    <div className="hero mt-10 bg-base-100 justify-center lg:justify-start">
+      <div className="hero-content flex-col lg:flex-row lg:fle">
         <div className="md:w-[400px] lg:pr-10">
           <h3 className="text-3xl font-bold text-center lg:text-start">
             Choose what to learn
@@ -32,7 +32,7 @@ const Learn = () => {
           {languages.map((language) => (
             <button
               key={language.id}
-              class="border border-green-300 rounded-3xl p-3 hover:scale-125 hover:duration-200 hover:bg-slate-50"
+              className="border border-green-300 rounded-3xl p-3 hover:scale-125 hover:duration-200 hover:bg-slate-50"
               onClick={() => navigateServiceDetails(language.id)}
             >
               {language.name}
