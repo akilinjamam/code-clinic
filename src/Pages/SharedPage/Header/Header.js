@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
@@ -10,7 +10,6 @@ const Header = () => {
   const logout = () => {
     signOut(auth);
   };
-  const navigate = useNavigate();
 
   return (
     <div>
@@ -38,7 +37,7 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li tabindex="0">
-                <a href="www.google.com" className="justify-between">
+                <Link to='/courses' className="justify-between">
                   Courses
                   <svg
                     className="fill-current"
@@ -49,13 +48,13 @@ const Header = () => {
                   >
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                   </svg>
-                </a>
+                </Link>
                 <ul className="p-2">
                   <li>
-                    <a href="www.google.com">HTML</a>
+                    <Link to='/htmlcourse' >HTML</Link >
                   </li>
                   <li>
-                    <a href="www.google.com">Javascript</a>
+                    <Link to='javascriptcourse' >Javascript</Link>
                   </li>
                 </ul>
               </li>
@@ -88,7 +87,7 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li tabindex="0">
-              <a href="www.google.com">
+              <Link to='/courses'>
                 Courses
                 <svg
                   className="fill-current"
@@ -99,13 +98,13 @@ const Header = () => {
                 >
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
-              </a>
+              </Link >
               <ul className="p-2">
                 <li>
-                  <a href="www.google.com">HTML</a>
+                  <Link to='/htmlcourse'>HTML</Link>
                 </li>
                 <li>
-                  <a href="www.google.com">Javascript</a>
+                  <Link to='/javascriptcourse'>Javascript</Link>
                 </li>
               </ul>
             </li>
