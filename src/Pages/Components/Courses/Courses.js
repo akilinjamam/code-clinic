@@ -18,6 +18,7 @@ const Courses = () => {
       {/* <!-- Sidebar content here --> */}
       <li><Link to='/courses' className='font-bold'>HTML Course</Link></li>
       <li><Link to='/courses/javascriptcourse' className='font-bold mt-1'>Javascript Course</Link></li>
+      <li><Link to='/courses/c++' className='font-bold'>C++ Course</Link></li>
     </ul>
   
   </div>

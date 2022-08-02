@@ -56,6 +56,9 @@ const Header = () => {
                   <li>
                     <Link to='/courses/javascriptcourse' >Javascript</Link>
                   </li>
+                  <li>
+                    <Link to='/courses/c++' >C++</Link>
+                  </li>
                 </ul>
               </li>
               <li tabindex="0">
@@ -106,6 +109,9 @@ const Header = () => {
                 <li>
                   <Link to='/courses/javascriptcourse'>Javascript</Link>
                 </li>
+                <li>
+                    <Link to='/courses/c++' >C++</Link>
+                  </li>
               </ul>
             </li>
             <li tabindex="0">
