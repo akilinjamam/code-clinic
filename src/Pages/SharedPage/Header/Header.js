@@ -51,10 +51,10 @@ const Header = () => {
                 </Link>
                 <ul className="p-2">
                   <li>
-                    <Link to='/htmlcourse' >HTML</Link >
+                    <Link to='/courses' >HTML</Link >
                   </li>
                   <li>
-                    <Link to='javascriptcourse' >Javascript</Link>
+                    <Link to='/courses/javascriptcourse' >Javascript</Link>
                   </li>
                 </ul>
               </li>
@@ -101,10 +101,10 @@ const Header = () => {
               </Link >
               <ul className="p-2">
                 <li>
-                  <Link to='/htmlcourse'>HTML</Link>
+                  <Link to='/courses'>HTML</Link>
                 </li>
                 <li>
-                  <Link to='/javascriptcourse'>Javascript</Link>
+                  <Link to='/courses/javascriptcourse'>Javascript</Link>
                 </li>
               </ul>
             </li>
