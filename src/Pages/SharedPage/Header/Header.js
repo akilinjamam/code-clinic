@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
@@ -74,23 +74,16 @@ const Header = () => {
                 </a>
                 <ul className="p-2">
                   <li>
-                    <a href="www.google.com">Submenu 1</a>
+                    <a href="www.google.com">Skill Tests</a>
                   </li>
                   <li>
-                    <a href="www.google.com">Submenu 2</a>
+                    <a href="www.google.com">Mock Interview</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
-          <a
-            onClick={() => {
-              navigate("/");
-            }}
-            className="btn btn-ghost normal-case text-xl"
-          >
-            Code Clinic
-          </a>
+          <Link to='/' class="btn btn-ghost normal-case text-xl">Coders Clinic</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
@@ -131,10 +124,10 @@ const Header = () => {
               </a>
               <ul class="p-2">
                 <li>
-                  <a href="www.google.com">Submenu 1</a>
+                  <a href="www.google.com">Skill Tests</a>
                 </li>
                 <li>
-                  <a href="www.google.com">Submenu 2</a>
+                  <a href="www.google.com">Mock Interview</a>
                 </li>
               </ul>
             </li>

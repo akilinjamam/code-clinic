@@ -1,8 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "./Pages/Components/Header/Header";
+import Header from "./Pages/SharedPage/Header/Header";
 import Home from "./Pages/Components/Home/Home";
 import Quiz from "./Pages/Components/Home/QuizSection/Quiz";
-import auth from "./firebase.init";
 import Login from "./Pages/Components/user/Login";
 import Signup from "./Pages/Components/user/Signup";
 import Footer from "./Pages/SharedPage/Footer/Footer";
