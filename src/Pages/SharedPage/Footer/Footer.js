@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer px-36 mx-auto items-center p-4 text-gray-700 lg:bg-gray-50">
       <div className="items-center grid-flow-col">
-        <p>Copyright © {date} - All right reser Code Clinic</p>
+        <p>Copyright © {date} - All right reserved Code Clinic</p>
       </div>
       <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a>
