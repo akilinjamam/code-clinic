@@ -1,14 +1,12 @@
-import React from 'react';
-import DeveloperBanner from './DeveloperSection/DeveloperBanner';
-
+import React from "react";
+import DeveloperBanner from "./DeveloperSection/DeveloperBanner";
 
 const Home = () => {
-    return (
-        <div>
-            <DeveloperBanner/>
-            
-        </div>
-    );
+  return (
+    <div>
+      <DeveloperBanner />
+    </div>
+  );
 };
 
 export default Home;
