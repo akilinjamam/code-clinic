@@ -23,15 +23,17 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signUp" element={<Signup />}></Route>
 
+        <Route path="/introduction" element={<Introduction />}></Route>
         <Route path="/courses" element={<Courses />}>
-
           <Route index element={<HtmlCourse />}></Route>
-          <Route path="/courses/javascriptcourse" element={<JavascriptCourse />}></Route>
-          <Route path="/courses/c++" element={<Cpp />}></Route>
+          <Route
+            path="/courses/javascriptcourse"
+            element={<JavascriptCourse />}
+          />
+          <Route path="/courses/c++" element={<Cpp />} />
         </Route>
-        <Route path="/contactUs" element={<ContactUs></ContactUs>}></Route>
 
-        <Route path="*" element={<NotFound />}></Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
