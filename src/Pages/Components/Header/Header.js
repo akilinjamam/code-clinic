@@ -1,7 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
 
 const Header = () => {
+  const [user] = useAuthState(auth);
+
+  const logout = () => {
+    signOut(auth);
+  };
   const navigate = useNavigate();
 
   return (
@@ -133,9 +141,15 @@ const Header = () => {
           </ul>
         </div>
         <div class="navbar-end">
-          <a href="www.google.com" className="btn">
-            Login
-          </a>
+          {user ? (
+            <button className="btn " onClick={logout}>
+              Sign Out
+            </button>
+          ) : (
+            <a href="login" class="btn">
+              Login
+            </a>
+          )}
         </div>
       </div>
     </div>
