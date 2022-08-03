@@ -7,7 +7,7 @@ const DeveloperBanner = () => {
         <div class="hero mt-10">
             <div class="hero-content flex-col lg:flex-row">
                 <div class="flex flex-col lg:flex-row">
-                    <div class="grid flex-grow w-[50%] card rounded-box place-items-center">
+                    <div class="grid flex-grow w-[50%] card rounded-box place-items-center justify-start">
                         <img className='w-[80px]' src={CoddingSkills} alt="CoddingSkills" />
                         <h3 class="text-lg font-bold text-[#CFD2CF] mt-6">FOR DEVELOPERS</h3>
                         <h3 class="text-4xl font-bold text-slate-700">Improve your coding skills.</h3>
