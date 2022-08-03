@@ -1,4 +1,4 @@
-# Code Clinic
+# Coders Clinic
 
 ## Technology Used `React` `firebase` `tailwind css` `javaScript`
 
