@@ -26,7 +26,7 @@ const Login = () => {
 
   if (error || gError) {
     signInError = (
-      <p className="text-white">
+      <p >
         <small>{error?.message || gError?.message}</small>
       </p>
     );
@@ -42,22 +42,21 @@ const Login = () => {
   };
 
   return (
-    <div className="flex h-screen justify-center items-center text-white  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-      <div className="card w-96 bg-base-100 shadow-xl  text-white bg-gradient-to-r from-pink-500  via-purple-500 to-primary">
+    <div className="flex h-screen justify-center items-center">
+      <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body">
           <h2 className="text-center text-2xl font-bold">Login</h2>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className=" bg-gradient-to-r from-pink-500  via-purple-500 to-primary"
           >
             <div className="form-control w-full max-w-xs">
               <label className="label">
-                <span className="label-text text-black">Email</span>
+                <span className="label-text ">Email</span>
               </label>
               <input
                 type="email"
                 placeholder="Your Email"
-                className="input input-bordered text-black w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
                 {...register("email", {
                   required: {
                     value: true,
@@ -71,12 +70,12 @@ const Login = () => {
               />
               <label className="label">
                 {errors.email?.type === "required" && (
-                  <span className="label-text-alt text-white">
+                  <span className="label-text-alt ">
                     {errors.email.message}
                   </span>
                 )}
                 {errors.email?.type === "pattern" && (
-                  <span className="label-text-alt text-white">
+                  <span className="label-text-alt ">
                     {errors.email.message}
                   </span>
                 )}
@@ -84,12 +83,12 @@ const Login = () => {
             </div>
             <div className="form-control w-full max-w-xs">
               <label className="label">
-                <span className="label-text text-black">Password</span>
+                <span className="label-text ">Password</span>
               </label>
               <input
                 type="password"
                 placeholder="Password"
-                className="input input-bordered text-black w-full max-w-xs"
+                className="input input-bordered  w-full max-w-xs"
                 {...register("password", {
                   required: {
                     value: true,
@@ -103,12 +102,12 @@ const Login = () => {
               />
               <label className="label">
                 {errors.password?.type === "required" && (
-                  <span className="label-text-alt text-white">
+                  <span className="label-text-alt ">
                     {errors.password.message}
                   </span>
                 )}
                 {errors.password?.type === "minLength" && (
-                  <span className="label-text-alt text-white">
+                  <span className="label-text-alt ">
                     {errors.password.message}
                   </span>
                 )}
@@ -116,7 +115,7 @@ const Login = () => {
             </div>
             {signInError}
             <input
-              className="btn w-full max-w-xs bg-fuchsia-900 text-white mt-6"
+              className="btn w-full max-w-xs text-white'"
               type="submit"
               value="Login"
             />
@@ -132,7 +131,7 @@ const Login = () => {
           <div className="divider">OR</div>
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline bg-fuchsia-900"
+            className="btn btn-outline"
           >
             Continue with Google
           </button>
