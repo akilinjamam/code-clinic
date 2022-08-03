@@ -5,6 +5,7 @@ import Home from './Pages/Components/Home/Home';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import Language from './Pages/LearnLanguage/Components/Language';
 import Learn from './Pages/LearnLanguage/Learn';
+import Footer from './Pages/SharedPage/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/learn' element={<Learn/>}></Route>
         <Route path='/learn/:Language' element={<Language/>}></Route>
       </Routes>
+      <Footer/>
     </div>
   );
 }
