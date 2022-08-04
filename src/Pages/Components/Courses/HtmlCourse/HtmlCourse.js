@@ -1,43 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Test from "../../Test"
+
 import { Link } from "react-router-dom";
 
+
+
 const HtmlCourse = () => {
+
+  const [htmlData, setHtmlData] = useState([])
+
+  useEffect(() => {
+    const url = "html.json"
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setHtmlData(data))
+  }, [])
+
   return (
     <div>
       <h2 className="text-4xl text-primary mb-4">HTML Course</h2>
-      <div className="flex justify-around">
-        <div>
-          <div className="overflow-x-auto">
-            <table className="table w-full">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Topics</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>1</th>
-                  <td>
-                    <Link to="/introduction">Introduction</Link>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div>
-          <h1 className="text-2xl font-bold my-3">What is HTML?</h1>
-          <p>* HTML stands for Hyper Text Markup Language.</p>
-          <p>* HTML is the standard markup language for creating Web pages</p>
-          <p>* HTML describes the structure of a Web page</p>
-          <p>* HTML consists of a series of elements</p>
-          <p>* HTML elements tell the browser how to display the content</p>
-          <p>
-            * HTML elements label pieces of content such as "this is a heading",
-            "this is a paragraph", "this is a link", etc.
-          </p>
-        </div>
+
+      <div>
+        {
+          htmlData.map((dataFlow, index) =>
+            <div>
+              <br /><br />
+              <span className="font-bold"> {index + 1} </span><br /><br />
+              <div style={{ backgroundColor: 'lightGray', padding: '20px', borderRadius: '10px' }}>
+                <p className="text-3xl font-bold"> {dataFlow.topic} </p>
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.title1} </p>
+                <p> {dataFlow.description1} </p>
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.title2} </p>
+                <p> {dataFlow.description2} </p>
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.title3} </p>
+                <p> {dataFlow.description3} </p>
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.title4} </p>
+                <p> {dataFlow.description4} </p>
+
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.title5} </p>
+                <p> {dataFlow.description5} </p>
+                <br />
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.exampleTitle1} </p>
+                <p> {dataFlow.example1} </p>
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.exampleTitle2} </p>
+                <p> {dataFlow.example2} </p>
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.exampleTitle3} </p>
+                <p> {dataFlow.example3} </p>
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.exampleTitle4} </p>
+                <p> {dataFlow.example4} </p>
+                <br />
+                <p className="text-2xl font-bold"> {dataFlow.exampleTitle5} </p>
+                <p> {dataFlow.example5} </p>
+              </div>
+            </div>)
+        }
       </div>
     </div>
   );
