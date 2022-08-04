@@ -145,14 +145,14 @@ const Header = () => {
               Sign Out
             </button>
           ) : (
-            <a href="login" className="btn">
+            <Link to="login" className="btn btn-ghost">
               Login
-            </a>
+            </Link>
           )}
         </div>
 
         <div style={{ marginLeft: '30px', marginRight: '70px', fontWeight: 'bold' }}>
-          <button className="btn mr-5"> <Link to='/contactUs'>Contact Us</Link> </button>
+          <button className="btn mr-5 btn-ghost"> <Link to='/contactUs'>Contact Us</Link> </button>
           {user && <span>{user.displayName}</span>}
         </div>
       </div>
