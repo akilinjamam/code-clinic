@@ -3,6 +3,7 @@ import Learn from "../../Learnlanguage/Learn";
 import About from "../About";
 import Banner from "./Banner/Banner";
 import DeveloperBanner from "./DeveloperSection/DeveloperBanner";
+import EnrollSection from "./EnrollSection/EnrollSection";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Banner/>
       <DeveloperBanner />
       <Learn />
+      <EnrollSection />
       <About />
     </div>
   );
