@@ -4,6 +4,7 @@ import About from "../About";
 import Banner from "./Banner/Banner";
 import CompilerHome from "./CompilerHome/CompilerHome";
 import DeveloperBanner from "./DeveloperSection/DeveloperBanner";
+import EnrollSection from "./EnrollSection/EnrollSection";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner/>
       <DeveloperBanner />
       <Learn />
+      <EnrollSection />
       <About />
       <CompilerHome/>
     </div>
