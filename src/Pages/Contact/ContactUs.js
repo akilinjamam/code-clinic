@@ -4,7 +4,7 @@ import ContactCard from "./ContactCard";
 const ContactUs = () => {
   const [developers, setDevelopers] = useState([]);
   useEffect(() => {
-    fetch("developersData.json")
+    fetch("contactUs.json")
       .then((res) => res.json())
       .then((data) => setDevelopers(data));
   }, []);
