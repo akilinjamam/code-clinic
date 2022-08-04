@@ -7,7 +7,7 @@ const About = () => {
         About Coder Clinic
       </h1>
       <div className="mt-5 font-semibold">
-        <div className="bg-gradient-to-r from-sky-100 to-indigo-100 p-10 text-gray-700 rounded-2xl">
+        <div className="bg-gradient-to-r from-sky-50 to-indigo-50 p-10 text-gray-700 rounded-2xl">
           <p className="font-semibold">
             Code Clinic is a web application built to help you practice
             programming and improve your coding skills. We create simplified and

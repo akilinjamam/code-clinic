@@ -4,7 +4,6 @@ import Home from "./Pages/Components/Home/Home";
 import Quiz from "./Pages/Components/Home/QuizSection/Quiz";
 import Login from "./Pages/Components/user/Login";
 import Signup from "./Pages/Components/user/Signup";
-import ContactUs from "./Pages/Contact/ContactUs"
 import Footer from "./Pages/SharedPage/Footer/Footer";
 import NotFound from "./Pages/SharedPage/NotFound/NotFound";
 import Courses from "./Pages/Components/Courses/Courses";
@@ -12,6 +11,7 @@ import HtmlCourse from "./Pages/Components/Courses/HtmlCourse/HtmlCourse";
 import JavascriptCourse from "./Pages/Components/Courses/JavascriptCourse/JavascriptCourse";
 import Cpp from "./Pages/Components/Courses/CppCourse/Cpp";
 import Introduction from "./Pages/Components/Courses/HtmlCourse/Introduction";
+import ContactUs from "./Pages/Contact/ContactUs";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signUp" element={<Signup />}></Route>
+        <Route path="/contactUs" element={<ContactUs />}></Route>
 
         <Route path="/introduction" element={<Introduction />}></Route>
         <Route path="/courses" element={<Courses />}>
