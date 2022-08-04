@@ -1,11 +1,12 @@
 import React from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 
 const Header = () => {
   const [user] = useAuthState(auth);
+  console.log(user)
 
   const logout = () => {
     signOut(auth);
@@ -110,8 +111,8 @@ const Header = () => {
                   <Link to='/courses/javascriptcourse'>Javascript</Link>
                 </li>
                 <li>
-                    <Link to='/courses/c++' >C++</Link>
-                  </li>
+                  <Link to='/courses/c++' >C++</Link>
+                </li>
               </ul>
             </li>
             <li tabIndex="0">
@@ -148,6 +149,11 @@ const Header = () => {
               Login
             </a>
           )}
+        </div>
+
+        <div style={{ marginLeft: '30px', marginRight: '70px', fontWeight: 'bold' }}>
+          <button className="btn mr-5"> <Link to='/contactUs'>Contact Us</Link> </button>
+          {user && <span>{user.displayName}</span>}
         </div>
       </div>
     </div>

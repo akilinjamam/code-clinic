@@ -4,6 +4,7 @@ import Home from "./Pages/Components/Home/Home";
 import Quiz from "./Pages/Components/Home/QuizSection/Quiz";
 import Login from "./Pages/Components/user/Login";
 import Signup from "./Pages/Components/user/Signup";
+import ContactUs from "./Pages/Contact/ContactUs"
 import Footer from "./Pages/SharedPage/Footer/Footer";
 import NotFound from "./Pages/SharedPage/NotFound/NotFound";
 import Courses from "./Pages/Components/Courses/Courses";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signUp" element={<Signup />}></Route>
 
+<<<<<<< HEAD
         <Route path="/introduction" element={<Introduction />}></Route>
         <Route path="/courses" element={<Courses />}>
           <Route index element={<HtmlCourse />}></Route>
@@ -33,6 +35,17 @@ function App() {
         </Route>
 
         <Route path="*" element={<NotFound />} />
+=======
+        <Route path="/courses" element={<Courses />}>
+
+          <Route index element={<HtmlCourse />}></Route>
+          <Route path="/courses/javascriptcourse" element={<JavascriptCourse />}></Route>
+          <Route path="/courses/c++" element={<Cpp />}></Route>
+        </Route>
+        <Route path="/contactUs" element={<ContactUs></ContactUs>}></Route>
+
+        <Route path="*" element={<NotFound />}></Route>
+>>>>>>> 135a01b78c91191c2edd9cad966069059af9c1b9
       </Routes>
       <Footer />
     </div>
