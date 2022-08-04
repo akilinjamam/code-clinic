@@ -1,8 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Test from "../../Test"
-
-import { Link } from "react-router-dom";
-
 
 
 const HtmlCourse = () => {
@@ -45,6 +41,7 @@ const HtmlCourse = () => {
                 <p className="text-2xl font-bold"> {dataFlow.title5} </p>
                 <p> {dataFlow.description5} </p>
                 <br />
+                <hr />
                 <br />
                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle1} </p>
                 <p> {dataFlow.example1} </p>
