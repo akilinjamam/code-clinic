@@ -12,6 +12,7 @@ import HtmlCourse from "./Pages/Components/Courses/HtmlCourse/HtmlCourse";
 import JavascriptCourse from "./Pages/Components/Courses/JavascriptCourse/JavascriptCourse";
 import Cpp from "./Pages/Components/Courses/CppCourse/Cpp";
 import Introduction from "./Pages/Components/Courses/HtmlCourse/Introduction";
+import EnrollMain from "./Pages/Components/Home/EnrollSection/EnrollMain";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signUp" element={<Signup />}></Route>
+        <Route path="/EnrollMain" element={<EnrollMain />}></Route>
 
         <Route path="/introduction" element={<Introduction />}></Route>
         <Route path="/courses" element={<Courses />}>
