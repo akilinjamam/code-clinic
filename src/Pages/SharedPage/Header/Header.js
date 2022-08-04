@@ -103,7 +103,7 @@ const Header = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </Link >
-              <ul className="p-2">
+              <ul className="p-2 z-20">
                 <li>
                   <Link to='/courses'>HTML</Link>
                 </li>
@@ -145,14 +145,14 @@ const Header = () => {
               Sign Out
             </button>
           ) : (
-            <Link to="login" className="btn btn-ghost">
+            <Link to="login" className="btn btn-ghost text-xs font-bold">
               Login
             </Link>
           )}
         </div>
 
         <div style={{ marginLeft: '30px', marginRight: '70px', fontWeight: 'bold' }}>
-          <button className="btn mr-5 btn-ghost"> <Link to='/contactUs'>Contact Us</Link> </button>
+          <button className="btn mr-5 btn-ghost"> <Link className="text-xs font-bold" to='/contactUs'>Contact Us</Link> </button>
           {user && <span>{user.displayName}</span>}
         </div>
       </div>

@@ -10,7 +10,7 @@ const Courses = () => {
         <h2 className="text-6xl flex justify-center font-bold text-primary">
           Courses
         </h2>
-        <Outlet />
+
         <label
           htmlFor="my-drawer-2"
           className="btn btn-primary drawer-button lg:hidden"
