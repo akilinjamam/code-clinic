@@ -1,7 +1,7 @@
 import React from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillFacebook } from "react-icons/ai";
+import github from "../../Assets/icons/github.svg";
+import fb from "../../Assets/icons/facebook.svg";
+import lin from "../../Assets/icons/linkedin.svg";
 
 const ContactCard = ({ developer }) => {
   const { name, describe, about, git, faceBook, linkedin, img } = developer;
@@ -10,7 +10,7 @@ const ContactCard = ({ developer }) => {
       <div className="flex p-5 mt-5">
         <figure className="w-28">
           <img
-            className="border-4 border-lime-400 rounded-full"
+            className="border-4 border-lime-400 rounded-full w-[150px] h-[115px]"
             src={img}
             alt={name}
           />
@@ -27,21 +27,21 @@ const ContactCard = ({ developer }) => {
           <a href={git} target="_blank" rel="noReferrer">
             <img
               className="w-[40px] hover:animate-bounce"
-              src={<AiFillGithub />}
+              src={github}
               alt=""
             />
           </a>
-          <a href={<AiFillLinkedin />} target="_blank" rel="noReferrer">
+          <a href={faceBook} target="_blank" rel="noReferrer">
             <img
               className="w-[40px] hover:animate-bounce"
-              src={<AiFillLinkedin />}
+              src={fb}
               alt=""
             />
           </a>
-          <a href={<AiFillFacebook />} target="_blank" rel="noReferrer">
+          <a href={linkedin} target="_blank" rel="noReferrer">
             <img
               className="w-[40px] hover:animate-bounce"
-              src={<AiFillFacebook />}
+              src={lin}
               alt=""
             />
           </a>

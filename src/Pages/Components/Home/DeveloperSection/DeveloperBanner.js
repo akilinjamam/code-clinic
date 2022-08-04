@@ -7,11 +7,11 @@ const DeveloperBanner = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="hero mt-10 ">
+    <div className="hero pt-36 px-5 bg-slate-100">
       <div className="hero-content flex-col lg:flex-row ">
         <div className="flex flex-col lg:flex-row">
-          <div className="grid flex-grow w-[50%] card rounded-box place-items-center">
-            <img className="w-[80px]" src={CoddingSkills} alt="CoddingSkills" />
+          <div className="grid flex-grow w-full px-5 lg:px-0 lg:w-1/2 mx-auto card rounded-lg place-items-start">
+            <img className="w-[80px] mx-auto" src={CoddingSkills} alt="CoddingSkills" />
             <h3 className="text-lg font-bold text-[#CFD2CF] mt-6">
               FOR DEVELOPERS
             </h3>
@@ -23,19 +23,18 @@ const DeveloperBanner = () => {
               increase this skill we need different skill assessment. (You can
               improve your assessment by clicking the button below.)
             </p>
-            <a
-              href="#"
-              className="btn btn-primary"
+            <button
+              className="btn btn-primary w-[250px]"
               onClick={() => {
                 navigate("/quiz");
               }}
             >
               Try for free challenge
-            </a>
+            </button>
           </div>
           <div className="divider lg:divider-horizontal"></div>
-          <div className="grid flex-grow w-[50%] card rounded-box place-items-center">
-            <img className="w-[70px]" src={InterviewImg} alt="InterviewImg" />
+          <div className="grid flex-grow w-full mt-20 lg:mt-0 px-5 lg:px-0 lg:w-1/2 mx-auto card rounded-lg place-items-start">
+            <img className="w-[70px] mx-auto" src={InterviewImg} alt="InterviewImg" />
             <h3 className="text-lg font-bold text-[#CFD2CF] mt-1">
               FOR INTERVIEWER
             </h3>
@@ -46,9 +45,14 @@ const DeveloperBanner = () => {
               If you are a candidate.You will be asked many types of questions,
               which you can see by clicking on the button below.
             </p>
-            <a href="#" className="btn btn-primary">
+            <button
+              className="btn btn-primary w-[200px]"
+              onClick={() => {
+                navigate("/quiz");
+              }}
+            >
               7 day's free trial
-            </a>
+            </button>
           </div>
         </div>
       </div>

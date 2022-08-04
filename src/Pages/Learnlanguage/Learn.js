@@ -18,21 +18,21 @@ const Learn = () => {
   };
 
   return (
-    <div className="hero mt-10 bg-base-100 justify-center lg:justify-start">
+    <div className="hero justify-center lg:justify-center py-36 bg-slate-100">
       <div className="hero-content flex-col lg:flex-row lg:fle">
-        <div className="md:w-[400px] lg:pr-10">
+        <div className="lg:pr-10">
           <h3 className="text-3xl font-bold text-center lg:text-start">
             Choose what to learn
           </h3>
-          <p className="pt-5 text-center hidden lg:block sm:text-justify lg:pr-10">
+          <p className="pt-5 text-center sm:text-justify lg:pr-10">
             Start learning programming language of your choice.
           </p>
         </div>
-        <div className="grid pt-5  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center font-semibold">
+        <div className="grid pt-5  sm:grid-cols-2 md:grid-cols-3 gap-8 text-center font-semibold">
           {languages.map((language) => (
             <button
               key={language.id}
-              className="border border-green-300 rounded-3xl p-3 hover:scale-125 hover:duration-200 hover:bg-slate-50"
+              className="border bg-slate-50 text-black justify-center border-green-300 rounded-3xl p-3 hover:scale-125 hover:duration-200 hover:bg-slate-50"
               onClick={() => navigateServiceDetails(language.id)}
             >
               {language.name}
