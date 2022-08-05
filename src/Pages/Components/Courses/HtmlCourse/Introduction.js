@@ -1,8 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Introduction = () => {
-  const navigate = useNavigate();
+  
   return (
     <div>
       <pre>
@@ -47,15 +47,9 @@ const Introduction = () => {
         <li>The &lt;h1&gt; element defines a large heading</li>
         <li>The &lt;p&gt; element defines a paragraph</li>
       </ul>
-      <a
-        href="#"
-        className="btn btn-primary"
-        onClick={() => {
-          navigate("/quiz");
-        }}
-      >
+      <Link to='/quiz'className="btn btn-primary">
         Take a quiz
-      </a>
+      </Link>
     </div>
   );
 };

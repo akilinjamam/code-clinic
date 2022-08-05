@@ -77,7 +77,7 @@ const Header = () => {
                 </Link>
                 <ul className="p-2">
                   <li>
-                    <Link to='/skilltests' >Skill Tests</Link>
+                    <Link to='/quiz' >Skill Tests</Link>
                   </li>
                   <li>
                     <Link to='/mockinterview'  >Mock Interview</Link>
@@ -92,7 +92,7 @@ const Header = () => {
           <ul className="menu menu-horizontal p-0">
             <li tabIndex="0">
               <Link to='/courses'>
-                Courses
+                Course
                 <svg
                   className="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +130,7 @@ const Header = () => {
               </Link>
               <ul className="p-2">
                 <li>
-                  <Link to='/skilltests'>Skill Tests</Link>
+                  <Link to='/quiz'>Skill Tests</Link>
                 </li>
                 <li>
                   <Link to='/mockinterview' >Mock Interview</Link>
@@ -144,7 +144,7 @@ const Header = () => {
             Admin
           </Link>
           {user ? (
-            <button className="btn " onClick={logout}>
+            <button className="btn btn-ghost sm:w-2/3 " onClick={logout}>
               Sign Out
             </button>
           ) : (
@@ -155,8 +155,8 @@ const Header = () => {
         </div>
 
         <div style={{ marginLeft: '30px', marginRight: '70px', fontWeight: 'bold' }}>
-          <button className="btn mr-5 btn-ghost"> <Link className="text-xs font-bold" to='/contactUs'>Contact Us</Link> </button>
-          {user && <span>{user.displayName}</span>}
+          <button className="btn mr-5 btn-ghost"> <Link to='/contactUs'>Contact Us</Link> </button>
+          {user && <span className=" text-sm">{user.displayName}</span>}
         </div>
       </div>
     </div>
