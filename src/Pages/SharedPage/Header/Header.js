@@ -55,7 +55,7 @@ const Header = () => {
                     <Link to='/courses' >HTML</Link >
                   </li>
                   <li>
-                    <Link to='/courses/javascriptcourse' >Javascript</Link>
+                    <Link to='/courses/javascriptCourse' >Javascript</Link>
                   </li>
                   <li>
                     <Link to='/courses/c++' >C++</Link>
@@ -108,7 +108,7 @@ const Header = () => {
                   <Link to='/courses'>HTML</Link>
                 </li>
                 <li>
-                  <Link to='/courses/javascriptcourse'>Javascript</Link>
+                  <Link to='/courses/javascriptCourse'>Javascript</Link>
                 </li>
                 <li>
                   <Link to='/courses/c++' >C++</Link>
@@ -140,6 +140,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
+          <Link to="" className="btn btn-ghost text-xs font-bold">
+            Admin
+          </Link>
           {user ? (
             <button className="btn " onClick={logout}>
               Sign Out
