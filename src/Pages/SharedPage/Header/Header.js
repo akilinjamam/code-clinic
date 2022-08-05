@@ -55,7 +55,7 @@ const Header = () => {
                     <Link to='/courses' >HTML</Link >
                   </li>
                   <li>
-                    <Link to='/courses/javascriptcourse' >Javascript</Link>
+                    <Link to='/courses/javascriptCourse' >Javascript</Link>
                   </li>
                   <li>
                     <Link to='/courses/c++' >C++</Link>
@@ -103,12 +103,12 @@ const Header = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </Link >
-              <ul className="p-2">
+              <ul className="p-2 z-20">
                 <li>
                   <Link to='/courses'>HTML</Link>
                 </li>
                 <li>
-                  <Link to='/courses/javascriptcourse'>Javascript</Link>
+                  <Link to='/courses/javascriptCourse'>Javascript</Link>
                 </li>
                 <li>
                   <Link to='/courses/c++' >C++</Link>
@@ -140,12 +140,15 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
+          <Link to="" className="btn btn-ghost text-xs font-bold">
+            Admin
+          </Link>
           {user ? (
             <button className="btn btn-ghost sm:w-2/3 " onClick={logout}>
               Sign Out
             </button>
           ) : (
-            <Link to="login" className="btn btn-ghost">
+            <Link to="login" className="btn btn-ghost text-xs font-bold">
               Login
             </Link>
           )}

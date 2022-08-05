@@ -23,7 +23,7 @@ const HtmlCourse = () => {
               <br /><br />
               <span className="font-bold"> {index + 1} </span><br /><br />
               <div style={{ backgroundColor: 'lightGray', padding: '20px', borderRadius: '10px' }}>
-                <p className="text-3xl font-bold"> {dataFlow.topic} </p>
+                <p className="text-3xl font-bold">  {dataFlow.topic} </p>
                 <br />
                 <p className="text-2xl font-bold"> {dataFlow.title1} </p>
                 <p> {dataFlow.description1} </p>
@@ -44,19 +44,19 @@ const HtmlCourse = () => {
                 <hr />
                 <br />
                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle1} </p>
-                <p> {dataFlow.example1} </p>
+                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code> {dataFlow.example1}</code> </p>
                 <br />
                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle2} </p>
-                <p> {dataFlow.example2} </p>
+                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code>{dataFlow.example2}</code> </p>
                 <br />
                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle3} </p>
-                <p> {dataFlow.example3} </p>
+                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code>{dataFlow.example3}</code> </p>
                 <br />
                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle4} </p>
-                <p> {dataFlow.example4} </p>
+                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code>{dataFlow.example4} </code></p>
                 <br />
                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle5} </p>
-                <p> {dataFlow.example5} </p>
+                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code> {dataFlow.example5}</code> </p>
               </div>
             </div>)
         }
