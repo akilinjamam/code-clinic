@@ -4,7 +4,7 @@ import Home from "./Pages/Components/Home/Home";
 import Quiz from "./Pages/Components/Home/QuizSection/Quiz";
 import Login from "./Pages/Components/user/Login";
 import Signup from "./Pages/Components/user/Signup";
-import ContactUs from "./Pages/Contact/ContactUs"
+import ContactUs from "./Pages/Contact/ContactUs";
 import Footer from "./Pages/SharedPage/Footer/Footer";
 import NotFound from "./Pages/SharedPage/NotFound/NotFound";
 import Courses from "./Pages/Components/Courses/Courses";
