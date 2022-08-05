@@ -18,6 +18,7 @@ import Attributes from "./Pages/Components/Courses/HtmlCourse/Attributes";
 import HtmlStyle from "./Pages/Components/Courses/HtmlCourse/HtmlStyle";
 import HtmlImage from "./Pages/Components/Courses/HtmlCourse/HtmlImage";
 import HtmlCce from "./Pages/Components/Courses/HtmlCourse/HtmlCce";
+import Editor from "./Pages/Components/Editor/Editor";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/EnrollMain" element={<EnrollMain />}></Route>
         <Route path="/contactUs" element={<ContactUs />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/Editor" element={<Editor />}></Route>
 
         <Route path="/introduction" element={<Introduction />}></Route>
         {/* <Route path="/courses" element={<Courses />}>
