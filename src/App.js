@@ -13,6 +13,7 @@ import JavascriptCourse from "./Pages/Components/Courses/JavascriptCourse/Javasc
 import Cpp from "./Pages/Components/Courses/CppCourse/Cpp";
 import Introduction from "./Pages/Components/Courses/HtmlCourse/Introduction";
 import EnrollMain from "./Pages/Components/Home/EnrollSection/EnrollMain";
+import About from "./Pages/Components/About";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/signUp" element={<Signup />}></Route>
         <Route path="/EnrollMain" element={<EnrollMain />}></Route>
         <Route path="/contactUs" element={<ContactUs />}></Route>
+        <Route path="/about" element={<About />}></Route>
 
         <Route path="/introduction" element={<Introduction />}></Route>
         <Route path="/courses" element={<Courses />}>
