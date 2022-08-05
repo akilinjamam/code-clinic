@@ -8,17 +8,16 @@ import ContactUs from "./Pages/Contact/ContactUs";
 import Footer from "./Pages/SharedPage/Footer/Footer";
 import NotFound from "./Pages/SharedPage/NotFound/NotFound";
 import Courses from "./Pages/Components/Courses/Courses";
-import HtmlCourse from "./Pages/Components/Courses/HtmlCourse/HtmlCourse";
 import JavascriptCourse from "./Pages/Components/Courses/JavascriptCourse/JavascriptCourse"
 import Cpp from "./Pages/Components/Courses/CppCourse/Cpp";
 import Introduction from "./Pages/Components/Courses/HtmlCourse/Introduction";
 import EnrollMain from "./Pages/Components/Home/EnrollSection/EnrollMain";
+import About from "./Pages/Components/About";
 import Intro from "./Pages/Components/Courses/HtmlCourse/Intro";
 import Attributes from "./Pages/Components/Courses/HtmlCourse/Attributes";
 import HtmlStyle from "./Pages/Components/Courses/HtmlCourse/HtmlStyle";
 import HtmlImage from "./Pages/Components/Courses/HtmlCourse/HtmlImage";
 import HtmlCce from "./Pages/Components/Courses/HtmlCourse/HtmlCce";
-
 
 function App() {
   return (
@@ -31,6 +30,7 @@ function App() {
         <Route path="/signUp" element={<Signup />}></Route>
         <Route path="/EnrollMain" element={<EnrollMain />}></Route>
         <Route path="/contactUs" element={<ContactUs />}></Route>
+        <Route path="/about" element={<About />}></Route>
 
         <Route path="/introduction" element={<Introduction />}></Route>
         {/* <Route path="/courses" element={<Courses />}>
