@@ -77,7 +77,7 @@ const Header = () => {
                 </Link>
                 <ul className="p-2">
                   <li>
-                    <Link to='/skilltests' >Skill Tests</Link>
+                    <Link to='/quiz' >Skill Tests</Link>
                   </li>
                   <li>
                     <Link to='/mockinterview'  >Mock Interview</Link>
@@ -130,7 +130,7 @@ const Header = () => {
               </Link>
               <ul className="p-2">
                 <li>
-                  <Link to='/skilltests'>Skill Tests</Link>
+                  <Link to='/quiz'>Skill Tests</Link>
                 </li>
                 <li>
                   <Link to='/mockinterview' >Mock Interview</Link>
