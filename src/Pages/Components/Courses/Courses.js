@@ -60,24 +60,24 @@ const Courses = () => {
           </li>
           <li>
             <Link to="" className="font-bold">
-              will be added
+              js Syntex
             </Link>
           </li>
           <li>
             <Link to="" className="font-bold">
-              will be added
-            </Link>
-          </li>
-
-          <li>
-            <Link to="" className="font-bold">
-              will be added
+              js Variables
             </Link>
           </li>
 
           <li>
             <Link to="" className="font-bold">
-              will be added
+              js Let
+            </Link>
+          </li>
+
+          <li>
+            <Link to="" className="font-bold">
+              js const
             </Link>
           </li>
 
