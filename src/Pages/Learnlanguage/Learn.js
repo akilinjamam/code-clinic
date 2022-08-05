@@ -33,7 +33,7 @@ const Learn = () => {
           {languages.map((language) => (
             <button
               key={language.id}
-              className="border bg-slate-50 text-black justify-center border-green-300 rounded-3xl p-3 hover:scale-125 hover:duration-200 hover:bg-slate-50"
+              className="border animate-pulse bg-gray-900 text-white justify-center rounded-3xl p-3 hover:scale-125 hover:duration-200 hover:bg-slate-100 hover:text-black"
               onClick={() => navigateServiceDetails(language.id)}
             >
               {language.name}
