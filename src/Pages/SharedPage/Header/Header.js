@@ -92,7 +92,7 @@ const Header = () => {
           <ul className="menu menu-horizontal p-0">
             <li tabIndex="0">
               <Link to='/courses'>
-                Courses
+                Course
                 <svg
                   className="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +141,7 @@ const Header = () => {
         </div>
         <div className="navbar-end">
           {user ? (
-            <button className="btn " onClick={logout}>
+            <button className="btn btn-ghost sm:w-2/3 " onClick={logout}>
               Sign Out
             </button>
           ) : (
@@ -153,7 +153,7 @@ const Header = () => {
 
         <div style={{ marginLeft: '30px', marginRight: '70px', fontWeight: 'bold' }}>
           <button className="btn mr-5 btn-ghost"> <Link to='/contactUs'>Contact Us</Link> </button>
-          {user && <span>{user.displayName}</span>}
+          {user && <span className=" text-sm">{user.displayName}</span>}
         </div>
       </div>
     </div>

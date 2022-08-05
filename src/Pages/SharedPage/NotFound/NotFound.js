@@ -1,12 +1,14 @@
 import React from 'react';
-import error from '../../../Assets/img/error.jpg';
+import { Link } from 'react-router-dom';
+import error from '../../../Assets/img/error.png';
 
 const NotFound = () => {
     return (
         <div>
-            <img src={error} alt="ErrorPic" />
+            <img className='bg-cover w-screen' src={error} alt="ErrorPic" />
+            <Link to='/' className='block text-center' >Go Back</Link>
         </div>
     );
 };
 
-export default NotFound;
+export default NotFound; 
