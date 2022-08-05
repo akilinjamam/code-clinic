@@ -6,7 +6,7 @@ const EnrollSection = () => {
         <div>
             <div class="hero min-h-screen bg-base-200">
                 <div class="hero-content flex-col lg:flex-row">
-                    <div>
+                    <div className=''>
                         <div class="card  bg-base-100 shadow-xl">
                         <div class="card-body">
                         <h1 class="text-3xl font-bold">Enroll Now for FREE</h1>

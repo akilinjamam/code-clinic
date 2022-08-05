@@ -22,9 +22,9 @@ const Learn = () => {
     <div className="hero justify-center lg:justify-center py-36 bg-slate-100 learn-sec">
       <div className="hero-content flex-col lg:flex-row lg:fle">
         <div className="lg:pr-10">
-          <h3 className="text-3xl font-bold text-center lg:text-start">
-            Choose what to learn
-          </h3>
+          <h1 className="text-5xl text-center lg:text-start">
+            Choose What to Learn
+          </h1>
           <p className="pt-5 text-center sm:text-justify lg:pr-10">
             Start learning programming language of your choice.
           </p>
