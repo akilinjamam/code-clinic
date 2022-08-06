@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
+import Banner from "../../Components/Home/Banner/Banner";
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -13,8 +14,8 @@ const Header = () => {
   };
 
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className="hero-sec sticky top-0 z-10">
+      <div className="navbar text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -38,7 +39,7 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li tabIndex="0">
-                <Link to='/courses' className="justify-between">
+                <Link to='/courses' className="justify-between hover:bg-white hover:text-black">
                   Courses
                   <svg
                     className="fill-current"
@@ -50,7 +51,7 @@ const Header = () => {
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                   </svg>
                 </Link>
-                <ul className="p-2">
+                <ul className="p-2 text-white hover:bg-white hover:text-black">
                   <li>
                     <Link to='/courses' >HTML</Link >
                   </li>
@@ -75,23 +76,23 @@ const Header = () => {
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                   </svg>
                 </Link>
-                <ul className="p-2">
+                <ul className="p-2 text-white hover:bg-white hover:text-black">
                   <li>
                     <Link to='/quiz' >Skill Tests</Link>
                   </li>
                   <li>
-                    <Link to='/mockinterview'  >Mock Interview</Link>
+                    <Link to='/mockinterview'  >Interview Preparation</Link>
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
-          <Link to='/' className="btn btn-ghost normal-case text-xl">Coders Clinic</Link>
+          <Link to='/' className="btn btn-ghost normal-case text-xl hover:bg-white hover:text-black">Coders Clinic</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li tabIndex="0">
-              <Link to='/courses'>
+              <Link to='/courses' className=" hover:bg-white hover:text-black">
                 Course
                 <svg
                   className="fill-current"
@@ -103,7 +104,7 @@ const Header = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </Link >
-              <ul className="p-2 z-20">
+              <ul className="p-2 z-20 text-white hover:bg-white hover:text-black">
                 <li>
                   <Link to='/courses'>HTML</Link>
                 </li>
@@ -116,7 +117,7 @@ const Header = () => {
               </ul>
             </li>
             <li tabIndex="0">
-              <Link to='/interview'>
+              <Link to='/interview' className=" hover:bg-white hover:text-black">
                 Interview
                 <svg
                   className="fill-current"
@@ -128,7 +129,7 @@ const Header = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </Link>
-              <ul className="p-2">
+              <ul className="p-2 text-white hover:bg-white hover:text-black">
                 <li>
                   <Link to='/quiz'>Skill Tests</Link>
                 </li>
@@ -140,25 +141,21 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="" className="btn btn-ghost text-xs font-bold">
+          <Link to="" className="btn btn-ghost text-xs font-bold hover:bg-white hover:text-black">
             Admin
           </Link>
           {user ? (
-            <button className="btn btn-ghost sm:w-2/3 " onClick={logout}>
+            <button className="btn btn-ghost sm:w-2/3  hover:bg-white hover:text-black" onClick={logout}>
               Sign Out
             </button>
           ) : (
-            <Link to="login" className="btn btn-ghost text-xs font-bold">
+            <Link to="login" className="btn btn-ghost text-xs font-bold hover:bg-white hover:text-black">
               Login
             </Link>
           )}
         </div>
-
-        <div style={{ marginLeft: '30px', marginRight: '70px', fontWeight: 'bold' }}>
-          <button className="btn mr-5 btn-ghost"> <Link to='/contactUs'>Contact Us</Link> </button>
-          {user && <span className=" text-sm">{user.displayName}</span>}
-        </div>
       </div>
+      
     </div>
   );
 };

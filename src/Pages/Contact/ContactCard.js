@@ -6,7 +6,7 @@ import lin from "../../Assets/icons/linkedin.svg";
 const ContactCard = ({ developer }) => {
   const { name, describe, about, git, faceBook, linkedin, img } = developer;
   return (
-    <div className="card w-90 bg-slate-100 shadow-xl mt-10">
+    <div className="card w-90 bg-slate-100 shadow-xl mt-10 ">
       <div className="flex p-5 mt-5">
         <figure className="w-28">
           <img
@@ -26,12 +26,12 @@ const ContactCard = ({ developer }) => {
         <div className="card-actions justify-center mt-3">
           <a href={git} target="_blank" rel="noReferrer">
             <img
-              className="w-[40px] hover:animate-bounce"
+              className="w-[40px] hover:animate-bounce  animate-spin"
               src={github}
               alt=""
             />
           </a>
-          <a href={faceBook} target="_blank" rel="noReferrer">
+          <a href={faceBook} target="_blank" rel="noReferrer ">
             <img
               className="w-[40px] hover:animate-bounce"
               src={fb}

@@ -13,7 +13,7 @@ const ContactUs = () => {
       <h1 className="text-4xl text-center font-semibold">
         Contact our Developers
       </h1>
-      <div className="grid gap-5 justify-center lg:grid-cols-3 md:grid-cols-2 mt-10 mb-5">
+      <div className="grid  gap-5 justify-center lg:grid-cols-3 md:grid-cols-2 mt-10 mb-5">
         {developers?.map((developer) => (
           <ContactCard key={developer.id} developer={developer} />
         ))}
