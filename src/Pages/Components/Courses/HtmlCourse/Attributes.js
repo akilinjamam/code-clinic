@@ -1,6 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
 
 const Attributes = () => {
+
+    const [inputValue, setInputValue] = useState("")
+
+
 
     const dataAtt = [
         {
@@ -26,7 +32,7 @@ const Attributes = () => {
             exampleTitle8: "",
             exampleTitle9: "",
             exampleTitle10: "",
-            example1: "<a href='https://www.facebook.com'>Visit W3Schools</a>",
+            example1: "<p>\n  <a href='www.facebook.com'>facebook</a>\n  </p>",
             example2: "<img src='img_girl.jpg'>",
             example3: "<img src='img_girl.jpg' width='500' height='600'>",
             example4: "<img src='img_girl.jpg' alt='Girl with a jacket'>",
@@ -53,41 +59,73 @@ const Attributes = () => {
 
                             <br /><br />
 
-                            <div style={{ backgroundColor: 'lightGray', padding: '20px', borderRadius: '10px' }}>
-                                <p className="text-3xl font-bold">  {dataFlow.topic} </p>
+                            <div className='bg-gray-100' style={{ padding: '20px', borderRadius: '10px' }}>
+                                {dataFlow.topic && <p className="text-3xl font-bold">  {dataFlow.topic} </p>}
                                 <br />
-                                <p className="text-2xl font-bold"> {dataFlow.title1} </p>
-                                <p> {dataFlow.description1} </p>
+                                {dataFlow.title1 && <p className="text-2xl font-bold"> {dataFlow.title1} </p>}
+                                {dataFlow.description1 && <p> {dataFlow.description1} </p>}
                                 <br />
-                                <p className="text-2xl font-bold"> {dataFlow.title2} </p>
-                                <p> {dataFlow.description2} </p>
+                                {dataFlow.title2 && <p className="text-2xl font-bold"> {dataFlow.title2} </p>}
+                                {dataFlow.description2 && <p> {dataFlow.description2} </p>}
                                 <br />
-                                <p className="text-2xl font-bold"> {dataFlow.title3} </p>
-                                <p> {dataFlow.description3} </p>
+                                {dataFlow.title3 && <p className="text-2xl font-bold"> {dataFlow.title3} </p>}
+                                {dataFlow.description3 && <p> {dataFlow.description3} </p>}
                                 <br />
-                                <p className="text-2xl font-bold"> {dataFlow.title4} </p>
-                                <p> {dataFlow.description4} </p>
+                                {dataFlow.title4 && <p className="text-2xl font-bold"> {dataFlow.title4} </p>}
+                                {dataFlow.description4 && <p> {dataFlow.description4} </p>}
 
                                 <br />
-                                <p className="text-2xl font-bold"> {dataFlow.title5} </p>
-                                <p> {dataFlow.description5} </p>
+                                {dataFlow.title5 && <p className="text-2xl font-bold"> {dataFlow.title5} </p>}
+                                {dataFlow.description5 && <p> {dataFlow.description5} </p>}
                                 <br />
                                 <hr />
                                 <br />
                                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle1} </p>
-                                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code> {dataFlow.example1}</code> </p>
+                                <br />
+                                {dataFlow.example1 && <div className='flex bg-black justify-between p-2 rounded '>
+                                    <pre > <code className=" mt-3  text-green-500 rounded"> {dataFlow.example1}
+                                    </code></pre>
+                                    <CopyToClipboard text={dataFlow.example1}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
+
+                                </div>}
+
+
                                 <br />
                                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle2} </p>
-                                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code>{dataFlow.example2}</code> </p>
+                                <br />
+                                {dataFlow.example2 && <div className='flex bg-black justify-between p-2 rounded '>
+                                    <pre > <code className=" mt-3  text-green-500 rounded"> {dataFlow.example2}
+                                    </code></pre>
+                                    <CopyToClipboard text={dataFlow.example2}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
+
+                                </div>}
                                 <br />
                                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle3} </p>
-                                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code>{dataFlow.example3}</code> </p>
+                                <br />
+                                {dataFlow.example3 && <div className='flex bg-black justify-between p-2 rounded '>
+                                    <pre > <code className=" mt-3  text-green-500 rounded"> {dataFlow.example3}
+                                    </code></pre>
+                                    <CopyToClipboard text={dataFlow.example3}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
+
+                                </div>}
                                 <br />
                                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle4} </p>
-                                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code>{dataFlow.example4} </code></p>
+                                <br />
+                                {dataFlow.example4 && <div className='flex bg-black justify-between p-2 rounded '>
+                                    <pre > <code className=" mt-3  text-green-500 rounded"> {dataFlow.example4}
+                                    </code></pre>
+                                    <CopyToClipboard text={dataFlow.example4}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
+
+                                </div>}
                                 <br />
                                 <p className="text-2xl font-bold"> {dataFlow.exampleTitle5} </p>
-                                <p className="bg-white mt-3 pl-3 text-red-500 rounded"> <code> {dataFlow.example5}</code> </p>
+                                <br />
+                                {dataFlow.example5 && <div className='flex bg-black justify-between p-2 rounded '>
+                                    <pre > <code className=" mt-3  text-green-500 rounded"> {dataFlow.example5}
+                                    </code></pre>
+                                    <CopyToClipboard text={dataFlow.example5}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
+
+                                </div>}
                             </div>
                         </div>)
 
