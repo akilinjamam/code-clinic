@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
-    <footer className="footer px-20 mx-auto items-center  text-white lg:bg-gray-50 foo py-12">
-      <div className="items-center grid-flow-col">
-        <ul className="flex gap-8">
-          <Link to="contactUs"><li className="py-2 hover:underline hover:font-semibold">Contact Us</li></Link>
-          <Link to="about"><li className="py-2 hover:underline hover:font-semibold">About</li></Link>
-          <a target="_blank" href="https://web.programming-hero.com"><li className="py-2 hover:underline hover:font-semibold">Organisation</li></a>
-        </ul>
+    <footer className="footer justify-items-center md:justify-items-start md:px-10 lg:px-20 text-white lg:bg-gray-50 foo py-10">
+      <div className="flex gap-8 pb-10">
+        <Link to="contactUs" className="hover:underline hover:font-semibold">Contact Us</Link>
+        <Link to="about" className="hover:underline hover:font-semibold">About</Link>
+        <a target="_blank" href="https://web.programming-hero.com" rel="noReferrer" className="hover:underline hover:font-semibold">Organization</a>
       </div>
-      <div className=" md:place-self-end pt-16">
-        <div className=" gap-4 md:place-self-end hidden md:flex">
+      <div className="place-self-center mt-20 md:place-self-end md:mt-0">
+        <div><p>©{date} - All right reserved by<span className="pl-2 text-orange-500 font-semibold">Coders Clinic</span> </p></div>
+
+        <div className="flex gap-4 place-self-center">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,6 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <div><p>©{date} - All right reserved by<span className="pl-2 text-orange-500 font-semibold">Coders Clinic</span> </p></div>
       </div>
     </footer>
   );
