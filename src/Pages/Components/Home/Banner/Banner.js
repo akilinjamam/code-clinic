@@ -3,7 +3,7 @@ import "./Banner.css";
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen bg-indigo-100 hero-sec text-white">
+        <div className="hero min-h-screen hero-sec  text-white">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img src="https://i.ibb.co/VNqcxYK/hero-img.jpg" className="max-w-sm rounded-lg shadow-2x w-2/5" />
           <div className='w-3/5 px-2'>

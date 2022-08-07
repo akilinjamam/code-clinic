@@ -22,7 +22,7 @@ import Editor from "./Pages/Components/Editor/Editor";
 
 function App() {
   return (
-    <div className="container mx-auto">
+    <div className="mx-auto">
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
