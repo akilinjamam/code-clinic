@@ -6,54 +6,52 @@ const CompilerHome = () => {
     const navigate = useNavigate()
 
     return (
-        <div className="container mx-auto">
+        <div className=" bg-base-200 mx-auto">
             <div className=' grid grid-cols-2 gap'>
-                <div className=" bg-slate-100">
+                <div>
                     <img src="https://i.ibb.co/FsTbWP7/compiler.png" alt="" />
                 </div>
-                <div className=" bg-slate-100">
+                <div >
 
                     <h1 className='text-4xl text-center mt-10'>Run Your Code With Our Compiler</h1>
 
-                    <div onClick={() => {
-                        navigate("/Editor");
-                    }}
-                        className='grid grid-cols-2 gap-10  mt-8 '>
-                        <div onClick={() => {
+                    <div
+                        className='grid grid-cols-2 gap-10 mt-28 '>
+                        <button onClick={() => {
                             navigate("/Editor");
-                        }} className='btn text-black hover:text-white  p-8 shadow-lg bg-white text-center font-bold rounded-md compiler'>
+                        }} className='btn  text-black hover:text-white shadow-lg bg-white text-center font-bold rounded-md compiler'>
                             <h1>JavaScript</h1>
-                        </div>
-                        <div onClick={() => {
+                        </button>
+                        <button onClick={() => {
                             navigate("/Editor");
                         }}
-                            className='btn text-black hover:text-white  p-8 shadow-lg bg-white text-center font-bold rounded-md compiler'>
+                            className='btn text-black hover:text-white shadow-lg bg-white text-center font-bold rounded-md compiler'>
                             <h1>HTML</h1>
-                        </div>
-                        <div onClick={() => {
+                        </button>
+                        <button onClick={() => {
                             navigate("/Editor");
                         }}
-                            className='btn text-black hover:text-white  p-8 shadow-lg bg-white text-center font-bold rounded-md compiler'>
+                            className='btn text-black hover:text-white shadow-lg bg-white text-center font-bold rounded-md compiler'>
                             <h1>CSS</h1>
-                        </div>
-                        <div onClick={() => {
+                        </button>
+                        <button onClick={() => {
                             navigate("/Editor");
                         }}
-                            className='btn text-black hover:text-white  p-8 shadow-lg bg-white text-center font-bold rounded-md compiler'>
+                            className='btn text-black hover:text-white shadow-lg bg-white text-center font-bold rounded-md compiler'>
                             <h1>C++</h1>
-                        </div>
-                        <div onClick={() => {
+                        </button>
+                        <button onClick={() => {
                             navigate("/Editor");
                         }}
-                            className='btn text-black hover:text-white  p-8 shadow-lg bg-white text-center font-bold rounded-md compiler'>
+                            className='btn text-black hover:text-white shadow-lg bg-white text-center font-bold rounded-md compiler'>
                             <h1>Python</h1>
-                        </div>
-                        <div onClick={() => {
+                        </button>
+                        <button onClick={() => {
                             navigate("/Editor");
                         }}
-                            className='btn text-black hover:text-white  p-8 shadow-lg bg-white text-center font-bold rounded-md compiler'>
+                            className='btn text-black hover:text-white justify-center shadow-lg bg-white text-center font-bold rounded-md compiler'>
                             <h1>C</h1>
-                        </div>
+                        </button>
                     </div>
                 </div>
 
