@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
-import Banner from "../../Components/Home/Banner/Banner";
+import logo from "../../../Assets/img/logo-c.png";
+import login from "../../../Assets/icons/user.png";
+import admin from "../../../Assets/icons/admin.png";
+
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -14,8 +17,8 @@ const Header = () => {
   };
 
   return (
-    <div className="hero-sec sticky top-0 z-10">
-      <div className="navbar text-white">
+    <div className="bg-[#2671EA] sticky top-0 z-10">
+      <div className="navbar text-black">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -87,12 +90,12 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link to='/' className="btn btn-ghost normal-case text-xl hover:bg-white hover:text-black">Coders Clinic</Link>
+          <Link to='/' className="btn btn-ghost normal-case text-2xl text-white"><span><img className="logo" src={logo} alt="" /></span>oders Clinic</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li tabIndex="0">
-              <Link to='/courses' className=" hover:bg-white hover:text-black">
+              <Link to='/courses' className=" hover:bg-white text-white hover:text-black">
                 Course
                 <svg
                   className="fill-current"
@@ -117,7 +120,7 @@ const Header = () => {
               </ul>
             </li>
             <li tabIndex="0">
-              <Link to='/interview' className=" hover:bg-white hover:text-black">
+              <Link to='/interview' className=" hover:bg-white text-white hover:text-black">
                 Interview
                 <svg
                   className="fill-current"
@@ -141,8 +144,8 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="" className="btn btn-ghost text-xs font-bold hover:bg-white hover:text-black">
-            Admin
+          <Link to="" className="btn btn-ghost p-0 text-xs font-bold hover:bg-white hover:text-black">
+          <img className="icon" src={admin} alt="" />
           </Link>
           {user ? (
             <button className="btn btn-ghost sm:w-2/3  hover:bg-white hover:text-black" onClick={logout}>
@@ -150,7 +153,7 @@ const Header = () => {
             </button>
           ) : (
             <Link to="login" className="btn btn-ghost text-xs font-bold hover:bg-white hover:text-black">
-              Login
+              <img className="icon p-0" src={login} alt="" />
             </Link>
           )}
         </div>
