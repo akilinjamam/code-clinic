@@ -11,7 +11,7 @@ const Footer = () => {
         <a target="_blank" href="https://web.programming-hero.com" rel="noReferrer" className="hover:underline hover:font-semibold">Organization</a>
       </div>
       <div className="place-self-center mt-20 md:place-self-end md:mt-0">
-        <div><p>©{date} - All right reserved by<span className="pl-2 text-orange-500 font-semibold">Coders Clinic</span> </p></div>
+        <div><p>©{date} - All Right Reserved By<span className="pl-2 text-orange-500 font-semibold">Coders Clinic</span> </p></div>
 
         <div className="flex gap-4 place-self-center">
           <a href="https://twitter.com/" target='_blank' rel="noreferrer">
