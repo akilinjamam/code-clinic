@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
 const Attributes = () => {
 
-    const [inputValue, setInputValue] = useState("")
+    
 
 
 
