@@ -4,9 +4,6 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Attributes = () => {
 
-    
-
-
 
     const dataAtt = [
         {
