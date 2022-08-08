@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
@@ -9,8 +9,13 @@ import admin from "../../../Assets/icons/admin.png";
 
 
 const Header = () => {
+  const navigate = useNavigate();
   const [user] = useAuthState(auth);
-  console.log(user)
+  
+  if(user){
+    navigate('/')
+  }
+  
 
   const logout = () => {
     signOut(auth);
