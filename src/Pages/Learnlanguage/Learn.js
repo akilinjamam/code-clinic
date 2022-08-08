@@ -8,7 +8,7 @@ const Learn = () => {
   return (
     <div className="hero justify-center lg:justify-center py-24 bg-slate-100 learn-sec">
       <div className="hero-content flex-col lg:flex-row lg:fle">
-        <div className="lg:pr-10">
+        <div className="lg:pr-10 learn-sec">
           <h1 className="text-5xl text-center lg:text-start">
             Choose What to Learn
           </h1>
