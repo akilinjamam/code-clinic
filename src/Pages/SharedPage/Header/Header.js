@@ -9,13 +9,14 @@ import admin from "../../../Assets/icons/admin.png";
 
 
 const Header = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
+  
   const [user] = useAuthState(auth);
   
   if(user){
     navigate('/')
   }
-  
+
 
   const logout = () => {
     signOut(auth);
