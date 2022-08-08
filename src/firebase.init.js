@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDibs2ma6NUjG8TtPZ6isPtBLn9D3-ie6Y",
-  authDomain: "code-clinics-cf50a.firebaseapp.com",
-  projectId: "code-clinics-cf50a",
-  storageBucket: "code-clinics-cf50a.appspot.com",
-  messagingSenderId: "83526996876",
-  appId: "1:83526996876:web:e433aac706f9939a91fca9",
+  apiKey: "AIzaSyAvANmVbwWoJU19gqctey6ZIue2svznlyk",
+  authDomain: "coders-clinic.firebaseapp.com",
+  projectId: "coders-clinic",
+  storageBucket: "coders-clinic.appspot.com",
+  messagingSenderId: "932158863205",
+  appId: "1:932158863205:web:d3f080d63db2025e43d38c"
 };
 
 // Initialize Firebase
