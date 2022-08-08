@@ -5,6 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import logo from "../../../Assets/img/logo-c.png";
 import login from "../../../Assets/icons/user.png";
+import signout from "../../../Assets/icons/logout.png";
 import admin from "../../../Assets/icons/admin.png";
 
 
@@ -23,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-[#2671EA] sticky top-0 z-10">
+    <div className="bg-[#191A25] sticky py-5 top-0 z-10">
       <div className="navbar text-black">
         <div className="navbar-start">
           <div className="dropdown">
@@ -154,9 +155,9 @@ const Header = () => {
           <img className="icon" src={admin} alt="" />
           </Link>
           {user ? (
-            <button className="btn btn-ghost sm:w-2/3  hover:bg-white hover:text-black" onClick={logout}>
-              Sign Out
-            </button>
+            <Link to="/" className="btn btn-ghost  hover:bg-white hover:text-black" onClick={logout}>
+               <img className="icon p-0" src={signout} alt="" />
+            </Link>
           ) : (
             <Link to="login" className="btn btn-ghost text-xs font-bold hover:bg-white hover:text-black">
               <img className="icon p-0" src={login} alt="" />

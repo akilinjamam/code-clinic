@@ -10,7 +10,7 @@ const ContactCard = ({ developer }) => {
       <div className="flex p-5 mt-5">
         <figure className="w-28">
           <img
-            className="border-4 border-lime-400 rounded-full w-[150px] h-[115px]"
+            className="border-4  border-lime-400 rounded-full w-[150px] h-[115px]"
             src={img}
             alt={name}
           />
