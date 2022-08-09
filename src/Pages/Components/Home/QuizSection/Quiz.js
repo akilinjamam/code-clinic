@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./quiz.css";
 
 const Quiz = () => {
   let QB = [
@@ -19,6 +18,116 @@ const Quiz = () => {
         { Answer: "article", isCorrect: false },
         { Answer: "section", isCorrect: false },
         { Answer: "main", isCorrect: false },
+      ],
+    },
+    {
+      Question: "What are the differences between html4 and html5 ?",
+      Answers: [
+        {
+          Answer: "html5 allows JS, html4 does not allow JS",
+          isCorrect: false,
+        },
+        { Answer: "html5 have nav, footer html4 have not", isCorrect: false },
+        { Answer: "In html5 draw shapes, html4 does not ", isCorrect: false },
+        { Answer: "All of the above", isCorrect: true },
+      ],
+    },
+    {
+      Question: "Why will you use Meta tag ?",
+      Answers: [
+        {
+          Answer: "Metadata is data (information) about data.",
+          isCorrect: true,
+        },
+        { Answer: "It consume the entire width", isCorrect: false },
+        {
+          Answer: "Used to represent the important text of a document",
+          isCorrect: false,
+        },
+        { Answer: "All of the above", isCorrect: false },
+      ],
+    },
+    {
+      Question: "Why will you use charset in html ?",
+      Answers: [
+        { Answer: "length and width of the screen.", isCorrect: false },
+        { Answer: "To display an HTML page correctly", isCorrect: true },
+        { Answer: "contains an address for a destination", isCorrect: false },
+        { Answer: "some kind of structure or expression", isCorrect: false },
+      ],
+    },
+    {
+      Question: "How to insert a copyright symbol on a browser page ?",
+      Answers: [
+        { Answer: "using &symbol; or &#179;", isCorrect: false },
+        { Answer: "using &copyright; or &#189;", isCorrect: false },
+        { Answer: "using &copy; or &#169;", isCorrect: true },
+        { Answer: "using &c; or &#199;", isCorrect: false },
+      ],
+    },
+    {
+      Question: "What is the use of an iframe tag ?",
+      Answers: [
+        {
+          Answer: "An iframe is used to display a movie within a web page.",
+          isCorrect: false,
+        },
+        {
+          Answer: "An iframe is used to display a image within a web page",
+          isCorrect: false,
+        },
+        {
+          Answer: "An iframe is used to display a icon within a web page.",
+          isCorrect: false,
+        },
+        {
+          Answer: "An iframe is used to display a web page within a web page.",
+          isCorrect: true,
+        },
+      ],
+    },
+    {
+      Question: "If I do not put <!DOCTYPE html> will HTML 5 work ?",
+      Answers: [
+        { Answer: "Sometime not works", isCorrect: false },
+        {
+          Answer:
+            "Browser will not be able to identify that it is an HTML document",
+          isCorrect: true,
+        },
+        { Answer: "It works not properly", isCorrect: false },
+        { Answer: "Working fine.", isCorrect: false },
+      ],
+    },
+    {
+      Question: "Which type of video formats are supported by HTML5 ?",
+      Answers: [
+        { Answer: "mp4, WebM, Ogg", isCorrect: true },
+        { Answer: "mp3, webM, Ogg", isCorrect: false },
+        { Answer: "Wav, dot, exe", isCorrect: false },
+        { Answer: "All type", isCorrect: false },
+      ],
+    },
+    {
+      Question: "What is the canvas element in HTML5 ?",
+      Answers: [
+        {
+          Answer:
+            " used to describe the two-dimensional vector and vector/raster graphics",
+          isCorrect: false,
+        },
+        {
+          Answer: "It is used to add sound or music files on the web page.",
+          isCorrect: false,
+        },
+        {
+          Answer: "a container that is used to draw graphics on the web page",
+          isCorrect: true,
+        },
+        {
+          Answer: "It is mostly used for vector type diagrams like pie charts",
+          isCorrect: false,
+        },
       ],
     },
   ];
@@ -44,35 +153,43 @@ const Quiz = () => {
     setShowScore(false);
   };
   return (
-    <div className="main">
-      <div className="app">
+    <div className="bg-gray-100 text-gray-800 flex justify-center items-center h-96">
+      <div className="flex justify-evenly w-1/2 min-h-200 rounded-lg p-0 bg-gray-500">
         {showScore ? (
-          <div className="score-section">
+          <div className="flex flex-col justify-center items-center pt-4 text-2xl text-gray-100">
             You have scored {score} out of {QB.length}
             <>
-              <button type="submit" onClick={resetQuiz}>
+              <button
+                className="btn btn-primary mb-5 mt-5"
+                type="submit"
+                onClick={resetQuiz}
+              >
                 Reset Quiz
               </button>
             </>
           </div>
         ) : (
-          <>
-            <div className="question-section p-20">
-              <div className="question-count">
-                <span>{currentQuestion + 1}</span>/{QB.length}
-              </div>
-              <div className="question-text">
-                {QB[currentQuestion].Question}
+          <div className="flex flex-col">
+            <div className="w-2/3 relative">
+              <div className="mb-2 text-gray-100">
+                <span className="text-2xl">{currentQuestion + 1}</span>/
+                {QB.length}
               </div>
             </div>
-            <div className="answer-section">
+            <div className="mb-3 text-2xl text-gray-100">
+              {QB[currentQuestion].Question}
+            </div>
+            <div className="w-full flex flex-col justify-between">
               {QB[currentQuestion].Answers.map((answer) => (
-                <button onClick={() => handleAnswerResponse(answer.isCorrect)}>
+                <button
+                  className="btn btn-primary mb-1"
+                  onClick={() => handleAnswerResponse(answer.isCorrect)}
+                >
                   {answer.Answer}
                 </button>
               ))}
             </div>
-          </>
+          </div>
         )}
       </div>
     </div>

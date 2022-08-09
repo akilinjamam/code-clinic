@@ -24,30 +24,36 @@ const DeveloperBanner = () => {
               improve your assessment by clicking the button below. assessment by clicking the button belowlicking the button
             </p>
             <button
-              className="btn btn-primary w-[250px]"
+              className="btn btn-glass w-[200px]"
               onClick={() => {
                 navigate("/quiz");
               }}
             >
-              Try for free challenge
+              View Cources
             </button>
           </div>
+
+          {/* ==================================================== */}
+
           <div className="divider lg:divider-horizontal"></div>
-          <div className="grid flex-grow w-full mt-20 lg:mt-2 px-5 lg:px-0 lg:w-1/2 mx-auto card rounded-lg ">
-            <img className="w-[70px] mx-auto" src={InterviewImg} alt="InterviewImg" />
-            <h3 className="text-lg font-bold text-center text-[#adafad] mt-1">
+
+          {/* ==================================================== */}
+
+          <div className="grid flex-grow w-full px-5 lg:px-0 lg:w-1/2 mx-auto card rounded-lg  ">
+            <img className="w-[80px] mx-auto" src={InterviewImg} alt="InterviewImg" />
+            <h3 className="text-lg font-bold text-center text-[#adafad] mt-6">
               FOR INTERVIEWER
             </h3>
             <h3 className="text-4xl font-bold text-slate-800">
               Interview Preparation.
             </h3>
             <p className="py-6 text-[#8b8d8d]">
-            As a developer we need to improve our coding skills. And to
+              As a developer we need to improve our coding skills. And to
               increase this skill we need different skill assessment. You can
               improve your assessment by clicking the button below. assessment by clicking the button belowlicking the button
             </p>
             <button
-              className="btn btn-primary w-[200px]"
+              className="btn btn-glass w-[200px]"
               onClick={() => {
                 navigate("/mockinterview");
               }}

@@ -1,9 +1,12 @@
 .hero-sec{
-    background-image:url("https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif") ;
+    background-image:url("../../../../Assets/img/gif-h.gif") ;
     background-repeat: no-repeat;
     background-size:cover ;
     background-position: center;
     
+}
+.hero-img{
+
 }
 .logo{
     height: 50px;
