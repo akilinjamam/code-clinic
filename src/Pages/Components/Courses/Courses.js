@@ -51,37 +51,9 @@ const Courses = () => {
               HTML Quotation & Citation
             </Link>
           </li>
-          <button className="btn btn-primary"> <Link to="/courses/javascriptCourse">Javascript Course</Link> </button>
 
-          <li>
-            <Link to="/courses/javascriptcourse" className="font-bold">
-              Introduction
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="font-bold">
-              js Syntex
-            </Link>
-          </li>
-          <li>
-            <Link to="" className="font-bold">
-              js Variables
-            </Link>
-          </li>
 
-          <li>
-            <Link to="" className="font-bold">
-              js Let
-            </Link>
-          </li>
 
-          <li>
-            <Link to="" className="font-bold">
-              js const
-            </Link>
-          </li>
-
-          <button className="btn btn-primary"> <Link to="/courses/cpp"> C++ Course</Link> </button>
 
 
         </ul>

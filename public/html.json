@@ -22,7 +22,13 @@
         "exampleTitle8": "",
         "exampleTitle9": "",
         "exampleTitle10": "",
-        "example1": "",
+        "example1": {
+            "img": {
+                "@src": "img_girl.jpg",
+                "@width": "500",
+                "@height": "600"
+            }
+        },
         "example2": "",
         "example3": "",
         "example4": "",
