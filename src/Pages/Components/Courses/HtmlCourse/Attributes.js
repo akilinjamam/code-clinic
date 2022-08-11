@@ -6,8 +6,6 @@ const Attributes = () => {
 
 
 
-
-
     const dataAtt = [
         {
             id: 2,

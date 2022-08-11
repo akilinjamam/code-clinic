@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -14,9 +14,13 @@ const Header = () => {
 
   const [user] = useAuthState(auth);
 
-  if (user) {
-    navigate('/')
-  }
+
+  useEffect(() => {
+    if (user) {
+      navigate('/')
+    }
+  }, [user, navigate])
+
 
 
   const logout = () => {
