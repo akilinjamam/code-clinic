@@ -18,7 +18,7 @@ import Attributes from "./Pages/Components/Courses/HtmlCourse/Attributes";
 import HtmlStyle from "./Pages/Components/Courses/HtmlCourse/HtmlStyle";
 import HtmlImage from "./Pages/Components/Courses/HtmlCourse/HtmlImage";
 import HtmlCce from "./Pages/Components/Courses/HtmlCourse/HtmlCce";
-import Editor from "./Pages/Components/Editor/Editor
+import Editor from "./Pages/Components/Editor/Editor";
 import InterviewPrep from "./Pages/Components/Home/CompilerHome/InterviewPrep/InterviewPrep";
 import JsCourses from "./Pages/Components/Courses/JsCourses";
 import JsSyntex from "./Pages/Components/Courses/JavascriptCourse/JsSyntex";
