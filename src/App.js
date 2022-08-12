@@ -18,7 +18,8 @@ import Attributes from "./Pages/Components/Courses/HtmlCourse/Attributes";
 import HtmlStyle from "./Pages/Components/Courses/HtmlCourse/HtmlStyle";
 import HtmlImage from "./Pages/Components/Courses/HtmlCourse/HtmlImage";
 import HtmlCce from "./Pages/Components/Courses/HtmlCourse/HtmlCce";
-import Editor from "./Pages/Components/Editor/Editor";
+import Editor from "./Pages/Components/Editor/Editor
+import InterviewPrep from "./Pages/Components/Home/CompilerHome/InterviewPrep/InterviewPrep";
 import JsCourses from "./Pages/Components/Courses/JsCourses";
 import JsSyntex from "./Pages/Components/Courses/JavascriptCourse/JsSyntex";
 import JsVariables from "./Pages/Components/Courses/JavascriptCourse/JsVariables";
@@ -27,20 +28,22 @@ import JsConst from "./Pages/Components/Courses/JavascriptCourse/JsConst";
 import CplusplusCourses from "./Pages/Components/Courses/CplusplusCourses";
 import CppIntro from "./Pages/Components/Courses/CppCourse/CppIntro";
 
+
 function App() {
   return (
     <div className="mx-auto">
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signUp" element={<Signup />}></Route>
         <Route path="/EnrollMain" element={<EnrollMain />}></Route>
         <Route path="/contactUs" element={<ContactUs />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/Editor" element={<Editor />}></Route>
-        <Route path="/quiz" element={<Quiz />}></Route>
+        <Route path="/quiz" element={<Quiz/>}></Route>
+        <Route path="/interview-prep" element={<InterviewPrep/>}></Route>
+        
 
         <Route path="/introduction" element={<Introduction />}></Route>
         {/* <Route path="/courses" element={<Courses />}>
