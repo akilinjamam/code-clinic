@@ -19,6 +19,7 @@ import HtmlStyle from "./Pages/Components/Courses/HtmlCourse/HtmlStyle";
 import HtmlImage from "./Pages/Components/Courses/HtmlCourse/HtmlImage";
 import HtmlCce from "./Pages/Components/Courses/HtmlCourse/HtmlCce";
 import Editor from "./Pages/Components/Editor/Editor";
+import InterviewPrep from "./Pages/Components/Home/CompilerHome/InterviewPrep/InterviewPrep";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/Editor" element={<Editor />}></Route>
         <Route path="/quiz" element={<Quiz/>}></Route>
+        <Route path="/interview-prep" element={<InterviewPrep/>}></Route>
 
         <Route path="/introduction" element={<Introduction />}></Route>
         {/* <Route path="/courses" element={<Courses />}>

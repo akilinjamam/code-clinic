@@ -93,7 +93,7 @@ const Header = () => {
                     <Link to='/quiz' >Skill Tests</Link>
                   </li>
                   <li>
-                    <Link to='/mockinterview'  >Interview Preparation</Link>
+                    <Link to='/interview-prep'  >Interview Preparation</Link>
                   </li>
                 </ul>
               </li>
@@ -146,7 +146,7 @@ const Header = () => {
                   <Link to='/quiz'>Skill Tests</Link>
                 </li>
                 <li>
-                  <Link to='/mockinterview' >Mock Interview</Link>
+                  <Link to='/interview-prep' >Interview Preparation</Link>
                 </li>
               </ul>
             </li>
