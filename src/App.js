@@ -27,6 +27,8 @@ import JsLet from "./Pages/Components/Courses/JavascriptCourse/JsLet";
 import JsConst from "./Pages/Components/Courses/JavascriptCourse/JsConst";
 import CplusplusCourses from "./Pages/Components/Courses/CplusplusCourses";
 import CppIntro from "./Pages/Components/Courses/CppCourse/CppIntro";
+import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/JavascriptQa";
+import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 
 
 function App() {
@@ -41,12 +43,11 @@ function App() {
         <Route path="/contactUs" element={<ContactUs />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/Editor" element={<Editor />}></Route>
-        <Route path="/quiz" element={<Quiz/>}></Route>
-        <Route path="/interview-prep" element={<InterviewPrep/>}></Route>
-        
+        <Route path="/quiz" element={<Quiz />}></Route>
+
 
         <Route path="/introduction" element={<Introduction />}></Route>
-      
+
         <Route path="/courses" element={<Courses />}>
           <Route index element={<Intro />}></Route>
 
@@ -82,7 +83,23 @@ function App() {
             element={<Cpp />}
           />
         </Route>
+        {/* Interview Preparation Section Routes */}
 
+        <Route path="/interview-prep" element={<InterviewPrep />}>
+          {/* <Route index element={<Intro />}></Route> */}
+
+          <Route
+            path="/interview-prep/javascript"
+            element={<JavascriptQa />}
+          />
+
+          <Route
+            path="/interview-prep/html"
+            element={<HtmlQa />}
+          />
+        </Route>
+
+        {/* Ends of Interview Preparation Section Routes */}
         <Route path="/jsCourses" element={<JsCourses></JsCourses>}>
 
           <Route
