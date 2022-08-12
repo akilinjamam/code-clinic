@@ -15,11 +15,14 @@ const Header = () => {
   const [user] = useAuthState(auth);
 
 
-  useEffect(()=>{
-    if(user){
+
+  useEffect(() => {
+    if (user) {
       navigate('/')
     }
-  },[user,navigate])
+  }, [user, navigate])
+
+ 
 
 
 
