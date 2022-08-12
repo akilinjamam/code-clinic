@@ -11,9 +11,10 @@ import admin from "../../../Assets/icons/admin.png";
 
 const Header = () => {
   const navigate = useNavigate()
-  
+
   const [user] = useAuthState(auth);
-  
+
+
   useEffect(()=>{
     if(user){
       navigate('/')
@@ -21,12 +22,17 @@ const Header = () => {
   },[user,navigate])
 
 
+
   const logout = () => {
     signOut(auth);
   };
 
   return (
-    <div className="bg-[#191A25] sticky py-5 top-0 z-10">
+
+    <div className="bg-[#2671EA] sticky top-0 z-30">
+
+
+
       <div className="navbar text-black">
         <div className="navbar-start">
           <div className="dropdown">
@@ -121,10 +127,10 @@ const Header = () => {
                   <Link to='/courses'>HTML</Link>
                 </li>
                 <li>
-                  <Link to='/courses/javascriptCourse'>Javascript</Link>
+                  <Link to='/jsCourses'>Javascript</Link>
                 </li>
                 <li>
-                  <Link to='/courses/c++' >C++</Link>
+                  <Link to='/cplusPlusCourses' >C++</Link>
                 </li>
               </ul>
             </li>
@@ -154,11 +160,11 @@ const Header = () => {
         </div>
         <div className="navbar-end">
           <Link to="" className="btn btn-ghost p-0 text-xs font-bold hover:bg-white hover:text-black">
-          <img className="icon" src={admin} alt="" />
+            <img className="icon" src={admin} alt="" />
           </Link>
           {user ? (
             <Link to="/" className="btn btn-ghost  hover:bg-white hover:text-black" onClick={logout}>
-               <img className="icon p-0" src={signout} alt="" />
+              <img className="icon p-0" src={signout} alt="" />
             </Link>
           ) : (
             <Link to="login" className="btn btn-ghost text-xs font-bold hover:bg-white hover:text-black">
@@ -167,7 +173,7 @@ const Header = () => {
           )}
         </div>
       </div>
-      
+
     </div>
   );
 };
