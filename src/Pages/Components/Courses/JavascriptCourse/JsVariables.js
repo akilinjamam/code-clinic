@@ -1,40 +1,37 @@
 import React from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import CopyToClipboard from 'react-copy-to-clipboard';
 
+const JsVariables = () => {
 
-const Attributes = () => {
-
-
-
-    const dataAtt = [
+    const jsVariables = [
         {
             id: 2,
-            topic: "Attributes",
-            title1: "href Attributes",
-            title2: "The src Attribute",
-            title3: "The width and height Attributes",
-            title4: "The alt Attribute",
-            title5: "The style Attribute",
-            description1: "The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:",
-            description2: "The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:",
-            description3: "The <img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):",
-            description4: "The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.",
-            description5: "The style attribute is used to add styles to an element, such as color, font, size, and more.",
-            exampleTitle1: "Example: href Attribute",
-            exampleTitle2: "Example: src Attribute",
-            exampleTitle3: "Example: The width and height Attributes",
-            exampleTitle4: "Example: The alt Attribute",
-            exampleTitle5: "Example: The style Attribute",
+            topic: "Javascript Variables",
+            title1: "4 way to decleare javascript variables:",
+            title2: "What are Variables?",
+            title3: "When to Use JavaScript var?",
+            title4: "When to Use JavaScript const?",
+            title5: "JavaScript Data Types",
+            description1: "using var, let, const and using nothing",
+            description2: "Variables are containers for storing data (storing data values). In this example, x, y, and z, a, b and c, d, e and f are variables, declared with the var, let and const keyword:",
+            description3: "Always declare JavaScript variables with var,let, or const.The var keyword is used in all JavaScript code from 1995 to 2015. The let and const keywords were added to JavaScript in 2015.If you want your code to run in older browser, you must use var.",
+            description4: "If you want a general rule: always declare variables with const.If you think the value of the variable can change, use let.In this example, price1, price2, and total, are variables:",
+            description5: "JavaScript variables can hold numbers like 100 and text values like 'John Doe'.In programming, text values are called text strings.JavaScript can handle many types of data, but for now, just think of numbers and strings.Strings are written inside double or single quotes. Numbers are written without quotes.If you put a number in quotes, it will be treated as a text string.",
+            exampleTitle1: "",
+            exampleTitle2: " Example: Variables",
+            exampleTitle3: "",
+            exampleTitle4: "Example: when to use const and let",
+            exampleTitle5: "Example: Data type",
             exampleTitle6: "",
             exampleTitle7: "",
             exampleTitle8: "",
             exampleTitle9: "",
             exampleTitle10: "",
-            example1: "<p>\n  <a href='www.facebook.com'>facebook</a>\n  </p>",
-            example2: "<img src='img_girl.jpg'>",
-            example3: "<img src='img_girl.jpg' width='500' height='600'>",
-            example4: "<img src='img_girl.jpg' alt='Girl with a jacket'>",
-            example5: "<p style='color:red;'>This is a red paragraph.</p>",
+            example1: "",
+            example2: "// variables: var,\n\nvar x = 5;\nvar y = 6;\nvar z = x + y;\n\n// variables: let,\nlet a = 3;\nlet b = 4;\nlet c = a + b;\n\n//variables: const\nConst d = 10;\nconst e = 12;\nconst f = d + e;",
+            example3: "",
+            example4: "const price1 = 5;\nconst price2 = 6;\nlet total = price1 + price2;",
+            example5: "const pi = 3.14;\nlet person = 'John Doe';\nlet answer = 'Yes I am!';",
             example6: "",
             example7: "",
             example8: "",
@@ -43,15 +40,13 @@ const Attributes = () => {
         }
     ]
 
-
-
     return (
         <div>
-            <h2 className="text-4xl text-primary mb-4">HTML Course</h2>
+            <h2 className="text-4xl text-primary mb-4">Javascript Course</h2>
 
             <div>
                 {
-                    dataAtt.map((dataFlow) =>
+                    jsVariables.map((dataFlow) =>
 
                         <div>
 
@@ -60,20 +55,20 @@ const Attributes = () => {
                             <div className='bg-gray-100' style={{ padding: '20px', borderRadius: '10px' }}>
                                 {dataFlow.topic && <p className="text-3xl font-bold">  {dataFlow.topic} </p>}
                                 <br />
-                                {dataFlow.title1 && <p className="text-2xl font-bold"> {dataFlow.title1} </p>}
+                                {dataFlow.title1 && <p className="text-2xl font-bold mb-3"> {dataFlow.title1} </p>}
                                 {dataFlow.description1 && <p> {dataFlow.description1} </p>}
                                 <br />
-                                {dataFlow.title2 && <p className="text-2xl font-bold"> {dataFlow.title2} </p>}
+                                {dataFlow.title2 && <p className="text-2xl font-bold mb-3"> {dataFlow.title2} </p>}
                                 {dataFlow.description2 && <p> {dataFlow.description2} </p>}
                                 <br />
-                                {dataFlow.title3 && <p className="text-2xl font-bold"> {dataFlow.title3} </p>}
+                                {dataFlow.title3 && <p className="text-2xl font-bold mb-3"> {dataFlow.title3} </p>}
                                 {dataFlow.description3 && <p> {dataFlow.description3} </p>}
                                 <br />
-                                {dataFlow.title4 && <p className="text-2xl font-bold"> {dataFlow.title4} </p>}
+                                {dataFlow.title4 && <p className="text-2xl font-bold mb-3"> {dataFlow.title4} </p>}
                                 {dataFlow.description4 && <p> {dataFlow.description4} </p>}
 
                                 <br />
-                                {dataFlow.title5 && <p className="text-2xl font-bold"> {dataFlow.title5} </p>}
+                                {dataFlow.title5 && <p className="text-2xl font-bold mb-3"> {dataFlow.title5} </p>}
                                 {dataFlow.description5 && <p> {dataFlow.description5} </p>}
                                 <br />
                                 <hr />
@@ -133,4 +128,4 @@ const Attributes = () => {
     );
 };
 
-export default Attributes;
+export default JsVariables;
