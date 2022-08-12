@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
-import logo from "../../../Assets/img/logo-c.png";
+import logo from "../../../Assets/icons/letter-c.png";
 import login from "../../../Assets/icons/user.png";
 import signout from "../../../Assets/icons/logout.png";
 import admin from "../../../Assets/icons/admin.png";
@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
 
-    <div className="bg-[#2671EA] sticky top-0 z-30">
+    <div className="bg-gray-800 sticky top-0 z-30">
 
 
 
