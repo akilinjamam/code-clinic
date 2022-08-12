@@ -46,17 +46,7 @@ function App() {
         
 
         <Route path="/introduction" element={<Introduction />}></Route>
-        {/* <Route path="/courses" element={<Courses />}>
-          <Route index element={<HtmlCourse />}></Route>
-          <Route
-            path="/courses/javascriptcourse"
-            element={<JavascriptCourse />}
-          />
-          <Route path="/courses/c++" element={<Cpp />} />
-        </Route> */}
-
-
-
+      
         <Route path="/courses" element={<Courses />}>
           <Route index element={<Intro />}></Route>
 
