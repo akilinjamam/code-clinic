@@ -11,7 +11,7 @@ const Footer = () => {
         <a target="_blank" href="https://web.programming-hero.com" rel="noReferrer" className="hover:underline hover:font-semibold">Organization</a>
       </div>
       <div className="place-self-center mt-20 md:place-self-end md:mt-0">
-        <div className="flex gap-4 place-self-end">
+        <div className="flex gap-4 place-self-center md:place-self-end">
           <a href="https://twitter.com/" target='_blank' rel="noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
