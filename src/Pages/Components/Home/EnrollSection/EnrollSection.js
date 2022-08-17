@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom';
 const EnrollSection = () => {
 
 
-        return (
-        <div>
-            <div class="hero p-16 bg-base-200">
+
 
     return (
         <div className='mb-0 pb-0'>
@@ -66,7 +64,7 @@ const EnrollSection = () => {
                 </div>
             </div>
         </div>
-        );
+    );
 };
 
-        export default EnrollSection;
+export default EnrollSection;
