@@ -22,7 +22,7 @@ const Header = () => {
     }
   }, [user, navigate])
 
- 
+
 
 
 
@@ -162,7 +162,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="" className="btn btn-ghost p-0 text-xs font-bold hover:bg-white hover:text-black">
+          <Link to="/adminHome" className="btn btn-ghost p-0 text-xs font-bold hover:bg-white hover:text-black">
             <img className="icon" src={admin} alt="" />
           </Link>
           {user ? (
