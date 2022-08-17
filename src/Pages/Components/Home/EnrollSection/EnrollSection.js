@@ -4,69 +4,15 @@ import { Link } from 'react-router-dom';
 const EnrollSection = () => {
 
 
-//     // .flip-card {
-//     background - color: transparent;
-//     width: 300px;
-//     height: 300px;
-//     perspective: 1000px;
-// }
-
-// .flip - card - inner {
-//     position: relative;
-//     width: 100 %;
-//     height: 100 %;
-//     text - align: center;
-//     transition: transform 0.6s;
-//     transform - style: preserve - 3d;
-//     box - shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-// }
-
-// .flip - card: hover.flip - card - inner {
-//     transform: rotateY(180deg);
-// }
-
-// .flip - card - front, .flip - card - back {
-//     position: absolute;
-//     width: 100 %;
-//     height: 100 %;
-//     -webkit - backface - visibility: hidden;
-//     backface - visibility: hidden;
-// }
-
-// .flip - card - front {
-//     background - color: #bbb;
-//     color: black;
-// }
-
-// .flip - card - back {
-//     background - color: #2980b9;
-//     color: white;
-//     transform: rotateY(180deg);
-// }
-// </style >
-// </head >
-//     <body>
-
-//         <h1>Card Flip with Text</h1>
-//         <h3>Hover over the image below:</h3>
-
-//         <div class="flip-card">
-//             <div class="flip-card-inner">
-//                 <div class="flip-card-front">
-//                     <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-//                 </div>
-//                 <div class="flip-card-back">
-//                     <h1>John Doe</h1>
-//                     <p>Architect & Engineer</p>
-//                     <p>We love that guy</p>
-//                 </div>
-//             </div>
-//         </div>
-
-
         return (
         <div>
             <div class="hero p-16 bg-base-200">
+
+    return (
+        <div className='mb-0 pb-0'>
+            <h2 class=" text-5xl text-blue-900 font-bold text-center"> Take the best package </h2>
+            <div class="hero bg-[url('https://i.pinimg.com/originals/7d/aa/11/7daa11df16b943f477c464a66b16e300.gif')] p-8 bg-base-200">
+
                 <div class="hero-content flex-col lg:flex-row">
                     {/*Card -01  */}
                     <div className=''>
