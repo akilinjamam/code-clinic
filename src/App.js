@@ -72,9 +72,17 @@ function App() {
         {/* Interview Preparation Section Routes */}
 
         <Route path="/interview-prep" element={<InterviewPrep />}>
-          {/* <Route index element={<Intro />}></Route> */}
+
+        
+          <Route
+            path="/interview-prep/javascript"
+            element={<JavascriptQa />}
+          />
+
+        
 
           <Route path="/interview-prep/javascript" element={<JavascriptQa />} />
+
 
           <Route path="/interview-prep/html" element={<HtmlQa />} />
         </Route>

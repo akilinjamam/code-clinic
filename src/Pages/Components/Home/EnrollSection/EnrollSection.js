@@ -2,10 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const EnrollSection = () => {
+
+
+        return (
+        <div>
+            <div class="hero p-16 bg-base-200">
+
     return (
         <div className='mb-0 pb-0'>
             <h2 class=" text-5xl text-blue-900 font-bold text-center"> Take the best package </h2>
             <div class="hero bg-[url('https://i.pinimg.com/originals/7d/aa/11/7daa11df16b943f477c464a66b16e300.gif')] p-8 bg-base-200">
+
                 <div class="hero-content flex-col lg:flex-row">
                     {/*Card -01  */}
                     <div className=''>
@@ -59,7 +66,7 @@ const EnrollSection = () => {
                 </div>
             </div>
         </div>
-    );
+        );
 };
 
-export default EnrollSection;
+        export default EnrollSection;
