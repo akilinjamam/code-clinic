@@ -33,6 +33,7 @@ import CppIntro from "./Pages/Components/Courses/CppCourse/CppIntro";
 import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/JavascriptQa";
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 import PythonCompiler from "./Pages/Components/Editor/PythonCompiler";
+import AdminHome from "./Pages/Components/AdminPanel/AdminHome";
 
 
 function App() {
@@ -102,6 +103,8 @@ function App() {
         <Route path="/cplusPlusCourses" element={<CplusplusCourses />}>
           <Route path="/cplusPlusCourses" element={<CppIntro />} />
         </Route>
+
+        <Route path="/adminHome" element={<AdminHome />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
