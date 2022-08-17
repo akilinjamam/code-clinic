@@ -19,6 +19,9 @@ import HtmlStyle from "./Pages/Components/Courses/HtmlCourse/HtmlStyle";
 import HtmlImage from "./Pages/Components/Courses/HtmlCourse/HtmlImage";
 import HtmlCce from "./Pages/Components/Courses/HtmlCourse/HtmlCce";
 import Editor from "./Pages/Components/Editor/Editor";
+
+import PaidCourse from "./Pages/Components/Home/PaidCourse/PaidCourse";
+
 import InterviewPrep from "./Pages/Components/Home/CompilerHome/InterviewPrep/InterviewPrep";
 import JsCourses from "./Pages/Components/Courses/JsCourses";
 import JsSyntex from "./Pages/Components/Courses/JavascriptCourse/JsSyntex";
@@ -31,6 +34,7 @@ import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/Jav
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 import PythonCompiler from "./Pages/Components/Editor/PythonCompiler";
 
+
 function App() {
   return (
     <div className="mx-auto">
@@ -40,6 +44,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signUp" element={<Signup />}></Route>
         <Route path="/EnrollMain" element={<EnrollMain />}></Route>
+        <Route path="/EnrollMain" element={<PaidCourse />}></Route>
         <Route path="/contactUs" element={<ContactUs />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/Editor" element={<Editor />}></Route>
