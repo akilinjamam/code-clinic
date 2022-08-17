@@ -153,8 +153,8 @@ const Quiz = () => {
     setShowScore(false);
   };
   return (
-    <div className="bg-gray-100 text-gray-800 flex justify-center items-center h-96">
-      <div className="flex justify-evenly w-1/2 min-h-200 rounded-lg p-0 bg-gray-500">
+    <div className="bg-gray-100 text-gray-800 p-20 flex justify-center items-center">
+      <div className="flex justify-evenly w-3/5  min-h-200 rounded-lg py-20 bg-gray-500 ">
         {showScore ? (
           <div className="flex flex-col justify-center items-center pt-4 text-2xl text-gray-100">
             You have scored {score} out of {QB.length}
@@ -179,10 +179,10 @@ const Quiz = () => {
             <div className="mb-3 text-2xl text-gray-100">
               {QB[currentQuestion].Question}
             </div>
-            <div className="w-full flex flex-col justify-between">
+            <div className="w-full flex flex-col justify-between ">
               {QB[currentQuestion].Answers.map((answer) => (
                 <button
-                  className="btn btn-primary mb-1"
+                  className="btn bg-slate-400 mb-1"
                   onClick={() => handleAnswerResponse(answer.isCorrect)}
                 >
                   {answer.Answer}

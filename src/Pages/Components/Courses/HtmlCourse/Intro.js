@@ -13,17 +13,12 @@ const Intro = () => {
     return (
         <div>
             <h2 className="text-4xl text-primary mb-4">HTML Course</h2>
-
+            <br /><br />
             <div>
                 {
                     introData.map((dataFlow) =>
                         <div>
-
-
                             <div>
-
-
-
                                 <div className='bg-gray-100' style={{ padding: '20px', borderRadius: '10px' }}>
                                     {dataFlow.topic && <p className="text-3xl font-bold">  {dataFlow.topic} </p>}
                                     <br />
