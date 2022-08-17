@@ -1,5 +1,5 @@
-import React from "react";
-import Learn from "../../Learnlanguage/Learn";
+import React from "react";import Learn from "../../Learnlanguage/Learn";
+import FreeCourses from "../FreeCourses/FreeCourses";
 import Banner from "./Banner/Banner";
 import CompilerHome from "./CompilerHome/CompilerHome";
 import DeveloperBanner from "./DeveloperSection/DeveloperBanner";
@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <Banner/>
       <DeveloperBanner />
-      <Learn />
+      <FreeCourses/>
       <EnrollSection />
       <CompilerHome/>
     </div>
