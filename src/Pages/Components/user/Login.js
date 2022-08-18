@@ -1,8 +1,11 @@
 import React from "react";
 import {
   useSignInWithEmailAndPassword,
+  useSignInWithGithub,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
+import github from '../../../Assets/icons/github.gif';
+import google from '../../../Assets/icons/google.svg';
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../../SharedPage/Footer/Loader";
@@ -11,6 +14,8 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+  const [signInWithGithub,, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
+
   const {
     register,
     formState: { errors },
@@ -21,11 +26,11 @@ const Login = () => {
 
   let signInError;
 
-  if (loading || gLoading) {
+  if (loading || gLoading || gitLoading) {
     return <Loading></Loading>;
   }
 
-  if (error || gError) {
+  if (error || gError || gitError) {
     signInError = (
       <p >
         <small>{error?.message || gError?.message}</small>
@@ -33,7 +38,7 @@ const Login = () => {
     );
   }
 
-  if (user || gUser) {
+  if (user || gUser || gitUser) {
     navigate('/')
   }
 
@@ -122,20 +127,26 @@ const Login = () => {
             />
           </form>
           <p>
-            <small>
-              New to Coder Clinic{" "}
-              <Link className="text-green-500" to="/SignUp">
+            <small >
+              New to Coder Clinic? 
+              <Link className="text-green-500 ml-2" to="/SignUp">
                 Create New Account
               </Link>
             </small>
           </p>
           <div className="divider">OR</div>
+          <div className=" flex justify-evenly items-center">
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline"
           >
-            Continue with Google
+            <img src={google} alt=''></img>
           </button>
+          <button
+            onClick={() => signInWithGithub()}
+          >
+          <img style={{width:'50px', height:'50px'}} src={github} alt=''></img>
+          </button>
+          </div>
         </div>
       </div>
     </div>
