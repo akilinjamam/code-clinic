@@ -31,7 +31,7 @@ import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/Jav
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 import UserProfile from "./Pages/UserDashboard/UserProfile";
 import Profile from "./Pages/UserDashboard/Profile";
-import BuyCourse from "./Pages/UserDashboard/BuyCourse";
+import MyCourse from "./Pages/UserDashboard/MyCourse";
 
 
 function App() {
@@ -146,7 +146,7 @@ function App() {
 
           <Route
             path="/dashboard/education"
-            element={<BuyCourse />}
+            element={<MyCourse />}
           />
         </Route>
       </Routes>
