@@ -149,10 +149,10 @@ function App() {
 
 
         {/* Admin Section */}
-        <Route path="/adminDashboard" element={<AdminDashboard />}>
+        {/* <Route path="/adminDashboard" element={<AdminDashboard />}>
 
           <Route path="/adminDashboard/adminHome" element={<AdminHome />} />
-        </Route>
+        </Route> */}
 
 
           <Route
