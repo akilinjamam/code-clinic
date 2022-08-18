@@ -10,18 +10,8 @@ import admin from "../../../Assets/icons/admin.png";
 
 
 const Header = () => {
-  const navigate = useNavigate()
 
   const [user] = useAuthState(auth);
-
-
-
-  useEffect(() => {
-    if (user) {
-      navigate('/')
-    }
-  }, [user, navigate])
-
 
 
 
