@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
@@ -19,7 +19,6 @@ const Header = () => {
   return (
 
     <div className="bg-gray-800 sticky top-0 z-30">
-
       <div className="navbar text-black">
         <div className="navbar-start">
           <div className="dropdown">
@@ -94,7 +93,7 @@ const Header = () => {
           </div>
           <Link to='/' className="btn btn-ghost normal-case text-2xl text-white"><span><img className="logo" src={logo} alt="" /></span>oders Clinic</Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-end mr-10 hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li tabIndex="0">
               <Link to='/courses' className=" hover:bg-white text-white hover:text-black">
@@ -143,21 +142,22 @@ const Header = () => {
                 </li>
               </ul>
             </li>
+            <li tabIndex="0" className=" relative">
+              {user ? <><div><img className="icon p-0 rounded-full" src={user?.photoURL} alt="user" /></div>
+                <ul className="p-5 text-white absolute right-0 bg-slate-800">
+                  <div className="w-[200px] flex flex-col text-white">
+                    <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='/dashboard'>Profile</Link>
+                    <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='#'>Student-Analytics</Link>
+                    <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='#'>Announcement</Link>
+                    <button className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md text-start " onClick={logout}>Log Out</button>
+                  </div>
+                </ul></> : (<Link to="login" className="btn btn-ghost pt-2 hover:bg-white hover:text-black">
+                  <div><img className="icon p-0" src={login} alt="" /></div>
+                </Link>)
+              }
+
+            </li>
           </ul>
-        </div>
-        <div className="navbar-end">
-          <Link to="/adminHome" className="btn btn-ghost p-0 text-xs font-bold hover:bg-white hover:text-black">
-            <img className="icon" src={admin} alt="" />
-          </Link>
-          {user ? (
-            <Link to="/" className="btn btn-ghost  hover:bg-white hover:text-black" onClick={logout}>
-              <img className="icon p-0" src={signout} alt="" />
-            </Link>
-          ) : (
-            <Link to="login" className="btn btn-ghost text-xs font-bold hover:bg-white hover:text-black">
-              <img className="icon p-0" src={login} alt="" />
-            </Link>
-          )}
         </div>
       </div>
 
