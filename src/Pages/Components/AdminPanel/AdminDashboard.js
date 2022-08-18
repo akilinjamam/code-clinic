@@ -11,7 +11,9 @@ const AdminDashboard = () => {
                     Admin Panel
                 </h2>
                 <Outlet />
-                <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+                <div className='text-center'>
+                    <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden m-5 ">Open drawer</label>
+                </div>
 
             </div>
             <div class="drawer-side">

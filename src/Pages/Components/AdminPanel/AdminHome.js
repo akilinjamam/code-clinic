@@ -8,7 +8,7 @@ import cPlus from "../../../Assets/adminIcon/c++.png"
 const AdminHome = () => {
     return (
         <div>
-            <p className='text-3xl m-5 text-green-600 font-bold'>Create Course Sub-section</p>
+            <p className='text-3xl m-5 text-green-600 font-bold text-center'>Create Course Sub-section</p>
             <div style={{ height: '500px', display: 'flex', justifyContent: 'center' }}>
 
                 <div style={{ display: 'flex', width: '70%', margin: 'auto' }}>
