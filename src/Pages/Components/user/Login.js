@@ -6,9 +6,10 @@ import {
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../../SharedPage/Footer/Loader";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const {
     register,
@@ -33,7 +34,7 @@ const Login = () => {
   }
 
   if (user || gUser) {
-    console.log(user || gUser);
+    navigate('/')
   }
 
   const onSubmit = (data) => {

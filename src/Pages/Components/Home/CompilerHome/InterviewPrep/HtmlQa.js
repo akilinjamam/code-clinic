@@ -3,6 +3,7 @@ import React from 'react';
 const HtmlQa = () => {
     return (
         <div className='m-5 p-8 text-white'>
+             <h3 className='text-black font-bold text-3xl ml-5'>HTML Course:-</h3>
             <div className=' hover:shadow-lg hover:shadow-white px-5 pb-4'>
                 <h1 className='text-yellow-500 font-semibold mt-5'>Question-01: What are the differences between html4 and html5? </h1>
                 <p><span className='text-black font-semibold'>Answer:</span> <br />
