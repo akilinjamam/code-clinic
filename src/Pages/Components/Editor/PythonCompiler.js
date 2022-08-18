@@ -20,29 +20,33 @@ const PythonCompiler = () => {
   }, []);
 
   return (
-    <div className="absolute w-4/5 top-20 bottom-20 left-10 right-10 text-left">
-      Start Your Python Code.
-      {testCases.map((testCase, i) => {
-        return (
-          <div key={i}>
-            <div>{testCase}</div>
-          </div>
-        );
-      })}
-      <CodeMirror
-        value={code}
-        // value="console.log('hello world!');"
-        height="500px"
-        theme={dracula}
-        extensions={[python()]}
-        onChange={onChange}
-      />
-      <button
-        className="border-2 p-1 bg-green-600 btn btn-primary"
-        onClick={submitCode}
-      >
-        Submit
-      </button>
+    <div className="mx-auto">
+      <h2 className="p-3 text-center text-3xl">Start Your Python Code.</h2>
+      <div>
+        <div className="border-gray-400 border-8 mb-4 mx-auto w-4/6">
+          {testCases.map((testCase, i) => {
+            return (
+              <div key={i}>
+                <div>{testCase}</div>
+              </div>
+            );
+          })}
+          <CodeMirror
+            value={code}
+            // value="console.log('hello world!');"
+            height="400px"
+            theme={dracula}
+            extensions={[python()]}
+            onChange={onChange}
+          />
+        </div>
+        <button
+          className="px-2 center btn btn-glass "
+          onClick={submitCode}
+        >
+          RUN CODE
+        </button>
+      </div>
     </div>
   );
 };
