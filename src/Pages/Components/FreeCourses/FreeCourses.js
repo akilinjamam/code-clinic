@@ -1,5 +1,5 @@
 import React from 'react';
-// import "./FreeCourses.css";
+import { Link } from 'react-router-dom';
 
 const FreeCourses = () => {
     return (
@@ -11,18 +11,18 @@ const FreeCourses = () => {
                 <p>Our free courses are simple and easy to learn.</p>
             </div>
             <div class="row1-container ">
-                <div class="box box-down cyan  ">
+                <div class="box box-down cyan ">
                     <h2>HTML</h2>
                     <p>We provide easy guideline to learn HTML5. Explore our course.</p>
                     <img className='h-20 pt-2' src="https://cdn-icons-png.flaticon.com/512/888/888859.png" alt=""/>
-                    <button type='submit' className='font-semibold pt-7 text-green-600'>View Details</button>
+                    <Link to="/htmlCourse"><button className='font-semibold pt-7 text-green-600'>View Details</button></Link>
                 </div>
 
                 <div class="box red">
                     <h2>JavaScript</h2>
                     <p>Practice JavaScript course and build your own website. </p>
                     <img className='h-20 pt-2'  src="https://icon-library.com/images/javascript-icon/javascript-icon-8.jpg" alt=""/>
-                    <button type='submit' className='font-semibold pt-7 text-green-600'>View Details</button>
+                   <Link to="/jsCourses"> <button type='submit' className='font-semibold pt-7 text-green-600'>View Details</button></Link>
                 </div>
 
                 <div class="box box-down blue">

@@ -5,14 +5,13 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import logo from "../../../Assets/icons/letter-c.png";
 import login from "../../../Assets/icons/user.png";
-import signout from "../../../Assets/icons/logout.png";
+import signout from "../../../Assets/icons/logout-white.png";
 import admin from "../../../Assets/icons/admin.png";
 
 
 const Header = () => {
 
   const [user] = useAuthState(auth);
-
   const logout = () => {
     signOut(auth);
   };
@@ -23,7 +22,7 @@ const Header = () => {
       <div className="navbar text-black">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex="0" className="btn btn-ghost lg:hidden">
+            <label tabIndex="0" className="btn btn-white lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -44,7 +43,7 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li tabIndex="0">
-                <Link to='/courses' className="justify-between hover:bg-white hover:text-black">
+                <p className="justify-between hover:bg-white hover:text-black">
                   Courses
                   <svg
                     className="fill-current"
@@ -55,7 +54,7 @@ const Header = () => {
                   >
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                   </svg>
-                </Link>
+                </p>
                 <ul className="p-2 text-white hover:bg-white hover:text-black">
                   <li>
                     <Link to='/courses' >HTML</Link >
@@ -122,7 +121,7 @@ const Header = () => {
               </ul>
             </li>
             <li tabIndex="0">
-              <Link to='/interview' className=" hover:bg-white text-white hover:text-black">
+              <p className=" hover:bg-white text-white hover:text-black">
                 Interview
                 <svg
                   className="fill-current"
@@ -133,7 +132,7 @@ const Header = () => {
                 >
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
-              </Link>
+              </p>
               <ul className="p-2 text-white hover:bg-white hover:text-black">
                 <li>
                   <Link to='/quiz'>Skill Tests</Link>
