@@ -30,6 +30,7 @@ import CppIntro from "./Pages/Components/Courses/CppCourse/CppIntro";
 import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/JavascriptQa";
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 import UserProfile from "./Pages/UserDashboard/UserProfile";
+import Profile from "./Pages/UserDashboard/Profile";
 
 
 function App() {
@@ -140,7 +141,8 @@ function App() {
         {/* User Profile route  */}
 
         <Route path="/dashboard" element={<UserProfile />}>
-          
+          <Route index element={<Profile />}></Route>
+
         </Route>
 
         <Route path="*" element={<NotFound />} />
