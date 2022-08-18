@@ -34,6 +34,7 @@ import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/Jav
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 import PythonCompiler from "./Pages/Components/Editor/PythonCompiler";
 import AdminHome from "./Pages/Components/AdminPanel/AdminHome";
+import AdminDashboard from "./Pages/Components/AdminPanel/AdminDashboard";
 
 
 function App() {
@@ -73,13 +74,13 @@ function App() {
 
         <Route path="/interview-prep" element={<InterviewPrep />}>
 
-        
+
           <Route
             path="/interview-prep/javascript"
             element={<JavascriptQa />}
           />
 
-        
+
 
           <Route path="/interview-prep/javascript" element={<JavascriptQa />} />
 
@@ -104,7 +105,12 @@ function App() {
           <Route path="/cplusPlusCourses" element={<CppIntro />} />
         </Route>
 
-        <Route path="/adminHome" element={<AdminHome />} />
+        {/* Admin Section */}
+        <Route path="/adminDashboard" element={<AdminDashboard />}>
+
+          <Route path="/adminDashboard/adminHome" element={<AdminHome />} />
+        </Route>
+
 
         <Route path="*" element={<NotFound />} />
       </Routes>

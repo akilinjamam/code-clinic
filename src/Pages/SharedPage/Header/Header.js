@@ -162,7 +162,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/adminHome" className="btn btn-ghost p-0 text-xs font-bold hover:bg-white hover:text-black">
+          <Link to="/adminDashboard" className="btn btn-ghost p-0 text-xs font-bold hover:bg-white hover:text-black">
             <img className="icon" src={admin} alt="" />
           </Link>
           {user ? (
