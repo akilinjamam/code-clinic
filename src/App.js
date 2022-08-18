@@ -31,6 +31,7 @@ import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/Jav
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 import UserProfile from "./Pages/UserDashboard/UserProfile";
 import Profile from "./Pages/UserDashboard/Profile";
+import MyCourse from "./Pages/UserDashboard/MyCourse";
 
 
 function App() {
@@ -142,7 +143,10 @@ function App() {
 
         <Route path="/dashboard" element={<UserProfile />}>
           <Route index element={<Profile />}></Route>
-
+          <Route
+            path="/dashboard/my_course"
+            element={<MyCourse />}
+          />
         </Route>
 
         <Route path="*" element={<NotFound />} />
