@@ -145,7 +145,7 @@ function App() {
           <Route index element={<Profile />}></Route>
 
           <Route
-            path="/dashboard/education"
+            path="/dashboard/my_course"
             element={<MyCourse />}
           />
         </Route>
