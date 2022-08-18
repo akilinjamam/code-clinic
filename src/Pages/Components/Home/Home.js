@@ -1,4 +1,4 @@
-import React from "react";import Learn from "../../Learnlanguage/Learn";
+import React from "react";
 import FreeCourses from "../FreeCourses/FreeCourses";
 import Banner from "./Banner/Banner";
 import CompilerHome from "./CompilerHome/CompilerHome";
