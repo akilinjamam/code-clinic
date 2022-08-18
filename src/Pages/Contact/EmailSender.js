@@ -18,6 +18,7 @@ const EmailSender = () => {
 
     };
     return (
+        <div>
             <form className='w-[300px] mx-auto flex flex-col' ref={form} onSubmit={sendEmail}>
                 <label className='text-white pt-3'>Name</label>
                 <input className='p-2 pt-1 text-lg rounded bg-slate-200' type="text" name="user_name" placeholder='Type Your Name' required />
@@ -26,11 +27,12 @@ const EmailSender = () => {
                 <label className='text-white pt-3'>Subject</label>
                 <input className='p-2 pt-1 rounded bg-slate-200' type="text" name="user_sub" placeholder='Type Your Email Subject' required />
                 <label className='text-white pt-3'>Message</label>
-            <textarea className='p-2 rounded bg-slate-200' name="message" placeholder='Type Your Massage' required />
+                <textarea className='p-2 rounded bg-slate-200' name="message" placeholder='Type Your Massage' required />
                 <input className='btn btn-secondary mt-5 w-[200px] mx-auto' type="submit" value="Send" />
             </form>
-        
-            
+      </div>
+
+
     );
 };
 
