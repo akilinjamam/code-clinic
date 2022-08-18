@@ -36,13 +36,13 @@ const UserProfile = () => {
                             <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
                             <ul className="menu overflow-y-auto w-80 pt-10  text-white ">
                                 {/* <!-- Sidebar content here --> */}
-                                <div className='pb-10'><img className='mx-auto rounded-full' src={user?.photoURL} alt="" /></div>
+                                <div className='w-[40%] mx-auto pb-10'><img className='w-[200px] rounded-full' src={user?.photoURL} alt="" /></div>
                                 <li><Link to="/dashboard" className=' hover:bg-slate-900 py-2 mb-2 rounded-2xl'>My Profile</Link></li>
                                 {user && <>
-                                    <li><Link to="/dashboard/education" className=' hover:bg-slate-900 py-2 mb-2 rounded-2xl'>Education</Link></li>
+                                    <li><Link to="/dashboard/my_course" className=' hover:bg-slate-900 py-2 mb-2 rounded-2xl'>My Courses</Link></li>
                                     <li><Link to="#" className=' hover:bg-slate-900 py-2 mb-2 rounded-2xl'>Skill Set</Link></li>
-                                    <li><Link to="/dashboard/education" className=' hover:bg-slate-900 py-2 mb-2 rounded-2xl'>Course</Link></li>
-                                    <li><Link to="#" className=' hover:bg-slate-900 py-2 mb-2 rounded-2xl'>My Courses</Link></li>
+                                    <li><Link to="/dashboard/education" className=' hover:bg-slate-900 py-2 mb-2 rounded-2xl'>Education</Link></li>
+                                    
                                 </>}
                             </ul>
 
