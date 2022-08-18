@@ -48,7 +48,7 @@ function App() {
         <Route path="/EnrollMain" element={<PaidCourse />}></Route>
         <Route path="/contactUs" element={<ContactUs />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/Editor" element={<Editor />}></Route>
+        <Route path="/editor" element={<Editor />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/pythonCom" element={<PythonCompiler />}></Route>
 
