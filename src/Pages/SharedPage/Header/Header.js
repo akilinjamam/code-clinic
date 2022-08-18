@@ -12,10 +12,7 @@ import admin from "../../../Assets/icons/admin.png";
 const Header = () => {
 
   const [user] = useAuthState(auth);
-
-
-
-
+  
   const logout = () => {
     signOut(auth);
   };
