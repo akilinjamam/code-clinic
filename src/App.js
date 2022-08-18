@@ -29,9 +29,15 @@ import CplusplusCourses from "./Pages/Components/Courses/CplusplusCourses";
 import CppIntro from "./Pages/Components/Courses/CppCourse/CppIntro";
 import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/JavascriptQa";
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
+
+import PythonCompiler from "./Pages/Components/Editor/PythonCompiler";
+import AdminHome from "./Pages/Components/AdminPanel/AdminHome";
+import AdminDashboard from "./Pages/Components/AdminPanel/AdminDashboard";
+
 import UserProfile from "./Pages/UserDashboard/UserProfile";
 import Profile from "./Pages/UserDashboard/Profile";
 import MyCourse from "./Pages/UserDashboard/MyCourse";
+
 
 
 function App() {
@@ -88,15 +94,25 @@ function App() {
         <Route path="/interview-prep" element={<InterviewPrep />}>
           {/* <Route index element={<Intro />}></Route> */}
 
+
           <Route
             path="/interview-prep/javascript"
             element={<JavascriptQa />}
           />
 
+
+
+
+          <Route path="/interview-prep/javascript" element={<JavascriptQa />} />
+
+
+          <Route path="/interview-prep/html" element={<HtmlQa />} />
+
           <Route
             path="/interview-prep/html"
             element={<HtmlQa />}
           />
+
         </Route>
 
         {/* Ends of Interview Preparation Section Routes */}
@@ -131,11 +147,20 @@ function App() {
 
         <Route path="/cplusPlusCourses" element={<CplusplusCourses />}>
 
+
+        {/* Admin Section */}
+        <Route path="/adminDashboard" element={<AdminDashboard />}>
+
+          <Route path="/adminDashboard/adminHome" element={<AdminHome />} />
+        </Route>
+
+
           <Route
             path="/cplusPlusCourses"
             element={<CppIntro />}
           />
         </Route>
+
 
         <Route path="*" element={<NotFound />} />
 

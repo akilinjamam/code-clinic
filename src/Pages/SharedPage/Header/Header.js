@@ -159,6 +159,22 @@ const Header = () => {
             </li>
           </ul>
         </div>
+
+        <div className="navbar-end">
+          <Link to="/adminDashboard" className="btn btn-ghost p-0 text-xs font-bold hover:bg-white hover:text-black">
+            <img className="icon" src={admin} alt="" />
+          </Link>
+          {user ? (
+            <Link to="/" className="btn btn-ghost  hover:bg-white hover:text-black" onClick={logout}>
+              <img className="icon p-0" src={signout} alt="" />
+            </Link>
+          ) : (
+            <Link to="login" className="btn btn-ghost text-xs font-bold hover:bg-white hover:text-black">
+              <img className="icon p-0" src={login} alt="" />
+            </Link>
+          )}
+        </div>
+
       </div>
 
     </div>

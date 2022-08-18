@@ -13,6 +13,9 @@ const Intro = () => {
     return (
         <div>
             <h2 className="text-4xl text-primary mb-4">HTML Course</h2>
+            <div align="right">
+                <p className='btn btn-secondary mx-5'>Edit & Delete</p>
+            </div>
             <br /><br />
             <div>
                 {

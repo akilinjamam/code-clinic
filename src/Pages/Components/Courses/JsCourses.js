@@ -12,7 +12,11 @@ const JsCourses = () => {
                         Courses
                     </h2>
                     <Outlet></Outlet>
-                    <label for="my-drawer-2" class="btn btn-ghost drawer-button lg:hidden">View Courses</label>
+
+                    <div className='text-center'>
+                        <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden m-5 ">Open drawer</label>
+                    </div>
+
 
                 </div>
                 <div class="drawer-side">

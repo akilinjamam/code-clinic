@@ -43,7 +43,9 @@ const JsVariables = () => {
     return (
         <div>
             <h2 className="text-4xl text-primary mb-4">Javascript Course</h2>
-
+            <div align="right">
+                <p className='btn btn-secondary mx-5'>Edit & Delete</p>
+            </div>
             <div>
                 {
                     jsVariables.map((dataFlow) =>
