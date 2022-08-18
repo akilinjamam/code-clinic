@@ -15,7 +15,7 @@ const MyCourse = () => {
                             <tr>
                                 <th>Name</th>
                                 <th>Enroll Date</th>
-                                <th>Favorite Color</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,6 +36,30 @@ const MyCourse = () => {
                                 <td>JavaScript</td>
                                 <td>12/08/2022</td>
                                 <td>Enrolled</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <h3 className="text-2xl text-center py-3">Recommended Course for you</h3>
+                    </div>
+                    <table class="table w-full border border-slate-300">
+                        {/* head */}
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {/* row 1 */}
+                            <tr>
+                                <td>Es6</td>
+                                <td><button className='btn btn-outline btn-sm capitalize'>Buy Now</button></td>
+                            </tr>
+                            {/* row 2 */}
+                            <tr>
+                                <td>React</td>
+                                <td><button className='btn btn-outline btn-sm capitalize'>Buy Now</button></td>
                             </tr>
                         </tbody>
                     </table>

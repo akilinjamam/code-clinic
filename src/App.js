@@ -37,6 +37,7 @@ import AdminDashboard from "./Pages/Components/AdminPanel/AdminDashboard";
 import UserProfile from "./Pages/UserDashboard/UserProfile";
 import Profile from "./Pages/UserDashboard/Profile";
 import MyCourse from "./Pages/UserDashboard/MyCourse";
+import MailContact from "./Pages/Contact/MailContact/MailContact";
 
 
 
@@ -53,6 +54,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/Editor" element={<Editor />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
+        <Route path="/email_contact" element={<MailContact />}></Route>
 
 
         <Route path="/introduction" element={<Introduction />}></Route>
