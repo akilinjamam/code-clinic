@@ -6,7 +6,7 @@ import auth from "../../../firebase.init";
 import logo from "../../../Assets/icons/letter-c.png";
 import login from "../../../Assets/icons/user.png";
 import signout from "../../../Assets/icons/logout-white.png";
-import admin from "../../../Assets/icons/admin.png";
+import admin from "../../../Assets/adminIcon/admin.png";
 
 
 const Header = () => {
@@ -140,7 +140,12 @@ const Header = () => {
                 <li>
                   <Link to='/interview-prep' >Interview Preparation</Link>
                 </li>
+
               </ul>
+            </li>
+
+            <li>
+              <Link to='/adminDashboard/adminHome' ><img style={{ width: '40px' }} src={admin} alt="" /></Link>
             </li>
             <li tabIndex="0" className=" relative">
               {user ? <><div><img className="icon p-0 rounded-full" src={user?.photoURL} alt="user" /></div>

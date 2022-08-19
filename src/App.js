@@ -26,7 +26,7 @@ import JsVariables from "./Pages/Components/Courses/JavascriptCourse/JsVariables
 import JsLet from "./Pages/Components/Courses/JavascriptCourse/JsLet";
 import JsConst from "./Pages/Components/Courses/JavascriptCourse/JsConst";
 import CplusplusCourses from "./Pages/Components/Courses/CplusplusCourses";
-import CppIntro from "./Pages/Components/Courses/CppCourse/CppIntro";
+
 import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/JavascriptQa";
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 
@@ -38,6 +38,11 @@ import UserProfile from "./Pages/UserDashboard/UserProfile";
 import Profile from "./Pages/UserDashboard/Profile";
 import MyCourse from "./Pages/UserDashboard/MyCourse";
 import MailContact from "./Pages/Contact/MailContact/MailContact";
+import HtmlCourseInput from "./Pages/Components/Courses/HtmlCourseInput/HtmlCourseInput";
+import JavascriptCourseInput from "./Pages/Components/Courses/JavascriptCourseInput/JavascriptCourseInput";
+import CssCourseInput from "./Pages/Components/Courses/CssCourseInput/CssCourseInput";
+import CPlusPlusCourseInput from "./Pages/Components/Courses/CPlusPlusCourseInput/CPlusPlusCourseInput";
+import AttributeModify from "./Pages/Components/Courses/HtmlCourse/AttributeModify";
 
 
 
@@ -56,7 +61,7 @@ function App() {
         <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/email_contact" element={<MailContact />}></Route>
 
-
+        {/* html course section */}
         <Route path="/introduction" element={<Introduction />}></Route>
 
         <Route path="/courses" element={<Courses />}>
@@ -90,6 +95,14 @@ function App() {
             path="/courses/cpp"
             element={<Cpp />}
           />
+
+          {/* modify section */}
+
+          <Route
+            path="/courses/attModify"
+            element={<AttributeModify />}
+          />
+
         </Route>
         {/* Interview Preparation Section Routes */}
 
@@ -149,22 +162,28 @@ function App() {
 
         <Route path="/cplusPlusCourses" element={<CplusplusCourses />}>
 
+        </Route>
 
         {/* Admin Section */}
-        {/* <Route path="/adminDashboard" element={<AdminDashboard />}>
+        <Route path="/adminDashboard" element={<AdminDashboard />}>
+
+          {/* html course data input section */}
+          <Route path="/adminDashboard/htmlCourseInput" element={<HtmlCourseInput />}></Route>
+
+          {/* js course data input section */}
+          <Route path="/adminDashboard/jsCourseInput" element={<JavascriptCourseInput />}></Route>
+
+          {/* css course data input section */}
+          <Route path="/adminDashboard/cssCourseInput" element={<CssCourseInput />}></Route>
+
+          {/* c++ course data input section */}
+          <Route path="/adminDashboard/cplusCourseInput" element={<CPlusPlusCourseInput />}></Route>
 
           <Route path="/adminDashboard/adminHome" element={<AdminHome />} />
-        </Route> */}
-
-
-          <Route
-            path="/cplusPlusCourses"
-            element={<CppIntro />}
-          />
         </Route>
 
 
-        <Route path="*" element={<NotFound />} />
+
 
         {/* User Profile route  */}
 
@@ -176,6 +195,11 @@ function App() {
             element={<MyCourse />}
           />
         </Route>
+
+
+
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
