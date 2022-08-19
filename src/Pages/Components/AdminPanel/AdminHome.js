@@ -12,10 +12,10 @@ const AdminHome = () => {
             <div style={{ height: '500px', display: 'flex', justifyContent: 'center' }}>
 
                 <div style={{ display: 'flex', width: '70%', margin: 'auto' }}>
-                    <Link to=""> <img className='w-2/3 hover:bg-slate-500 rounded p-2 mx-auto' src={html} alt="" /> </Link>
-                    <Link to=""> <img className='w-2/3  hover:bg-slate-500 rounded p-2 mx-auto' src={css} alt="" /> </Link>
-                    <Link to=""> <img className='w-2/3  hover:bg-slate-500 rounded p-2 mx-auto' src={js} alt="" /> </Link>
-                    <Link to=""> <img className='w-2/3  hover:bg-slate-500 rounded p-2 mx-auto' src={cPlus} alt="" /> </Link>
+                    <Link to="/adminDashboard/htmlCourseInput"> <img className='w-2/3 hover:bg-slate-500 rounded p-2 mx-auto' src={html} alt="" /> </Link>
+                    <Link to="/adminDashboard/cssCourseInput"> <img className='w-2/3  hover:bg-slate-500 rounded p-2 mx-auto' src={css} alt="" /> </Link>
+                    <Link to="/adminDashboard/jsCourseInput"> <img className='w-2/3  hover:bg-slate-500 rounded p-2 mx-auto' src={js} alt="" /> </Link>
+                    <Link to="/adminDashboard/cplusCourseInput"> <img className='w-2/3  hover:bg-slate-500 rounded p-2 mx-auto' src={cPlus} alt="" /> </Link>
                 </div>
 
             </div>
