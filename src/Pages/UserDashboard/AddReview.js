@@ -7,7 +7,6 @@ import Loader from '../SharedPage/Footer/Loader';
 const AddReview = () => {
     const [user, loading] = useAuthState(auth);
     const { register, handleSubmit} = useForm();
-console.log(user)
 
     const onSubmit = () => {
 
