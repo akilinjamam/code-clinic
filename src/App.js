@@ -26,7 +26,7 @@ import JsVariables from "./Pages/Components/Courses/JavascriptCourse/JsVariables
 import JsLet from "./Pages/Components/Courses/JavascriptCourse/JsLet";
 import JsConst from "./Pages/Components/Courses/JavascriptCourse/JsConst";
 import CplusplusCourses from "./Pages/Components/Courses/CplusplusCourses";
-import CppIntro from "./Pages/Components/Courses/CppCourse/CppIntro";
+
 import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/JavascriptQa";
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 
@@ -38,7 +38,15 @@ import UserProfile from "./Pages/UserDashboard/UserProfile";
 import Profile from "./Pages/UserDashboard/Profile";
 import MyCourse from "./Pages/UserDashboard/MyCourse";
 import MailContact from "./Pages/Contact/MailContact/MailContact";
+
+import HtmlCourseInput from "./Pages/Components/Courses/HtmlCourseInput/HtmlCourseInput";
+import JavascriptCourseInput from "./Pages/Components/Courses/JavascriptCourseInput/JavascriptCourseInput";
+import CssCourseInput from "./Pages/Components/Courses/CssCourseInput/CssCourseInput";
+import CPlusPlusCourseInput from "./Pages/Components/Courses/CPlusPlusCourseInput/CPlusPlusCourseInput";
+import AttributeModify from "./Pages/Components/Courses/HtmlCourse/AttributeModify";
+
 import AddReview from "./Pages/UserDashboard/AddReview";
+
 
 import Settings from "./Pages/Components/quizSection/Settings";
 import Questions from "./Pages/Components/quizSection/Questions";
@@ -59,10 +67,14 @@ function App() {
         <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/email_contact" element={<MailContact />}></Route>
 
+
+      
+
         <Route path="/pythonCom" element={<PythonCompiler />}></Route>
         <Route path="/settings" element={<Settings />}></Route>
         <Route path="/questions" element={<Questions />}></Route>
         <Route path="/score" element={<FinalScreen />}></Route>
+  {/* html course section */}
 
         <Route path="/introduction" element={<Introduction />}></Route>
 
@@ -77,8 +89,26 @@ function App() {
 
           <Route path="/courses/htmlImage" element={<HtmlImage />} />
 
+          <Route
+            path="/courses/htmlCce"
+            element={<HtmlCce />}
+          />
+          <Route
+            path="/courses/cpp"
+            element={<Cpp />}
+          />
+
+          {/* modify section */}
+
+          <Route
+            path="/courses/attModify"
+            element={<AttributeModify />}
+          />
+
+
           <Route path="/courses/htmlCce" element={<HtmlCce />} />
           <Route path="/courses/cpp" element={<Cpp />} />
+
         </Route>
         {/* Interview Preparation Section Routes */}
 
@@ -108,16 +138,40 @@ function App() {
         </Route>
 
         <Route path="/cplusPlusCourses" element={<CplusplusCourses />}>
+
+
+        </Route>
+
+      
+
           {/* Admin Section */}
-          {/* <Route path="/adminDashboard" element={<AdminDashboard />}>
+           <Route path="/adminDashboard" element={<AdminDashboard />}>
+
+
+          {/* html course data input section */}
+          <Route path="/adminDashboard/htmlCourseInput" element={<HtmlCourseInput />}></Route>
+
+
+          {/* js course data input section */}
+          <Route path="/adminDashboard/jsCourseInput" element={<JavascriptCourseInput />}></Route>
+
+          {/* css course data input section */}
+          <Route path="/adminDashboard/cssCourseInput" element={<CssCourseInput />}></Route>
+
+          {/* c++ course data input section */}
+          <Route path="/adminDashboard/cplusCourseInput" element={<CPlusPlusCourseInput />}></Route>
 
           <Route path="/adminDashboard/adminHome" element={<AdminHome />} />
-        </Route> */}
+        </Route>
+
+
+
 
           <Route path="/cplusPlusCourses" element={<CppIntro />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
+
 
         {/* User Profile route  */}
 
@@ -138,6 +192,11 @@ function App() {
           />
 
         </Route>
+
+
+
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
