@@ -68,13 +68,13 @@ function App() {
         <Route path="/email_contact" element={<MailContact />}></Route>
 
 
-      
+
 
         <Route path="/pythonCom" element={<PythonCompiler />}></Route>
         <Route path="/settings" element={<Settings />}></Route>
         <Route path="/questions" element={<Questions />}></Route>
         <Route path="/score" element={<FinalScreen />}></Route>
-  {/* html course section */}
+        {/* html course section */}
 
         <Route path="/introduction" element={<Introduction />}></Route>
 
@@ -142,10 +142,10 @@ function App() {
 
         </Route>
 
-      
 
-          {/* Admin Section */}
-           <Route path="/adminDashboard" element={<AdminDashboard />}>
+
+        {/* Admin Section */}
+        <Route path="/adminDashboard" element={<AdminDashboard />}>
 
 
           {/* html course data input section */}
@@ -162,12 +162,6 @@ function App() {
           <Route path="/adminDashboard/cplusCourseInput" element={<CPlusPlusCourseInput />}></Route>
 
           <Route path="/adminDashboard/adminHome" element={<AdminHome />} />
-        </Route>
-
-
-
-
-          <Route path="/cplusPlusCourses" element={<CppIntro />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
