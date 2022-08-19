@@ -5,8 +5,12 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import logo from "../../../Assets/icons/letter-c.png";
 import login from "../../../Assets/icons/user.png";
+
 import signout from "../../../Assets/icons/logout-white.png";
 import admin from "../../../Assets/adminIcon/admin.png";
+
+import user_2 from "../../../Assets/icons/user_2.png";
+
 
 
 const Header = () => {
@@ -40,10 +44,9 @@ const Header = () => {
             </label>
             <ul
               tabIndex="0"
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
+              className="menu menu-compact dropdown-content mt-3 p-2 bg-slate-800 text-white shadow rounded-box w-52" >
               <li tabIndex="0">
-                <p className="justify-between hover:bg-white hover:text-black">
+                <p className="justify-between">
                   Courses
                   <svg
                     className="fill-current"
@@ -55,7 +58,7 @@ const Header = () => {
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                   </svg>
                 </p>
-                <ul className="p-2 text-white hover:bg-white hover:text-black">
+                <ul className="p-2">
                   <li>
                     <Link to='/courses' >HTML</Link >
                   </li>
@@ -88,6 +91,23 @@ const Header = () => {
                     <Link to='/interview-prep'  >Interview Preparation</Link>
                   </li>
                 </ul>
+              </li>
+              <li tabIndex="0" className="">
+                {user ? <><div><p className="pr-6">User Dashboard</p><svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
+                  <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                </svg></div>
+                  <ul className="p-5 text-white bg-slate-800 ml-[-200px] mt-14">
+                    <div className="w-[200px] flex flex-col text-white">
+                      <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='/dashboard'>Profile</Link>
+                      <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='#'>Student-Analytics</Link>
+                      <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='#'>Announcement</Link>
+                      <button className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md text-start " onClick={logout}>Log Out</button>
+                    </div>
+                  </ul></> : (<Link to="login" className="btn btn-ghost pt-2 hover:bg-white hover:text-black">
+                    <div><img className="icon p-0" src={login} alt="" /></div>
+                  </Link>)
+                }
+
               </li>
             </ul>
           </div>
@@ -148,8 +168,8 @@ const Header = () => {
               <Link to='/adminDashboard/adminHome' ><img style={{ width: '40px' }} src={admin} alt="" /></Link>
             </li>
             <li tabIndex="0" className=" relative">
-              {user ? <><div><img className="icon p-0 rounded-full" src={user?.photoURL} alt="user" /></div>
-                <ul className="p-5 text-white absolute right-0 bg-slate-800">
+              {user ? <><div>{user.photoURL ? <img className="icon p-0 rounded-full" src={user?.photoURL} alt="user" /> : <img className="icon p-0 rounded-full" src={user_2} alt="user" /> }</div>
+                <ul className="p-5 text-white absolute right-[-50px] bg-slate-800">
                   <div className="w-[200px] flex flex-col text-white">
                     <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='/dashboard'>Profile</Link>
                     <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='#'>Student-Analytics</Link>

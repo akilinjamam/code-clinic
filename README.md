@@ -1,6 +1,10 @@
 # Coders Clinic
 
-## Technology Used `React` `firebase` `tailwind css` `javaScript`
+
+## Technology Used `React` `firebase` `tailwind css` `javaScript` `axios` `redux` 
+
+## Technology Used `React` `firebase` `tailwind css` `javaScript` `axios` `redux`
+
 
 
 
