@@ -33,6 +33,7 @@ import UserProfile from "./Pages/UserDashboard/UserProfile";
 import Profile from "./Pages/UserDashboard/Profile";
 import MyCourse from "./Pages/UserDashboard/MyCourse";
 import MailContact from "./Pages/Contact/MailContact/MailContact";
+import AddReview from "./Pages/UserDashboard/AddReview";
 
 
 function App() {
@@ -145,10 +146,13 @@ function App() {
 
         <Route path="/dashboard" element={<UserProfile />}>
           <Route index element={<Profile />}></Route>
-
           <Route
             path="/dashboard/my_course"
             element={<MyCourse />}
+          />
+          <Route
+            path="/dashboard/add_review"
+            element={<AddReview />}
           />
         </Route>
       </Routes>
