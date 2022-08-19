@@ -16,9 +16,12 @@ const AddReview = () => {
         return <Loader />
     }
     return (
-        <div className='w-full mx-auto'>
-            <h2 className='text-4xl text-purple-200 bg-slate-400 text-center py-3'>Your Review</h2>
-            <div className='card w-60 sm:w-96 bg-gray-200  mx-auto py-16 my-5 shadow-xl shadow-slate-700'>
+        <div className='w-[95%] mx-auto bg-slate-200 rounded-xl divide-y-4 divide-slate-400 pb-10'>
+            <div className='flex justify-between px-10 h-16 items-center'>
+                <h3 className="text-3xl font-semibold">Add Review</h3>
+            </div>
+            <div>
+                <div className='card w-60 sm:w-96 bg-slate-300  mx-auto py-16 my-5 shadow-xl shadow-slate-700'>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-control w-3/4 mx-auto">
                         <label className="label input-group input-group-vertical py-1">Your Name </label>
@@ -54,6 +57,7 @@ const AddReview = () => {
                         <input className="btn btn-primary" type="submit" value='Submit' />
                     </div>
                 </form>
+            </div>
             </div>
         </div>
     );
