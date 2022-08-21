@@ -43,19 +43,19 @@ const MailContact = () => {
                                 <label className="label">
                                     <span className="label-text text-textSemi">Name</span>
                                 </label>
-                                <input type="text" name="user_name" placeholder="Name" className="input input-bordered bg-slate-200 text-black" />
+                                <input type="text" name="user_name" placeholder="Name" className="input input-bordered bg-slate-200 text-black" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-textSemi">Email</span>
                                 </label>
-                                <input type="email" name="user_email" placeholder="Email" className="input input-bordered bg-slate-200 text-black" />
+                                <input type="email" name="user_email" placeholder="Email" className="input input-bordered bg-slate-200 text-black" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-textSemi">Massage</span>
                                 </label>
-                                <textarea name="message" className="textarea textarea-bordered text-black bg-slate-200" placeholder="Massage" />
+                                <textarea name="message" className="textarea textarea-bordered text-black bg-slate-200" placeholder="Massage" required/>
                             </div>
                             <div className="form-control text-white mt-6">
                                 <input type="submit" value="Send" className="btn btn-outline " />
