@@ -5,10 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import logo from "../../../Assets/icons/letter-c.png";
 import login from "../../../Assets/icons/user.png";
-
-import signout from "../../../Assets/icons/logout-white.png";
 import admin from "../../../Assets/adminIcon/admin.png";
-
 import user_2 from "../../../Assets/icons/user_2.png";
 
 
@@ -116,7 +113,7 @@ const Header = () => {
         <div className="navbar-end mr-10 hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li tabIndex="0">
-              <Link to='/courses' className=" hover:bg-white text-white hover:text-black">
+              <Link to='/courses' className=" hover:bg-slate-900 text-white">
                 Course
                 <svg
                   className="fill-current"
@@ -128,20 +125,20 @@ const Header = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </Link >
-              <ul className="p-2 z-20 text-white hover:bg-white hover:text-black">
-                <li>
+              <ul className="p-2 z-20 text-white bg-slate-800 hover:text-white">
+                <li className="hover:bg-slate-900">
                   <Link to='/courses'>HTML</Link>
                 </li>
-                <li>
+                <li className="hover:bg-slate-900">
                   <Link to='/jsCourses'>Javascript</Link>
                 </li>
-                <li>
+                <li className="hover:bg-slate-900">
                   <Link to='/cplusPlusCourses' >C++</Link>
                 </li>
               </ul>
             </li>
             <li tabIndex="0">
-              <p className=" hover:bg-white text-white hover:text-black">
+              <p className=" hover:bg-slate-900 text-white">
                 Interview
                 <svg
                   className="fill-current"
@@ -153,12 +150,12 @@ const Header = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </p>
-              <ul className="p-2 text-white hover:bg-white hover:text-black">
-                <li>
-                  <Link to='/quiz'>Skill Tests</Link>
+              <ul className="p-2 text-white hover:bg-slate-800">
+                <li className="hover:bg-slate-900">
+                  <Link to='/quiz hover:bg-slate-900'>Skill Tests</Link>
                 </li>
-                <li>
-                  <Link to='/interview-prep' >Interview Preparation</Link>
+                <li className="hover:bg-slate-900">
+                  <Link to='/interview-prep hover:bg-slate-900' >Interview Preparation</Link>
                 </li>
 
               </ul>
@@ -176,8 +173,8 @@ const Header = () => {
                     <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='#'>Announcement</Link>
                     <button className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md text-start " onClick={logout}>Log Out</button>
                   </div>
-                </ul></> : (<Link to="login" className="btn btn-ghost pt-2 hover:bg-white hover:text-black">
-                  <div><img className="icon p-0" src={login} alt="" /></div>
+                </ul></> : (<Link to="login" className="btn btn-link pt-2">
+                  <div><img className="icon mt-2" src={login} alt="" /></div>
                 </Link>)
               }
 
