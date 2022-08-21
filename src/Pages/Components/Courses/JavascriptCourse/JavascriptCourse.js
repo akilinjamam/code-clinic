@@ -1,5 +1,6 @@
 import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import { Link } from 'react-router-dom';
 
 const JavascriptCourse = () => {
 
@@ -12,11 +13,11 @@ const JavascriptCourse = () => {
       title3: "",
       title4: "",
       title5: "JavaScript Can Change HTML Content",
-      description1: "JavaScript is the world's most popular programming language.",
-      description2: "JavaScript is the programming language of the Web.",
-      description3: "JavaScript is easy to learn.",
-      description4: "This tutorial will teach you JavaScript from basic to advanced.",
-      description5: "One of many JavaScript HTML methods is getElementById().The example below 'finds' an HTML element (with id='demo'), and changes the element content (innerHTML) to 'Hello JavaScript':",
+      description1: "JavaScript is the world's most popular programming language.JavaScript is the programming language of the Web.JavaScript is easy to learn.This tutorial will teach you JavaScript from basic to advanced.One of many JavaScript HTML methods is getElementById().The example below 'finds' an HTML element (with id='demo'), and changes the element content (innerHTML) to 'Hello JavaScript':",
+      description2: "",
+      description3: "",
+      description4: "",
+      description5: "",
       exampleTitle1: "Example:",
       exampleTitle2: "",
       exampleTitle3: "",
@@ -44,7 +45,8 @@ const JavascriptCourse = () => {
     <div>
       <h2 className="text-4xl text-primary mb-4">Javascript Course</h2>
       <div align="right">
-        <p className='btn btn-secondary mx-5'>Edit & Delete</p>
+        <Link to="/jsCourses/jsCourseModify" className='btn btn-secondary mx-5'>Edit & Delete</Link>
+
       </div>
       <div>
         {
