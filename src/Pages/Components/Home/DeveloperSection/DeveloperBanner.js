@@ -7,7 +7,7 @@ const DeveloperBanner = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="hero pt-36 px-5 bg-[#F1F1F1]">
+    <div className="hero pt-36 px-5 bg-[#F1F1F1] text-justify">
       <div className="hero-content flex-col lg:flex-row ">
         <div className="flex flex-col lg:flex-row">
           <div className="grid flex-grow w-full px-5 lg:px-0 lg:w-1/2 mx-auto card rounded-lg ">
@@ -31,19 +31,13 @@ const DeveloperBanner = () => {
             <button
               className="btn btn-glass w-[200px]"
               onClick={() => {
-                navigate("/quiz");
+                navigate("/settings");
               }}
             >
-              View Cources
+              7 day's free trial
             </button>
           </div>
-
-          {/* ==================================================== */}
-
           <div className="divider lg:divider-horizontal"></div>
-
-          {/* ==================================================== */}
-
           <div className="grid flex-grow w-full px-5 lg:px-0 lg:w-1/2 mx-auto card rounded-lg  ">
             <img
               className="w-[80px] mx-auto"
@@ -65,10 +59,10 @@ const DeveloperBanner = () => {
             <button
               className="btn btn-glass w-[200px]"
               onClick={() => {
-                navigate("/settings");
+                navigate("/quiz");
               }}
             >
-              7 day's free trial
+              Take Quiz
             </button>
           </div>
         </div>
