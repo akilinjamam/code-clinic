@@ -29,7 +29,7 @@ const UserProfile = () => {
             </div>
             <div className="drawer-side text-white">
                 <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-                <ul className="menu p-4 overflow-y-auto w-[200px] sm:w-80 pt-10 bg-slate-500">
+                <ul className="menu p-4 overflow-y-auto w-[200px] sm:w-80 pt-10 bg-slate-700">
                     {/* <!-- Sidebar content here --> */}
                     <li><Link to="/dashboard" className=' hover:bg-slate-900 py-2 mb-2'>My Profile</Link></li>
                     {user && <>
