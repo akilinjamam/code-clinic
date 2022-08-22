@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FreeCourses = () => {
     return (
-        <div className='learn-sec pt-8' >
+        <div className='learn-sec pt-20' >
             <div class="header my-0">
                 <h1>Easy & effective courses</h1>
                 <h1 className='text-4xl'>Provided by <span className='font-semibold text-blue-600'>Coders Clinic</span></h1>

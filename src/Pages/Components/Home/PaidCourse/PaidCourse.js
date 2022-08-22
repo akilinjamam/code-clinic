@@ -5,158 +5,107 @@ import wrong from "../../../../Assets/icons/cross-mark (1).png";
 
 const PaidCourse = () => {
   return (
-<div className='mt-0 pt-0'>
-
-    <div class="hero p-4">
-   
-      <div className='hero-content flex-col lg:flex-row'>
-      <div class="card  w-96  bg-[url('https://img1.picmix.com/output/stamp/normal/3/0/4/6/1846403_0dc06.gif')] bg-base-100 shadow-2xl drop-shadow-lg drop-shadow-md">
-          <div class="card-body">
-            <h2 class="text-amber-500 text-3xl font-bold text-center">
-            PRO
-            </h2>
-            <h1 className='text-4xl text-amber-900 font-bold text-center py-3'>$29</h1>
-            <p className='text-sm mt-2 py-2 '>Interested to learn new topic but not sure if you should dive in and invest right now? then give a short to our one month free trial and decide later.</p>
-            <ol className='text-sm mt-4 ml-3 list-decimal'>
-              
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">One month Free Trial</p>
-              </li>
-              <br />
-             
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">15 Quiz per topic</p>
-              </li>
-              <br />
-              
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">Browse Forum</p>
-              </li>
-              <br />
-              
-              <li className='my-2 inline-flex'>
-              <img src={wrong}  alt=''/>
-              <p className=" mt-2">Vote Solution</p>
-              </li>
-              <br />
-              
-              <li className='my-2 inline-flex'>
-              <img src={wrong}  alt=''/>
-              <p className=" mt-2">Suggest Courses</p>
-              </li>
-              <br />
-
-            </ol>
-            <button class="btn btn-sm"><Link class="font-bold" to='/signUp'>Try it out</Link></button>
-            <div class="card-actions justify-end">
-            <div class="badge badge-secondary">NEW</div> 
-            </div>
+    <div className='bg-base-200 py-10'>
+      <div className='bg-base-200 grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto w-[90%] py-10'>
+        <div class="card bg-base-100 duration-700 shadow-xl hover:shadow-green-200 relative">
+          <sup className='badge badge-secondary absolute right-2 top-0 text-lg p-3'>New</sup>
+          <div class="card-body text-justify">
+            <h1 class="tab text-5xl text-amber-900 font-bold">
+              $29
+              <sup class="rounded-xl px-2 bg-lime-400 text-black text-lg">PRO</sup></h1>
+            <p className='mt-10'>Interested to learn new topic but not sure if you should dive in and invest right now? then give a short to our one month free trial and decide later.</p>
           </div>
+          <ul className='grid grid-cols-1 pl-10'>
+            <li className='inline-flex items-center'>
+              <img src={right} className=" " alt='' />
+              <p className="">One month Free Trial</p>
+            </li>
+            <li className='inline-flex items-center'>
+              <img src={right} className=" " alt='' />
+              <p className=" mt-2">15 Quiz per topic</p>
+            </li>
+            <li className='inline-flex items-center'>
+              <img src={right} className=" " alt='' />
+              <p className="">Browse Forum</p>
+            </li>
+            <li className='inline-flex  items-center'>
+              <img src={wrong} alt='' />
+              <p>Vote Solution</p>
+            </li>
+            <li className='inline-flex  items-center'>
+              <img src={wrong} alt='' />
+              <p>Suggest Courses</p>
+            </li>
+          </ul>
+          <Link class="btn btn-sm font-bold my-10 w-[250px] mx-auto" to='/signUp'>Try it out</Link>
+        </div>
+        <div class="card bg-base-100 duration-700 shadow-xl hover:shadow-green-200 relative">
+          <sup className='badge badge-secondary absolute right-2 top-0 text-lg p-3'>New</sup>
+          <div class="card-body text-justify">
+            <h1 class="tab text-5xl text-amber-900 font-bold">
+              $39
+              <sup class="rounded-xl px-2 bg-lime-400 text-black text-lg">PRO<sup className='text-lg pt-1'>+</sup></sup></h1>
+            <p className='mt-10'>Satisfied with our pre-offered package and courses and want to get some more in a budget friendly package.</p>
+          </div>
+          <ul className='grid grid-cols-1 pl-10'>
+            <li className='inline-flex items-center'>
+              <img src={right} className=" " alt='' />
+              <p className="">One month Free Trial</p>
+            </li>
+            <li className='inline-flex items-center'>
+              <img src={right} className=" " alt='' />
+              <p className=" mt-2">15 Quiz per topic</p>
+            </li>
+            <li className='inline-flex items-center'>
+              <img src={right} className=" " alt='' />
+              <p className="">Browse Forum</p>
+            </li>
+            <li className='inline-flex  items-center'>
+              <img src={right} alt='' />
+              <p>Vote Solution</p>
+            </li>
+            <li className='inline-flex  items-center'>
+              <img src={wrong} alt='' />
+              <p>Suggest Courses</p>
+            </li>
+          </ul>
+          <Link class="btn btn-sm font-bold my-10 w-[250px] mx-auto" to='/signUp'>Try it out</Link>
+        </div>
+        <div class="card bg-base-100 duration-700 shadow-xl hover:shadow-green-200 relative">
+          <sup className='badge badge-secondary absolute right-2 top-0 text-lg p-3'>New</sup>
+          <div class="card-body text-justify">
+            <h1 class="tab text-5xl text-amber-900 font-bold">
+              $49
+              <sup class="rounded-xl px-2 bg-lime-400 text-black text-lg">ADVANCE</sup></h1>
+            <p className='mt-10'>Want the most out from the courses according to your test ? Then the por pus plan is for you.</p>
+          </div>
+          <ul className='grid grid-cols-1 pl-10'>
+            <li className='inline-flex items-center'>
+              <img src={right} className=" " alt='' />
+              <p className="">One month Free Trial</p>
+            </li>
+            <li className='inline-flex items-center'>
+              <img src={right} className=" " alt='' />
+              <p className=" mt-2">15 Quiz per topic</p>
+            </li>
+            <li className='inline-flex items-center'>
+              <img src={right} className=" " alt='' />
+              <p className="">Browse Forum</p>
+            </li>
+            <li className='inline-flex  items-center'>
+              <img src={right} alt='' />
+              <p>Vote Solution</p>
+            </li>
+            <li className='inline-flex  items-center'>
+              <img src={right} alt='' />
+              <p>Suggest Courses</p>
+            </li>
+          </ul>
+          <Link class="btn btn-sm font-bold my-10 w-[250px] mx-auto" to='/signUp'>Try it out</Link>
         </div>
 
-
-        
-         <div class="card  w-96 mx-5 bg-[url('https://img1.picmix.com/output/stamp/normal/3/0/4/6/1846403_0dc06.gif')] bg-base-100 shadow-2xl drop-shadow-lg drop-shadow-md">
-          <div class="card-body">
-            <h2 class="text-amber-500 text-3xl font-bold text-center">
-            PRO PLUS
-            </h2>
-            <h1 className='text-4xl text-amber-900 font-bold text-center py-3'>$39</h1>
-            <p className='text-sm mt-2 py-2 '>Satisfied with our pre-offered package and courses and want to get some more in a budget friendly package.</p>
-            <ol className='text-sm mt-4 ml-3 list-decimal'>
-              
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">One month Free Trial</p>
-              </li>
-              <br />
-             
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">15 Quiz per topic</p>
-              </li>
-              <br />
-              
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">Browse Forum</p>
-              </li>
-              <br />
-              
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">Vote Solution</p>
-              </li>
-              <br />
-              
-              <li className='my-2 inline-flex'>
-              <img src={wrong}  alt=''/>
-              <p className=" mt-2">Suggest Courses</p>
-              </li>
-              <br />
-
-            </ol>
-            <button class="btn btn-sm"><Link class="font-bold" to='/signUp'>Try it out</Link></button>
-            <div class="card-actions justify-end">
-            <div class="badge badge-secondary">NEW</div> 
-            </div>
-          </div>
-        </div>
-
-
-
-         <div class="card  w-96 mx-5 bg-[url('https://img1.picmix.com/output/stamp/normal/3/0/4/6/1846403_0dc06.gif')] bg-base-100 shadow-2xl drop-shadow-lg drop-shadow-md">
-          <div class="card-body">
-            <h2 class="text-amber-500 text-3xl font-bold text-center">
-            ADVANCE
-            </h2>
-            <h1 className='text-4xl font-bold text-amber-900 text-center py-3'>$49</h1>
-            <p className='text-sm mt-2 py-2 '>Want the most out from the courses according to your test ? Then the por  pus plan is for you.</p>
-            <ol className='text-sm mt-4 ml-3 list-decimal'>
-              
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">One month Free Trial</p>
-              </li>
-              <br />
-             
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">15 Quiz per topic</p>
-              </li>
-              <br />
-              
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">Browse Forum</p>
-              </li>
-              <br />
-              
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">Vote Solution</p>
-              </li>
-              <br />
-              
-              <li className='my-2 inline-flex'>
-              <img src={right} className=" " alt=''/>
-              <p className=" mt-2">Suggest Courses</p>
-              </li>
-              <br />
-
-            </ol>
-            <button class="btn btn-sm"><Link class="font-bold" to='/signUp'>Try it out</Link></button>
-            <div class="card-actions justify-end">
-            <div class="badge badge-secondary">NEW</div> 
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-</div>
   );
 };
 

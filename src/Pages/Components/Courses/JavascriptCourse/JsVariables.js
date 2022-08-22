@@ -1,5 +1,6 @@
 import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import { Link } from 'react-router-dom';
 
 const JsVariables = () => {
 
@@ -44,7 +45,7 @@ const JsVariables = () => {
         <div>
             <h2 className="text-4xl text-primary mb-4">Javascript Course</h2>
             <div align="right">
-                <p className='btn btn-secondary mx-5'>Edit & Delete</p>
+                <Link to="/jsCourses/jsVariabless" className='btn btn-secondary mx-5'>Edit & Delete</Link>
             </div>
             <div>
                 {
