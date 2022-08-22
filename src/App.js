@@ -134,10 +134,6 @@ function App() {
 
           <Route path="/interview-prep/javascript" element={<JavascriptQa />} />
 
-          <Route path="/interview-prep/javascript" element={<JavascriptQa />} />
-
-          <Route path="/interview-prep/html" element={<HtmlQa />} />
-
           <Route path="/interview-prep/html" element={<HtmlQa />} />
         </Route>
 
