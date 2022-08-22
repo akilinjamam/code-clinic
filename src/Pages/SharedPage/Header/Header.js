@@ -100,9 +100,7 @@ const Header = () => {
                       <Link className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md" to='#'>Announcement</Link>
                       <button className="py-1 pl-2 mb-1 hover:bg-slate-900 rounded-md text-start " onClick={logout}>Log Out</button>
                     </div>
-                  </ul></> : (<Link to="login" className="btn btn-ghost pt-2 hover:bg-white hover:text-black">
-                    <div><img className="icon p-0" src={login} alt="" /></div>
-                  </Link>)
+                  </ul></> : (<Link to="login" className="pr-6">Log In</Link>)
                 }
 
               </li>
