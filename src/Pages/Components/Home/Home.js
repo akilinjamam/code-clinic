@@ -12,6 +12,7 @@ const Home = () => {
       <Banner/>
       <DeveloperBanner />
       <FreeCourses/>
+      <EnrollSection />
       <PaidCourse />
       <CompilerHome/>
     </div>

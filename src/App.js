@@ -98,15 +98,6 @@ function App() {
 
           <Route path="/courses/htmlImage" element={<HtmlImage />} />
 
-          <Route
-            path="/courses/htmlCce"
-            element={<HtmlCce />}
-          />
-          <Route
-            path="/courses/cpp"
-            element={<Cpp />}
-          />
-
           {/* modify section */}
 
           <Route
@@ -219,15 +210,7 @@ function App() {
           <Route index element={<Profile />}></Route>
 
           <Route path="/dashboard/my_course" element={<MyCourse />} />
-
-          <Route
-            path="/dashboard/my_course"
-            element={<MyCourse />}
-          />
-          <Route
-            path="/dashboard/add_review"
-            element={<AddReview />}
-          />
+          <Route path="/dashboard/add_review" element={<AddReview />}/>
 
         </Route>
         <Route path="*" element={<NotFound />} />

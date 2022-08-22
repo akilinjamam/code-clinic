@@ -25,7 +25,7 @@ const AddReview = () => {
                 <h3 className="text-3xl font-semibold">Add Review</h3>
             </div>
             <div>
-                <div className='card w-60 sm:w-96 bg-slate-300  mx-auto py-16 my-5 shadow-xl shadow-slate-700'>
+                <div className='card sm:w-96 bg-slate-300  mx-auto py-16 my-5 shadow-xl shadow-slate-700'>
                     <form onSubmit={handleSubmit(onSubmit)} className='w-[90%] mx-auto'>
                         <div className="form-control w-full">
                             <label className="label">
