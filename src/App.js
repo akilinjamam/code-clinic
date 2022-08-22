@@ -51,6 +51,15 @@ import AddReview from "./Pages/UserDashboard/AddReview";
 import Settings from "./Pages/Components/quizSection/Settings";
 import Questions from "./Pages/Components/quizSection/Questions";
 import FinalScreen from "./Pages/Components/quizSection/FinalScreen";
+import HtmlStyleModify from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify";
+import HtmlImageModify from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify";
+import HtmlCceModify from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify";
+import IntroModify from "./Pages/Components/Courses/HtmlCourse/IntroModify";
+import JavascriptCourseModify from "./Pages/Components/Courses/JavascriptCourse/JavascriptCourseModify";
+import JsConstModify from "./Pages/Components/Courses/JavascriptCourse/JsConstModify";
+import JsLetModify from "./Pages/Components/Courses/JavascriptCourse/JsLetModify";
+import JsSyntexModify from "./Pages/Components/Courses/JavascriptCourse/JsSyntexModify";
+import JsVariablesModify from "./Pages/Components/Courses/JavascriptCourse/JsVariablesModify";
 
 function App() {
   return (
@@ -101,8 +110,25 @@ function App() {
           {/* modify section */}
 
           <Route
+            path="/courses/dataIntro"
+            element={<IntroModify />}
+          />
+
+          <Route
             path="/courses/attModify"
             element={<AttributeModify />}
+          />
+          <Route
+            path="/courses/htmlStyleModify"
+            element={<HtmlStyleModify />}
+          />
+          <Route
+            path="/courses/htmlImageModify"
+            element={<HtmlImageModify />}
+          />
+          <Route
+            path="/courses/htmlCceModify"
+            element={<HtmlCceModify />}
           />
 
 
@@ -135,6 +161,35 @@ function App() {
           <Route path="/jsCourses/jsLet" element={<JsLet />} />
 
           <Route path="/jsCourses/jsConst" element={<JsConst />} />
+
+          {/* js Modify section */}
+
+          <Route
+            path="/jsCourses/jsCourseModify"
+            element={<JavascriptCourseModify />}
+          />
+
+          <Route
+            path="/jsCourses/jsConstModify"
+            element={<JsConstModify />}
+          />
+
+          <Route
+            path="/jsCourses/jsLetModify"
+            element={<JsLetModify />}
+          />
+
+          <Route
+            path="/jsCourses/jsSyntexx"
+            element={<JsSyntexModify />}
+          />
+
+          <Route
+            path="/jsCourses/jsVariabless"
+            element={<JsVariablesModify />}
+          />
+
+
         </Route>
 
         <Route path="/cplusPlusCourses" element={<CplusplusCourses />}>

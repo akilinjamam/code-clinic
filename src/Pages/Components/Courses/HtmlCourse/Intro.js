@@ -15,7 +15,8 @@ const Intro = () => {
         <div>
             <h2 className="text-4xl text-primary mb-4">HTML Course</h2>
             <div align="right">
-                <Link to="" className='btn btn-secondary mx-5'>Edit & Delete</Link>
+                <Link to="/courses/dataIntro" className='btn btn-secondary mx-5'>Edit & Delete</Link>
+
             </div>
             <br /><br />
             <div>
