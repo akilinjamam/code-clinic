@@ -61,6 +61,7 @@ import JsLetModify from "./Pages/Components/Courses/JavascriptCourse/JsLetModify
 import JsSyntexModify from "./Pages/Components/Courses/JavascriptCourse/JsSyntexModify";
 import JsVariablesModify from "./Pages/Components/Courses/JavascriptCourse/JsVariablesModify";
 import RequireAuth from "./Pages/Components/user/RequireAuth";
+import CssCourses from "./Pages/Components/Courses/CplusplusCourses";
 
 function App() {
   return (
@@ -76,9 +77,6 @@ function App() {
         <Route path="/Editor" element={<Editor />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/email_contact" element={<MailContact />}></Route>
-
-
-
 
         <Route path="/pythonCom" element={<PythonCompiler />}></Route>
         <Route path="/settings" element={<Settings />}></Route>
@@ -180,7 +178,7 @@ function App() {
 
         </Route>
 
-        <Route path="/cplusPlusCourses" element={<CplusplusCourses />}>
+        <Route path="/CssCourses" element={<CssCourses />}>
 
 
         </Route>
