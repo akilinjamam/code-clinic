@@ -55,20 +55,20 @@ const Header = () => {
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                   </svg>
                 </p>
-                <ul className="p-2">
+                <ul className="text-white bg-slate-700 ml-3">
                   <li>
                     <Link to='/courses' >HTML</Link >
                   </li>
                   <li>
-                    <Link to='/courses/javascriptCourse' >Javascript</Link>
+                    <Link to='/jsCourses' >Javascript</Link>
                   </li>
                   <li>
-                    <Link to='/courses/c++' >CSS</Link>
+                    <Link to='/CssCourses' >CSS</Link>
                   </li>
                 </ul>
               </li>
               <li tabIndex="0">
-                <Link to='/interview' className="justify-between">
+                <p to='/interview' className="justify-between">
                   Interview
                   <svg
                     className="fill-current"
@@ -79,13 +79,13 @@ const Header = () => {
                   >
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                   </svg>
-                </Link>
-                <ul className="p-2 text-white hover:bg-white hover:text-black">
+                </p>
+                <ul className="text-white bg-slate-700 ml-3">
                   <li>
                     <Link to='/quiz' >Skill Tests</Link>
                   </li>
                   <li>
-                    <Link to='/interview-prep'  >Interview Preparation</Link>
+                    <Link to='/interview-prep'>Interview Preparation</Link>
                   </li>
                 </ul>
               </li>
@@ -136,7 +136,7 @@ const Header = () => {
               </ul>
             </li>
             <li tabIndex="0">
-              <p className=" hover:bg-slate-900 text-white">
+              <p className="hover:bg-slate-900 text-white">
                 Interview
                 <svg
                   className="fill-current"
@@ -148,7 +148,7 @@ const Header = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </p>
-              <ul className="p-2 text-white hover:bg-slate-800">
+              <ul className="p-2 z-20 text-white bg-slate-800">
                 <li className="hover:bg-slate-900">
                   <Link to='/quiz'>Skill Tests</Link>
                 </li>

@@ -62,6 +62,7 @@ import JsSyntexModify from "./Pages/Components/Courses/JavascriptCourse/JsSyntex
 import JsVariablesModify from "./Pages/Components/Courses/JavascriptCourse/JsVariablesModify";
 import RequireAuth from "./Pages/Components/user/RequireAuth";
 import CssCourses from "./Pages/Components/Courses/CplusplusCourses";
+import ProfileEditor from "./Pages/UserDashboard/ProfileEditor";
 
 function App() {
   return (
@@ -204,6 +205,7 @@ function App() {
         <Route path="/dashboard" element={<RequireAuth><UserProfile /></RequireAuth>}>
           <Route index element={<Profile />}></Route>
 
+          <Route path="/dashboard/profile_edit" element={<ProfileEditor />} />
           <Route path="/dashboard/my_course" element={<MyCourse />} />
           <Route path="/dashboard/add_review" element={<AddReview />}/>
 
