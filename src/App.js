@@ -60,6 +60,7 @@ import JsConstModify from "./Pages/Components/Courses/JavascriptCourse/JsConstMo
 import JsLetModify from "./Pages/Components/Courses/JavascriptCourse/JsLetModify";
 import JsSyntexModify from "./Pages/Components/Courses/JavascriptCourse/JsSyntexModify";
 import JsVariablesModify from "./Pages/Components/Courses/JavascriptCourse/JsVariablesModify";
+import CssCourses from "./Pages/Components/Courses/CplusplusCourses";
 
 function App() {
   return (
@@ -176,7 +177,7 @@ function App() {
 
         </Route>
 
-        <Route path="/cplusPlusCourses" element={<CplusplusCourses />}>
+        <Route path="/CssCourses" element={<CssCourses />}>
 
 
         </Route>
