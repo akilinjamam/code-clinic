@@ -76,9 +76,6 @@ function App() {
         <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/email_contact" element={<MailContact />}></Route>
 
-
-
-
         <Route path="/pythonCom" element={<PythonCompiler />}></Route>
         <Route path="/settings" element={<Settings />}></Route>
         <Route path="/questions" element={<Questions />}></Route>
