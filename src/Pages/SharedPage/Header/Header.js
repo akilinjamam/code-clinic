@@ -63,7 +63,7 @@ const Header = () => {
                     <Link to='/courses/javascriptCourse' >Javascript</Link>
                   </li>
                   <li>
-                    <Link to='/courses/c++' >C++</Link>
+                    <Link to='/courses/c++' >CSS</Link>
                   </li>
                 </ul>
               </li>
@@ -131,7 +131,7 @@ const Header = () => {
                   <Link to='/jsCourses'>Javascript</Link>
                 </li>
                 <li className="hover:bg-slate-900">
-                  <Link to='/cplusPlusCourses' >C++</Link>
+                  <Link to='/CssCourses' >CSS</Link>
                 </li>
               </ul>
             </li>
