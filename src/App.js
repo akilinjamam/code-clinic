@@ -60,6 +60,7 @@ import JsConstModify from "./Pages/Components/Courses/JavascriptCourse/JsConstMo
 import JsLetModify from "./Pages/Components/Courses/JavascriptCourse/JsLetModify";
 import JsSyntexModify from "./Pages/Components/Courses/JavascriptCourse/JsSyntexModify";
 import JsVariablesModify from "./Pages/Components/Courses/JavascriptCourse/JsVariablesModify";
+import RequireAuth from "./Pages/Components/user/RequireAuth";
 
 function App() {
   return (
@@ -202,7 +203,7 @@ function App() {
           <Route path="/adminDashboard/adminHome" element={<AdminHome />} />
         </Route>
         {/* User Profile route  */}
-        <Route path="/dashboard" element={<UserProfile />}>
+        <Route path="/dashboard" element={<RequireAuth><UserProfile /></RequireAuth>}>
           <Route index element={<Profile />}></Route>
 
           <Route path="/dashboard/my_course" element={<MyCourse />} />
