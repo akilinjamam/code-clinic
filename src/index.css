@@ -9,13 +9,74 @@
 .logo {
   height: 50px;
 }
+/* Button Style */
+.btn-big {
+  background-color: #474EDD;
+  background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 0.1) 50%, transparent 55%),-webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), transparent);
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      #333797,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+  color: white !important;
+  display: block;
+  font-family: "Lucida Grande", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 61px;
+  letter-spacing: -1px;
+  line-height: 61px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-decoration: none !important;
+  -webkit-transition: all .2s linear;
+  width: 186px;
+  }
+ 
+  .btn-big:active {
+  background-color: #474EDD;
+  top: 4px;
+  box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #333797,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+  }
+ 
+  .btn-big:hover {
+  background-color: #5158E0;
+  poisiton: relative;
+  top: -1px;
+  box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #333797,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+  }
+/* Button Style Ends */
 
+/* Summary card styles */
+.summary {
+  position: relative;
+  display: inline-block;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  persepctive: 1000px;
+  margin: 20px;
+  margin-top: 50px;
+}
+.summary .box {
+  transform: rotateY(-40deg);
+  height: auto;
+  width: 250px;
+  background-color: rgb(2, 98, 99) ;
+}
+.summary:before {
+  content: "";
+  top: -15px;
+  position: absolute;
+  width: 50px;
+  height: auto;
+  background-color:whitesmoke;
+  transform: translateX(215px) translateY(2.7px) rotateY(55deg)
+}
+/* Summary card styles ends */
 .icon {
   height: 30px;
 }
 
 /* Footer style */
-.foo {
+.footerr {
   background-image: url("https://blog.hubspot.com/hs-fs/hubfs/7a8f8d634013568124e130728834d47a.gif?width=1500&name=7a8f8d634013568124e130728834d47a.gif");
   background-position: center;
 }

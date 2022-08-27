@@ -13,7 +13,7 @@ const CompilerHome = () => {
             <img src="https://i.ibb.co/FsTbWP7/compiler.png" alt="" />
           </div>
           <div className="lg:w-3/6">
-            <h1 className="text-4xl text-center">
+            <h1 className="text-4xl text-center text-info">
               Run Your Code With Our Compiler
             </h1>
 

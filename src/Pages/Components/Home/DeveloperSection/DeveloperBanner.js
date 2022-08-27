@@ -7,7 +7,7 @@ const DeveloperBanner = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="hero pt-36 px-5  text-justify">
+    <div className="hero pt-36 px-5 text-justify">
       <div className="hero-content flex-col md:flex-row ">
         <div className="flex flex-col md:flex-row">
           <div className="grid flex-grow w-full px-5 lg:px-0 lg:w-1/2 mx-auto card rounded-lg ">
@@ -29,7 +29,7 @@ const DeveloperBanner = () => {
               by clicking the button belowlicking the button
             </p>
             <button
-              className="btn btn-glass w-[200px] mx-auto"
+              className="btn-big w-[180px]"
               onClick={() => {
                 navigate("/settings");
               }}
@@ -57,7 +57,7 @@ const DeveloperBanner = () => {
               by clicking the button belowlicking the button
             </p>
             <button
-              className="btn btn-glass w-[200px] mx-auto"
+              className="btn-big  w-[180px]"
               onClick={() => {
                 navigate("/quiz");
               }}
