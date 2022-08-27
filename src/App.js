@@ -68,7 +68,7 @@ import Recap from "./Pages/Components/Home/OthersSaying/Recap";
 
 function App() {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto bg-green-100">
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
