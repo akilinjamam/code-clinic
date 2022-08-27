@@ -21,7 +21,7 @@ const Header = () => {
   return (
 
 
-    <div className="primary sticky top-0 z-30 shadow-lg">
+    <div className="primaryshadow-lg">
       <div className="navbar text-black">
 
         <div className="navbar-start">
