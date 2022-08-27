@@ -7,7 +7,7 @@ const EnrollSection = () => {
 
 
     return (
-        <div className='bg-base-200 pt-24'>
+        <div className=' pt-24'>
             <h2 class=" text-5xl text-blue-900 font-bold text-center"> Take the best package </h2>
             <div class="hero  p-8">
                 <div class="hero-content flex-col lg:flex-row">

@@ -32,11 +32,11 @@ export default class OthersSaying extends Component {
         autoplaySpeed: 2000
       };
       return (
-        <div className='p-20 bg-base-200 '>
+        <div className='p-20 '>
           <h2 className='text-5xl font-bold text-purple-900 text-center mb-3'>Whats others are saying</h2>
           <Slider ref={slider => (this.slider = slider)} {...settings}>
             <div className='m-3 p-3'>
-            <div class="card  bg-base-100 hover:shadow-purple-700  shadow-xl">
+            <div class="card  bg-base-100 hover:shadow-blue-300  shadow-xl">
               <figure>
               <div class="avatar pt-3">
                   <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -51,7 +51,7 @@ export default class OthersSaying extends Component {
             </div>
             </div>
             <div className='m-3 p-3'>
-            <div class="card  bg-base-100 hover:shadow-purple-700 shadow-xl">
+            <div class="card  bg-base-100 hover:shadow-blue-300 shadow-xl">
               <figure>
               <div class="avatar pt-3">
                   <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -66,7 +66,7 @@ export default class OthersSaying extends Component {
             </div>
             </div>
             <div className='m-3 p-3'>
-            <div class="card  bg-base-100 hover:shadow-purple-700 shadow-xl">
+            <div class="card  bg-base-100 hover:shadow-blue-300 shadow-xl">
               <figure>
               <div class="avatar pt-3">
                   <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -81,7 +81,7 @@ export default class OthersSaying extends Component {
             </div>
             </div>
             <div className='m-3 p-3'>
-            <div class="card  bg-base-100 hover:shadow-purple-700 shadow-xl">
+            <div class="card  bg-base-100 hover:shadow-blue-300 shadow-xl">
               <figure>
               <div class="avatar pt-3">
                   <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -96,7 +96,7 @@ export default class OthersSaying extends Component {
             </div>
             </div>
             <div className='m-3 p-3'>
-            <div class="card  bg-base-100  hover:shadow-purple-700 shadow-xl">
+            <div class="card  bg-base-100  hover:shadow-blue-300 shadow-xl">
               <figure>
               <div class="avatar pt-3">
                   <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -111,7 +111,7 @@ export default class OthersSaying extends Component {
             </div>
             </div>
             <div className='m-3 p-3'>
-            <div class="card  bg-base-100  hover:shadow-purple-700 shadow-xl">
+            <div class="card  bg-base-100  hover:shadow-blue-300 shadow-xl">
               <figure>
               <div class="avatar pt-3">
                   <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
