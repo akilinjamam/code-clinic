@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
-    <footer className="footer justify-items-center md:justify-items-start md:px-10 lg:px-20 text-white lg:bg-gray-50 foo py-10">
+    <footer className="footer justify-items-center md:justify-items-start md:px-10 lg:px-20 text-white lg:bg-gray-50 footerr py-10">
       <div className="flex gap-8 pt-4">
         <Link to="contactUs" className="hover:underline hover:font-semibold">Contact Us</Link>
         <Link to="about" className="hover:underline hover:font-semibold">About</Link>
