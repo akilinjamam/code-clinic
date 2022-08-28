@@ -1,9 +1,12 @@
 import React from "react";
 import {
   useCreateUserWithEmailAndPassword,
+  useSignInWithGithub,
   useSignInWithGoogle,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
+import github from '../../../Assets/icons/github.gif';
+import google from '../../../Assets/icons/google.svg';
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../../SharedPage/Footer/Loader";
@@ -11,6 +14,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+  const [signInWithGithub,, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
   const {
     register,
     formState: { errors },
@@ -24,11 +28,11 @@ const Signup = () => {
   const navigate = useNavigate();
   let signInError;
 
-  if (loading || gLoading || updating) {
+  if (loading || gLoading || gitLoading || updating) {
     return <Loading></Loading>;
   }
 
-  if (error || gError || updateError) {
+  if (error || gError ||   gitError  || updateError) {
     signInError = (
       <p className="text-red-500">
         <small>
@@ -38,7 +42,7 @@ const Signup = () => {
     );
   }
 
-  if (user || gUser) {
+  if (user || gUser || gitUser) {
     console.log(user || gUser);
   }
 
@@ -50,8 +54,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex h-screen justify-center items-center">
-      <div className="card w-96 bg-base-100 shadow-xl  ">
+    <div className="flex h-screen backgroundImg justify-center items-center">
+      <div className="card w-96 bg-base-100  bg-transparent shadow-2xl ">
         <div className="card-body">
           <h2 className="text-center text-2xl font-bold">Sign Up</h2>
           <form
@@ -146,20 +150,26 @@ const Signup = () => {
             />
           </form>
           <p>
-            <small>
+            <small className="font-bold text-center">
               Already have an account?{" "}
               <Link className="text-primary" to="/login">
                 Please login
               </Link>
             </small>
           </p>
-          <div className="divider">OR</div>
+          <div className="divider text-red-700">OR</div>
+          <div className=" flex justify-evenly items-center">
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline"
           >
-            Continue with Google
+            <img src={google} alt=''></img>
           </button>
+          <button
+            onClick={() => signInWithGithub()}
+          >
+          <img style={{width:'50px', height:'50px'}} src={github} alt=''></img>
+          </button>
+          </div>
         </div>
       </div>
     </div>
