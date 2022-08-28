@@ -75,6 +75,11 @@
   height: 30px;
 }
 
+.backgroundImg{
+  background-image: url(./Assets/img/background2.jpg);
+  background-size: cover;
+}
+
 /* Footer style */
 .footerr {
   background-image: url("https://blog.hubspot.com/hs-fs/hubfs/7a8f8d634013568124e130728834d47a.gif?width=1500&name=7a8f8d634013568124e130728834d47a.gif");
