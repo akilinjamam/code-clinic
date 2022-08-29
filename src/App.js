@@ -63,10 +63,11 @@ import JsVariablesModify from "./Pages/Components/Courses/JavascriptCourse/JsVar
 import RequireAuth from "./Pages/Components/user/RequireAuth";
 import CssCourses from "./Pages/Components/Courses/CplusplusCourses";
 import ProfileEditor from "./Pages/UserDashboard/ProfileEditor";
+import OthersSaying from "./Pages/Components/Home/OthersSaying/OthersSaying";
 
 function App() {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto bg-green-100">
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -83,6 +84,7 @@ function App() {
         <Route path="/settings" element={<Settings />}></Route>
         <Route path="/questions" element={<Questions />}></Route>
         <Route path="/score" element={<FinalScreen />}></Route>
+        <Route path="/OthersSaying" element={<OthersSaying />}></Route>
         {/* html course section */}
 
         <Route path="/introduction" element={<Introduction />}></Route>
