@@ -2,14 +2,14 @@ import React from 'react';
 
 const MyCourse = () => {
     return (
-        <div className='w-[95%] mx-auto bg-slate-200 rounded-xl divide-y-4 divide-slate-400'>
+        <div className='w-[95%] mx-auto bg-green-200 rounded-xl divide-y-4 divide-slate-400'>
             <div className='flex justify-between px-10 h-16 items-center'>
                 <h3 className="text-3xl font-semibold">My Courses</h3>
             </div>
             <div className='p-5'>
                 <h4 className="text-2xl"><span className=''>Option</span>: Junior Level</h4>
                 <div class="overflow-x-auto mt-5">
-                    <table class="table w-full border border-slate-300">
+                    <table class="table w-full border bg-green-500 ">
                         {/* head */}
                         <thead>
                             <tr>
