@@ -6,7 +6,8 @@ const Intro = () => {
     const [introData, setIntroData] = useState([])
     console.log(introData.length)
     useEffect(() => {
-        const url = "htmlIntro.json"
+        // const url = "htmlIntro.json"
+        const url = "http://localhost:5000/htmlIntro"
         fetch(url)
             .then((res) => res.json())
             .then((data) => setIntroData(data))
