@@ -59,7 +59,7 @@
   transform: rotateY(-40deg);
   height: auto;
   width: 250px;
-  background-color: rgb(2, 98, 99) ;
+  background-color: #BFDBFE ;
 }
 .summary:before {
   content: "";
