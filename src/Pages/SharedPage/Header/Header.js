@@ -156,10 +156,7 @@ const Header = () => {
               {user ? <><div>{user.photoURL ? <img className="icon p-0 rounded-full" src={user?.photoURL} alt="user" /> : <img className="icon p-0 rounded-full" src={user_2} alt="user" />}</div>
                 <ul className="p-5 text-white absolute right-[-50px]">
                   <div className="w-[200px] flex flex-col text-white">
-                    <Link className="py-1 pl-2 mb-1 rounded-md" to='/dashboard'>Profile</Link>
-                    <Link className="py-1 pl-2 mb-1  rounded-md" to='#'>Student-Analytics</Link>
-                    <Link className="py-1 pl-2 mb-1  rounded-md" to='#'>Announcement</Link>
-                    <button className="py-1 pl-2 mb-1  rounded-md text-start " onClick={logout}>Log Out</button>
+                    <Link className="py-1 pl-2 mb-1 rounded-md" to='/dashboard'>View Profile</Link>
                   </div>
                 </ul></> : (<Link to="login" className="btn btn-link pt-2">
                   <div><img className="icon mt-2" src={login} alt="" /></div>
