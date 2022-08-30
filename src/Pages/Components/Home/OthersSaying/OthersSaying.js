@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import Slider from "react-slick";
 import star from '../../../../Assets/icons/star.png';
 import soroar from '../../../../Assets/img/soroar.jpg'
-import apu from '../../../../Assets/img/apu.png'
-import alamin from '../../../../Assets/img/alamin.jpg'
-import pervej from '../../../../Assets/img/parvez.jpg'
-import injaman from '../../../../Assets/img/injaman.jpg'
-import mahabub from '../../../../Assets/img/murshid.jpg'
+import apu from '../../../../Assets/img/apu.png';
+import alamin from '../../../../Assets/img/alamin.jpg';
+import pervej from '../../../../Assets/img/parvez.jpg';
+import injaman from '../../../../Assets/img/injaman.jpg';
 
 
 
