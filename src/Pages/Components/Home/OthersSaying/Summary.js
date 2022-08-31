@@ -2,29 +2,29 @@ import React from 'react';
 
 const Summary = () => {
     return (
-        <div class="grid lg:grid-cols-4 sm:grid-cols-1 gap-5 w-11/12 mx-auto text-center">
+        <div class="grid lg:grid-cols-4 sm:grid-cols-1 gap-5 w-11/12 mx-auto sm:mx-auto text-center">
             <div className='summary'>
-                <div className='bg-blue-300 box'>
-                    <h1 className="font-bold text-3xl text-orange-800">350</h1>
-                    <p className='text-3xl text-blue-900 font-semibold'>Total Quiz</p>
+                <div className='bg-blue-400 box'>
+                    <h1 className="font-bold text-3xl text-orange-600">350</h1>
+                    <h3 className='text-3xl font-semibold text-black'>Total Quiz</h3>
                 </div>
             </div>
             <div className='summary'>
-                <div className='bg-blue-300 box'>
-                    <h1 className="font-bold text-3xl text-orange-800">20</h1>
-                    <p className='text-3xl text-blue-900 font-semibold'>Total Course</p>
+                <div className='bg-blue-400 box'>
+                    <h1 className="font-bold text-3xl text-orange-600">20</h1>
+                    <h3 className='text-3xl font-semibold text-black'>Total Course</h3>
                 </div>
             </div>
             <div className='summary'>
-                <div className='bg-blue-300 box'>
-                    <h1 className="font-bold text-3xl text-orange-800">2k+</h1>
-                    <p className='text-3xl text-blue-900 font-semibold'>Quiz Enrolled</p>
+                <div className='bg-blue-400 box'>
+                    <h1 className="font-bold text-3xl text-orange-600">2k+</h1>
+                    <h3 className='text-3xl font-semibold text-black'>Quiz Enrolled</h3>
                 </div>
             </div>
             <div className='summary'>
-                <div className='bg-blue-300 box'>
-                    <h1 className="font-bold text-3xl text-orange-800">10k</h1>
-                    <p className='text-3xl text-blue-900 font-semibold'>Enrolled</p>
+                <div className='bg-blue-400 box'>
+                    <h1 className="font-bold text-3xl text-green-800">10k</h1>
+                    <h3 className='text-3xl font-semibold text-black'>Enrolled</h3>
                 </div>
             </div>
         </div>
