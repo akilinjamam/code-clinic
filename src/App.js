@@ -82,6 +82,22 @@ import RequireAuth from "./Pages/Components/user/RequireAuth";
 import CssCourses from "./Pages/Components/Courses/CplusplusCourses";
 import ProfileEditor from "./Pages/UserDashboard/ProfileEditor";
 import OthersSaying from "./Pages/Components/Home/OthersSaying/OthersSaying";
+import HtmlStyleModify1 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify1";
+import HtmlStyleModify2 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify2";
+import HtmlStyleModify3 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify3";
+import HtmlStyleModify4 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify4";
+import HtmlStyleModify5 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify5";
+import HtmlStyleModify6 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify6";
+import HtmlStyleModify7 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify7";
+import HtmlStyleModify8 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify8";
+import HtmlStyleModify9 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify9";
+import HtmlStyleModify10 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify10";
+import HtmlStyleModify11 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify11";
+import HtmlStyleModify12 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify12";
+import HtmlStyleModify13 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify13";
+import HtmlStyleModify14 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify14";
+import HtmlStyleModify15 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify15";
+import HtmlStyleModify16 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify16";
 
 
 function App() {
@@ -198,6 +214,71 @@ function App() {
             path="/courses/htmlStyleModify"
             element={<HtmlStyleModify />}
           />
+          <Route
+            path="/courses/htmlStyle/topic1/:id"
+            element={<HtmlStyleModify1 />}
+          />
+          <Route
+            path="/courses/htmlStyle/title1/:id"
+            element={<HtmlStyleModify2 />}
+          />
+          <Route
+            path="/courses/htmlStyle/title2/:id"
+            element={<HtmlStyleModify3 />}
+          />
+          <Route
+            path="/courses/htmlStyle/title3/:id"
+            element={<HtmlStyleModify4 />}
+          />
+          <Route
+            path="/courses/htmlStyle/title4/:id"
+            element={<HtmlStyleModify5 />}
+          />
+          <Route
+            path="/courses/htmlStyle/title5/:id"
+            element={<HtmlStyleModify6 />}
+          />
+          <Route
+            path="/courses/htmlStyle/description1/:id"
+            element={<HtmlStyleModify7 />}
+          />
+          <Route
+            path="/courses/htmlStyle/description2/:id"
+            element={<HtmlStyleModify8 />}
+          />
+          <Route
+            path="/courses/htmlStyle/description3/:id"
+            element={<HtmlStyleModify9 />}
+          />
+          <Route
+            path="/courses/htmlStyle/description4/:id"
+            element={<HtmlStyleModify10 />}
+          />
+          <Route
+            path="/courses/htmlStyle/description5/:id"
+            element={<HtmlStyleModify11 />}
+          />
+          <Route
+            path="/courses/htmlStyle/example1/:id"
+            element={<HtmlStyleModify12 />}
+          />
+          <Route
+            path="/courses/htmlStyle/example2/:id"
+            element={<HtmlStyleModify13 />}
+          />
+          <Route
+            path="/courses/htmlStyle/example3/:id"
+            element={<HtmlStyleModify14 />}
+          />
+          <Route
+            path="/courses/htmlStyle/example4/:id"
+            element={<HtmlStyleModify15 />}
+          />
+          <Route
+            path="/courses/htmlStyle/example5/:id"
+            element={<HtmlStyleModify16 />}
+          />
+          {/* ---------------------------------------------------- */}
           <Route
             path="/courses/htmlImageModify"
             element={<HtmlImageModify />}

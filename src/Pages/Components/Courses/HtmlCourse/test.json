@@ -1,50 +1,50 @@
 [
     {
-        "topic1": "Attributes"
+        "topic": "HTML Quotation and Citation Elements"
     },
     {
-        "title1": "href Attributes"
+        "title1": "HTML <blockquote> for Quotations"
     },
     {
-        "description1": "The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:"
+        "description1": "The HTML <blockquote> element defines a section that is quoted from another source. Browsers usually indent <blockquote> elements."
     },
     {
-        "example1": "<a href='https://www.facebook.com'>Visit W3Schools</a"
+        "example1": ""
     },
     {
-        "title2": "The src Attribute"
+        "title2": "HTML <q> for Short Quotations"
     },
     {
-        "description2": "The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:"
+        "description2": "The HTML <q> tag defines a short quotation. Browsers normally insert quotation marks around the quotation."
     },
     {
-        "example2": "<img src='img_girl.jpg'>"
+        "example2": ""
     },
     {
-        "title3": "The width and height Attributes"
+        "title3": "HTML <abbr> for Abbreviations"
     },
     {
-        "description3": "The <img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels)"
+        "description3": "The HTML <abbr> tag defines an abbreviation or an acronym, like 'HTML', 'CSS', 'Mr.', 'Dr.', 'ASAP', 'ATM'. Marking abbreviations can give useful information to browsers, translation systems and search-engines.Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the"
     },
     {
-        "example3": "<img src='img_girl.jpg' width='500' height='600'>"
+        "example3": ""
     },
     {
-        "title4": "The alt Attribute"
+        "title4": "HTML <address> for Contact Information"
     },
     {
-        "description4": "The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader."
+        "description4": "The HTML <address> tag defines the contact information for the author/owner of a document or an article. The contact information can be an email address, URL, physical address, phone number, social media handle, etc.The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element."
     },
     {
-        "example4": "<img src='img_girl.jpg' alt='Girl with a jacket'>"
+        "example4": ""
     },
     {
-        "title5": "The style Attribute"
+        "title5": "HTML <cite> for Work Title"
     },
     {
-        "description5": "The style attribute is used to add styles to an element, such as color, font, size, and more."
+        "description5": "The HTML <cite> tag defines the title of a creative work (e.g. a book, apoem, a song, a movie, a painting, a sculpture, etc.).Note: A person's name is not the title of a work.  The text in the <cite> element usually renders in italic."
     },
     {
-        "example5": "<p style='color:red;'>This is a red paragraph.</p>"
+        "example5": ""
     }
 ]
