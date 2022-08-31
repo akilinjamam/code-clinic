@@ -29,7 +29,7 @@ const FreeCourses = () => {
                     <h2>CSS</h2>
                     <p>Style your own dynamic website using CSS. Follow our free guidelines.</p>
                     <img className='h-20 pt-2' src="https://cdn.iconscout.com/icon/free/png-256/css-37-226088.png" alt=""/>
-                    <button type='submit' className='font-semibold pt-7 text-green-600'>View Details</button>
+                    <button type='submit' className='font-semibold pt-7 text-secondary'>View Details</button>
                 </div>
             </div>
             <div class="row2-container ">

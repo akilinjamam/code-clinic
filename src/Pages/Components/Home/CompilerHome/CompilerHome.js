@@ -7,13 +7,13 @@ const CompilerHome = () => {
 
   return (
     <>
-      <div class="hero bg-base-200">
+      <div class="hero ">
         <div class="hero-content flex-col lg:flex-row">
           <div className="lg:w-3/6">
             <img src="https://i.ibb.co/FsTbWP7/compiler.png" alt="" />
           </div>
           <div className="lg:w-3/6">
-            <h1 className="text-4xl text-center">
+            <h1 className="text-4xl text-center text-info">
               Run Your Code With Our Compiler
             </h1>
 

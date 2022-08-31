@@ -12,7 +12,7 @@ const Attributes = () => {
     useEffect(() => {
         const url = 'http://localhost:5000/htmlAtt';
         fetch(url).then(res => res.json()).then(data => setDataaAtt(data))
-    }, [])
+    }, [dataaAtt])
 
     // const dataAtt = [
     //     {

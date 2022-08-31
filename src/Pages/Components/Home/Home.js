@@ -3,7 +3,8 @@ import FreeCourses from "../FreeCourses/FreeCourses";
 import Banner from "./Banner/Banner";
 import CompilerHome from "./CompilerHome/CompilerHome";
 import DeveloperBanner from "./DeveloperSection/DeveloperBanner";
-import EnrollSection from "./EnrollSection/EnrollSection";
+import OthersSaying from "./OthersSaying/OthersSaying";
+import Summary from "./OthersSaying/Summary";
 import PaidCourse from "./PaidCourse/PaidCourse";
 
 const Home = () => {
@@ -12,9 +13,10 @@ const Home = () => {
       <Banner/>
       <DeveloperBanner />
       <FreeCourses/>
-      <EnrollSection />
       <PaidCourse />
       <CompilerHome/>
+      <OthersSaying/>
+      <Summary/>
     </div>
   );
 };
