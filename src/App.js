@@ -435,7 +435,7 @@ function App() {
         </Route>
 
         {/* Admin Section */}
-        <Route path="/adminDashboard" element={<AdminDashboard />}>
+        <Route path="/adminDashboard" element={<AdminDashboard activate={activate} />}>
 
           {/* html course data input section */}
           <Route path="/adminDashboard/htmlCourseInput" element={<HtmlCourseInput />}></Route>
