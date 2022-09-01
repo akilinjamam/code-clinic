@@ -77,7 +77,6 @@ import AttributeModify14 from "./Pages/Components/Courses/HtmlCourse/AttributeMo
 import AttributeModify15 from "./Pages/Components/Courses/HtmlCourse/AttributeModify15";
 import AttributeModify16 from "./Pages/Components/Courses/HtmlCourse/AttributeModify16";
 
-
 import RequireAuth from "./Pages/Components/user/RequireAuth";
 import CssCourses from "./Pages/Components/Courses/CplusplusCourses";
 import ProfileEditor from "./Pages/UserDashboard/ProfileEditor";
