@@ -23,7 +23,7 @@ const Summary = () => {
             </div>
             <div className='summary'>
                 <div className='bg-blue-400 box'>
-                    <h1 className="font-bold text-3xl text-green-800">10k</h1>
+                    <h1 className="font-bold text-3xl text-orange-600">10k</h1>
                     <h3 className='text-3xl font-semibold text-black'>Enrolled</h3>
                 </div>
             </div>

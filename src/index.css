@@ -86,7 +86,6 @@
   background-position: center;
 }
 
-
 /* Free Courses Styles  */
 
 /* .learn-sec {
@@ -219,3 +218,25 @@ h2 {
   }
 
 }
+
+/* SCroll To Up Button Styles Here */
+.scroll-btn{
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: all .4s;
+}
+.scroll-btn.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* SCroll To Up Button Styles Ends */
