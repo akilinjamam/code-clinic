@@ -115,6 +115,20 @@ import HtmlImageModify14 from "./Pages/Components/Courses/HtmlCourse/HtmlImageMo
 import HtmlImageModify15 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify15";
 import HtmlImageModify16 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify16";
 import { useState } from "react";
+import HtmlCceModify1 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify1";
+import HtmlCceModify2 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify2";
+import HtmlCceModify3 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify3";
+import HtmlCceModify4 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify4";
+import HtmlCceModify5 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify5";
+import HtmlCceModify6 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify6";
+import HtmlCceModify7 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify7";
+import HtmlCceModify8 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify8";
+import HtmlCceModify9 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify9";
+import HtmlCceModify10 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify10";
+import HtmlCceModify11 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify/HtmlCceModify11";
+import HtmlIntroModify1 from "./Pages/Components/Courses/HtmlCourse/HtmlIntroModify/HtmlIntroModify1";
+import HtmlIntroModify2 from "./Pages/Components/Courses/HtmlCourse/HtmlIntroModify/HtmlIntroModify2";
+import HtmlIntroModify3 from "./Pages/Components/Courses/HtmlCourse/HtmlIntroModify/HtmlIntroModify3";
 
 
 function App() {
@@ -157,8 +171,20 @@ function App() {
           {/* modify section */}
 
           <Route
-            path="/courses/dataIntro"
+            path="/courses/htmlIntro"
             element={<IntroModify />}
+          />
+          <Route
+            path="/courses/htmlIntro/topic1/:id"
+            element={<HtmlIntroModify1 />}
+          />
+          <Route
+            path="/courses/htmlIntro/title1/:id"
+            element={<HtmlIntroModify2 />}
+          />
+          <Route
+            path="/courses/htmlIntro/description1/:id"
+            element={<HtmlIntroModify3 />}
           />
 
           <Route
@@ -374,6 +400,51 @@ function App() {
 
 
           <Route path="/courses/htmlCce" element={<HtmlCce />} />
+
+          <Route
+            path="/courses/htmlCce/topic1/:id"
+            element={<HtmlCceModify1 />}
+          />
+          <Route
+            path="/courses/htmlCce/title1/:id"
+            element={<HtmlCceModify2 />}
+          />
+          <Route
+            path="/courses/htmlCce/title2/:id"
+            element={<HtmlCceModify3 />}
+          />
+          <Route
+            path="/courses/htmlCce/title3/:id"
+            element={<HtmlCceModify4 />}
+          />
+          <Route
+            path="/courses/htmlCce/title4/:id"
+            element={<HtmlCceModify5 />}
+          />
+          <Route
+            path="/courses/htmlCce/title5/:id"
+            element={<HtmlCceModify6 />}
+          />
+          <Route
+            path="/courses/htmlCce/description1/:id"
+            element={<HtmlCceModify7 />}
+          />
+          <Route
+            path="/courses/htmlCce/description2/:id"
+            element={<HtmlCceModify8 />}
+          />
+          <Route
+            path="/courses/htmlCce/description3/:id"
+            element={<HtmlCceModify9 />}
+          />
+          <Route
+            path="/courses/htmlCce/description4/:id"
+            element={<HtmlCceModify10 />}
+          />
+          <Route
+            path="/courses/htmlCce/description5/:id"
+            element={<HtmlCceModify11 />}
+          />
           <Route path="/courses/cpp" element={<Cpp />} />
 
         </Route>

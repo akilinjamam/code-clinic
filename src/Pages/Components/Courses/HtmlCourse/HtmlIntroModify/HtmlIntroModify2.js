@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-
-const HtmlImageModify1 = () => {
+import { useParams } from 'react-router-dom'
+const HtmlIntroModify2 = () => {
+    // import { useParams } from 'react-router-dom'
 
     const { id } = useParams()
-    // import { useParams } from 'react-router-dom';
-    const [dataaStyle, setDataaStyle] = useState([])
+
+    const [dataaIntro, setdataaIntro] = useState([])
     useEffect(() => {
-        const url = 'http://localhost:5000/htmlImage';
+        const url = 'http://localhost:5000/htmlIntro';
         fetch(url, {
             method: 'GET',
             headers: {
@@ -16,28 +16,30 @@ const HtmlImageModify1 = () => {
 
         })
             .then(res => res.json())
-            .then(data => setDataaStyle(data))
-    }, [dataaStyle])
+            .then(data => setdataaIntro(data))
+    }, [dataaIntro])
 
 
 
     const handleModify = event => {
         event.preventDefault()
         console.log(id)
-        const topic1 = event.target.topic1.value
+        const title1 = event.target.title1.value
 
-        const updateImageData1 = {
-            topic1: topic1,
+        const updateIntroData2 = {
+            title1: title1,
+
+
         }
 
         // sending data to server
-        const url = `http://localhost:5000/htmlImage/topic1/${id}`
+        const url = `http://localhost:5000/htmlIntro/title1/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(updateImageData1)
+            body: JSON.stringify(updateIntroData2)
         })
             .then(res => {
                 console.log(res)
@@ -54,18 +56,18 @@ const HtmlImageModify1 = () => {
         <div>
             <form onSubmit={handleModify} action="">
                 <div className='p-5'>
-                    <p className='text-2xl font-bold text-green-500 text-center'>Modify  Html Image</p>
+                    <p className='text-2xl font-bold text-green-500 text-center'>Modify  Attributes</p>
 
-                    {dataaStyle && <p className='font-bold mt-10 bg-gray-300 p-2 rounded'>1</p>}
+                    {dataaIntro && <p className='font-bold mt-10 bg-gray-300 p-2 rounded'>1</p>}
                     <br />
                     <div className='bg-gray-300 p-5 rounded'>
-                        {dataaStyle && <label className="label">
+                        {dataaIntro && <label className="label">
                             <span className="label-text font-bold">Sub-Section Topic:</span>
                         </label>}
-                        <p> {dataaStyle.map(d => d.topic1)} </p>
+                        <p> {dataaIntro.map(d => d.title1)} </p>
                         <br />
-                        {dataaStyle && <div className=' flex'>
-                            <input required type="text" name='topic1' className="input input-bordered input-primary w-full max-w-xs" />
+                        {dataaIntro && <div className=' flex'>
+                            <input required type="text" name='title1' className="input input-bordered input-primary w-full max-w-xs" />
 
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 
@@ -78,4 +80,4 @@ const HtmlImageModify1 = () => {
     );
 };
 
-export default HtmlImageModify1;
+export default HtmlIntroModify2;
