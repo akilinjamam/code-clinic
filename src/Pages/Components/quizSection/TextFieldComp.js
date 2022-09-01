@@ -9,11 +9,11 @@ const TextFieldComp = () => {
   };
   return (
     <div>
-      <form>
-        <input
+      <form className="text-black">
+        <h6 className="font-semibold mb-1">Select Amount :</h6>
+        <input className="text-center font-bold"
           onChange={handleChange}
-          label="Amount of Question"
-          type="number"
+          type="number" min="0" required
         />
       </form>
     </div>

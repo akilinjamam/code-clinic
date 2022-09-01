@@ -13,9 +13,9 @@ const FinalScreen = () => {
     navigate("/settings");
   };
   return (
-    <div>
-      <h1>Final Score {score}</h1>
-      <button onClick={handleBackToSettings}>Back To Settings</button>
+    <div className=" bg-blue-200 w-1/2 mx-auto py-10 mb-8 rounded-xl shadow-lg text-center">
+      <h1 className="p-3 text-4xl font-bold">Final Score : <span className="text-green-600">{score}</span></h1>
+      <button className="btn-big w-[180px] my-8 mx-auto" onClick={handleBackToSettings}>Go Back</button>
     </div>
   );
 };
