@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { Link } from 'react-router-dom';
 
-const Intro = () => {
+const Intro = ({ activate }) => {
     const [introData, setIntroData] = useState([])
     console.log(introData.length)
     useEffect(() => {
@@ -13,19 +13,16 @@ const Intro = () => {
             .then((data) => setIntroData(data))
     }, [])
     return (
-        <div>
+        <div >
             <h2 className="text-4xl text-primary mb-4">HTML Course</h2>
-            <div align="right">
-                <Link to="/courses/dataIntro" className='btn btn-secondary mx-5'>Edit & Delete</Link>
 
-            </div>
-            <br /><br />
-            <div>
+
+            <div className={activate && 'bg-black'} >
                 {
                     introData.map((dataFlow) =>
-                        <div>
+                        <div >
                             <div>
-                                <div className='bg-gray-100' style={{ padding: '20px', borderRadius: '10px' }}>
+                                <div className='bg-gray-100' style={{ padding: '20px' }}>
                                     {dataFlow.topic && <p className="text-3xl font-bold">  {dataFlow.topic} </p>}
                                     <br />
                                     {dataFlow.title1 && <p className="text-2xl font-bold"> {dataFlow.title1} </p>}

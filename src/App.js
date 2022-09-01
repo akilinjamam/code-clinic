@@ -98,14 +98,33 @@ import HtmlStyleModify13 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleMo
 import HtmlStyleModify14 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify14";
 import HtmlStyleModify15 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify15";
 import HtmlStyleModify16 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify16";
+import HtmlImageModify1 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify1";
+import HtmlImageModify2 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify2";
+import HtmlImageModify3 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify3";
+import HtmlImageModify4 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify4";
+import HtmlImageModify5 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify5";
+import HtmlImageModify6 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify6";
+import HtmlImageModify7 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify7";
+import HtmlImageModify8 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify8";
+import HtmlImageModify9 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify9";
+import HtmlImageModify10 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify10";
+import HtmlImageModify11 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify11";
+import HtmlImageModify12 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify12";
+import HtmlImageModify13 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify13";
+import HtmlImageModify14 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify14";
+import HtmlImageModify15 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify15";
+import HtmlImageModify16 from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify/HtmlImageModify16";
+import { useState } from "react";
 
 
 function App() {
+
+  const [activate, setActivate] = useState(false)
   return (
-    <div className="mx-auto bg-green-100">
-      <Header />
+    <div className={`mx-auto  ${activate ? 'bg-gray-800' : 'bg-green-100'} `}>
+      <Header activate={activate} setActivate={setActivate} />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Home activate={activate} setActivate={setActivate} />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signUp" element={<Signup />}></Route>
         <Route path="/EnrollMain" element={<EnrollMain />}></Route>
@@ -124,7 +143,7 @@ function App() {
 
         <Route path="/introduction" element={<Introduction />}></Route>
 
-        <Route path="/courses" element={<Courses />}>
+        <Route path="/courses" element={<Courses activate={activate} />}>
           <Route index element={<Intro />}></Route>
 
           <Route path="/courses/intro" element={<Intro />} />
@@ -282,6 +301,71 @@ function App() {
           <Route
             path="/courses/htmlImageModify"
             element={<HtmlImageModify />}
+          />
+
+          <Route
+            path="/courses/htmlImage/topic1/:id"
+            element={<HtmlImageModify1 />}
+          />
+          <Route
+            path="/courses/htmlImage/title1/:id"
+            element={<HtmlImageModify2 />}
+          />
+          <Route
+            path="/courses/htmlImage/title2/:id"
+            element={<HtmlImageModify3 />}
+          />
+          <Route
+            path="/courses/htmlImage/title3/:id"
+            element={<HtmlImageModify4 />}
+          />
+          <Route
+            path="/courses/htmlImage/title4/:id"
+            element={<HtmlImageModify5 />}
+          />
+          <Route
+            path="/courses/htmlImage/title5/:id"
+            element={<HtmlImageModify6 />}
+          />
+          <Route
+            path="/courses/htmlImage/description1/:id"
+            element={<HtmlImageModify7 />}
+          />
+          <Route
+            path="/courses/htmlImage/description2/:id"
+            element={<HtmlImageModify8 />}
+          />
+          <Route
+            path="/courses/htmlImage/description3/:id"
+            element={<HtmlImageModify9 />}
+          />
+          <Route
+            path="/courses/htmlImage/description4/:id"
+            element={<HtmlImageModify10 />}
+          />
+          <Route
+            path="/courses/htmlImage/description5/:id"
+            element={<HtmlImageModify11 />}
+          />
+          <Route
+            path="/courses/htmlImage/example1/:id"
+            element={<HtmlImageModify12 />}
+          />
+          <Route
+            path="/courses/htmlImage/example2/:id"
+            element={<HtmlImageModify13 />}
+          />
+          <Route
+            path="/courses/htmlImage/example3/:id"
+            element={<HtmlImageModify14 />}
+          />
+          <Route
+            path="/courses/htmlImage/example4/:id"
+            element={<HtmlImageModify15 />}
+          />
+          <Route
+            path="/courses/htmlImage/example5/:id"
+            element={<HtmlImageModify16 />}
           />
           <Route
             path="/courses/htmlCceModify"
