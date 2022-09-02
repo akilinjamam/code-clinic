@@ -20,7 +20,7 @@ const AdminDashboard = ({ activate }) => {
                 <label for="my-drawer-2" class="drawer-overlay"></label>
                 <ul class={`menu p-4 overflow-y-auto w-80 ${activate ? 'bg-gray-700' : 'bg-base-200'}  text-base-content`}>
 
-                    <li className={`font-bold ${activate && 'text-white'}`} ><Link to="">Make Admin from users</Link></li>
+                    <li className={`font-bold ${activate && 'text-white'}`} ><Link to="/adminDashboard/makeAdmin">Make Admin from users</Link></li>
                     <li className={`font-bold ${activate && 'text-white'}`}><Link to="/adminDashboard/adminHome">Create Courses Sub-section</Link></li>
 
                 </ul>

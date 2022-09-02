@@ -129,6 +129,7 @@ import HtmlCceModify11 from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify
 import HtmlIntroModify1 from "./Pages/Components/Courses/HtmlCourse/HtmlIntroModify/HtmlIntroModify1";
 import HtmlIntroModify2 from "./Pages/Components/Courses/HtmlCourse/HtmlIntroModify/HtmlIntroModify2";
 import HtmlIntroModify3 from "./Pages/Components/Courses/HtmlCourse/HtmlIntroModify/HtmlIntroModify3";
+import MakeAdmin from "./Pages/Components/AdminPanel/MakeAdmin";
 
 
 function App() {
@@ -521,6 +522,7 @@ function App() {
           <Route path="/adminDashboard/cplusCourseInput" element={<CPlusPlusCourseInput />}></Route>
 
           <Route path="/adminDashboard/adminHome" element={<AdminHome />} />
+          <Route path="/adminDashboard/makeAdmin" element={<MakeAdmin />} />
         </Route>
         {/* User Profile route  */}
         <Route path="/dashboard" element={<RequireAuth><UserProfile /></RequireAuth>}>
