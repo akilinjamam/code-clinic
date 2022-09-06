@@ -20,7 +20,7 @@ const Profile = () => {
             <div className="hero p-5">
                 <div className="hero-content flex-col md:flex-row ">
                     <div>
-                        <img className='w-[200px] rounded-full' src={user?.photoURL} alt='user' /><br />
+                        <img className='w-[200px] rounded-full' src="https://i.ibb.co/3Bb4sSV/nury-6cedf1776f60d6c11f34.png" alt='user' /><br />
                         <button navigate="/dashboard/profile_edit" className="btn btn-primary mt-5 ml-10">edit profile</button>
                     </div>
                     <div className='md:ml-20'>

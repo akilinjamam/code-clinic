@@ -1,5 +1,5 @@
 import React from "react";
-import github from "../../Assets/icons/github.svg";
+import github from "../../Assets/icons/github.gif";
 import fb from "../../Assets/icons/facebook.svg";
 import lin from "../../Assets/icons/linkedin.svg";
 
@@ -26,7 +26,7 @@ const ContactCard = ({ developer }) => {
         <div className="card-actions justify-center mt-3">
           <a href={git} target="_blank" rel="noReferrer">
             <img
-              className="w-[40px] hover:animate-bounce  animate-spin"
+              className="w-[40px] hover:animate-bounce"
               src={github}
               alt=""
             />

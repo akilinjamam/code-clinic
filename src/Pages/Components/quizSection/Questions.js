@@ -53,7 +53,7 @@ const Questions = () => {
   if (loading) {
     return (
       <div>
-        <h1>Loading</h1>
+        <h1 className="text-center text-orange-600 font-bold my-4">Loading...</h1>
       </div>
     );
   }
@@ -69,17 +69,19 @@ const Questions = () => {
     }
   };
   return (
-    <div>
-      <h4>Question {questionIndex + 1}</h4>
-      <h3 mt={5}>{decode(response.results[questionIndex].question)}</h3>
-      {options.map((data, id) => (
-        <div key={id}>
-          <button onClick={handleClickAnswer}>{decode(data)}</button>
-        </div>
-      ))}
-      <div>
-        Score {score}/{response.results.length}
+    <div className="bg-blue-200 my-8 p-10 w-1/2 mx-auto rounded-lg shadow-lg">
+      <h4 className="text-3xl font-bold text-center my-3">Question : <span className="text-red-600">{questionIndex + 1}</span></h4>
+      <div className="bg-white p-6 shadow-md">
+        <p className="font-semibold mb-3" mt={5}>{decode(response.results[questionIndex].question)}</p>
+        {options.map((data, id) => (
+          <div key={id}>
+            <button className="font-bold" onClick={handleClickAnswer}>{decode(data)}</button>
+          </div>
+        ))}
       </div>
+      <p className="text-center text-2xl font-semibold py-2">
+        Score : <span className="text-green-700 font-bold">{score}/{response.results.length}</span>
+      </p>
     </div>
   );
 };

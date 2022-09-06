@@ -3,17 +3,17 @@ import { Link, Outlet } from 'react-router-dom';
 
 const InterviewPrep = () => {
     return (
-        <div className="drawer drawer-mobile bg-slate-500">
+        <div className="drawer drawer-mobile bg-green-200">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content ">
                 {/* <!-- Page content here --> */}
-                <h2 className="text-6xl flex justify-center font-bold text-slate-800">
+                <h2 className="text-6xl flex justify-center font-bold text-green-500">
                     Interview Preparation
                 </h2>
                 <Outlet />
                 <label
                     htmlFor="my-drawer-2"
-                    className="btn btn-ghost drawer-button lg:hidden"
+                    className="btn bg- drawer-button lg:hidden"
                 >
                     Open Side Bar
                 </label>
@@ -21,43 +21,43 @@ const InterviewPrep = () => {
             <div className="drawer-side">
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
 
-                <ul className="menu p-4 overflow-y-auto w-80 text-white bg-slate-800 shadow-sm shadow-white">
+                <ul className="menu p-4 overflow-y-auto w-80 text-black bg-green-200 shadow-sm shadow-white">
                     {/* <!-- Sidebar content here --> */}
-                    <button className="btn bg-slate-500 disabled">Technologies</button>
+                    <button className="p-4 rounded-md bg-green-500 text-black disabled">Technologies</button>
                     <li>
-                        <Link to="/interview-prep/javascript" className="font-bold hover:bg-slate-500">
+                        <Link to="/interview-prep/javascript" className="font-boldhover:bg-slate-200">
                             Javascript
                         </Link>
                     </li>
                     <li>
-                        <Link to="/interview-prep/html" className="font-bold hover:bg-slate-500">
+                        <Link to="/interview-prep/html" className="font-boldhover:bg-slate-200">
                             HTML
                         </Link>
                     </li>
                     <li>
-                        <Link to="" className="font-bold hover:bg-slate-500">
+                        <Link to="" className="font-boldhover:bg-slate-200">
                             CSS
                         </Link>
                     </li>
 
                     <li>
-                        <Link to="" className="font-bold hover:bg-slate-500">
+                        <Link to="" className="font-boldhover:bg-slate-200">
                             React
                         </Link>
                     </li>
 
                     <li>
-                        <Link to="" className="font-bold hover:bg-slate-500">
+                        <Link to="" className="font-boldhover:bg-slate-200">
                             Node.JS
                         </Link>
                     </li>
                     <li>
-                        <Link to="" className="font-bold hover:bg-slate-500">
+                        <Link to="" className="font-boldhover:bg-slate-200">
                             Redux
                         </Link>
                     </li>
                     <li>
-                        <Link to="" className="font-bold hover:bg-slate-500">
+                        <Link to="" className="font-boldhover:bg-slate-200">
                             MongoDB
                         </Link>
                     </li>
