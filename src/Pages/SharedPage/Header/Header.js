@@ -4,8 +4,8 @@ import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import logo from "../../../Assets/icons/letter-c.png";
-import login from "../../../Assets/icons/user.png";
-import admin from "../../../Assets/adminIcon/admin.png";
+import login from "../../../Assets/icons/login.png";
+import admin from "../../../Assets/icons/admin.png";
 import user_2 from "../../../Assets/icons/user_2.png";
 import { useState } from "react";
 
@@ -153,11 +153,15 @@ const Header = ({ activate, setActivate }) => {
             </li>
 
             <li>
+
               <button onClick={() => setActivate(!activate)}> {activate ? <span className="text-white">Light Mode</span> : <span>Dark Mode</span>} </button>
             </li>
 
             <li>
               <Link to='/adminDashboard/adminHome' ><img style={{ width: '40px' }} src={admin} alt="" /></Link>
+
+              <Link to='/adminDashboard/adminHome' ><img style={{ width: '30px' }} src={admin} alt="" /></Link>
+
             </li>
             <li tabIndex="0" className=" relative">
               {user ? <><div>{user.photoURL ? <img className="icon p-0 rounded-full" src={user?.photoURL} alt="user" /> : <img className="icon p-0 rounded-full" src={user_2} alt="user" />}</div>
@@ -165,8 +169,8 @@ const Header = ({ activate, setActivate }) => {
                   <div className="w-[200px] flex flex-col text-white">
                     <Link className="py-1 pl-2 mb-1 rounded-md" to='/dashboard'>View Profile</Link>
                   </div>
-                </ul></> : (<Link to="login" className="btn btn-link pt-2">
-                  <div><img className="icon mt-2" src={login} alt="" /></div>
+                </ul></> : (<Link to="login" className="">
+                  <div><img style={{ width: '30px' }} src={login} alt="" /></div>
                 </Link>)
               }
 
