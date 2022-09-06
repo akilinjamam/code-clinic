@@ -97,6 +97,7 @@ import HtmlStyleModify13 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleMo
 import HtmlStyleModify14 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify14";
 import HtmlStyleModify15 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify15";
 import HtmlStyleModify16 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify16";
+import MakeAdmin from "./Pages/Components/AdminPanel/MakeAdmin";
 
 
 function App() {
@@ -365,6 +366,7 @@ function App() {
           <Route path="/adminDashboard/cplusCourseInput" element={<CPlusPlusCourseInput />}></Route>
 
           <Route path="/adminDashboard/adminHome" element={<AdminHome />} />
+          <Route path="/adminDashboard/makeAdmin" element={<MakeAdmin />} />
         </Route>
         {/* User Profile route  */}
         <Route path="/dashboard" element={<RequireAuth><UserProfile /></RequireAuth>}>
