@@ -9,6 +9,8 @@ import admin from "../../../Assets/icons/admin.png";
 import user_2 from "../../../Assets/icons/user_2.png";
 import { BiLogOutCircle } from "react-icons/bi";
 import { BiUserCircle } from "react-icons/bi";
+import day from '../../../Assets/icons/sunny.png'
+import night from '../../../Assets/icons/moon.png'
 
 
 
@@ -102,7 +104,9 @@ const Header = ({ activate, setActivate }) => {
         </div>
         <div className="navbar-end mr-10 hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
+            <button onClick={() => setActivate(!activate)}>{activate ? <span className="text-white"><img style={{ width: '30px' }} src={day} alt="" /></span> : <span> <img style={{ width: '30px' }} src={night} alt="" /> </span>}</button>
             <li tabIndex="0">
+
               <Link to='/courses' className={`${activate ? 'text-white' : 'text-neutral'}`}>
                 Course
                 <svg

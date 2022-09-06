@@ -98,14 +98,17 @@ import HtmlStyleModify14 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleMo
 import HtmlStyleModify15 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify15";
 import HtmlStyleModify16 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify/HtmlStyleModify16";
 import MakeAdmin from "./Pages/Components/AdminPanel/MakeAdmin";
+import { useState } from "react";
 
 
 function App() {
+
+  const [activate, setActivate] = useState(false)
   return (
-    <div className="mx-auto bg-green-100">
-      <Header />
+    <div className={`mx-auto  ${activate ? 'bg-gray-800' : 'bg-green-100'} `}>
+      <Header activate={activate} setActivate={setActivate} />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Home activate={activate} />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signUp" element={<Signup />}></Route>
         <Route path="/EnrollMain" element={<EnrollMain />}></Route>
