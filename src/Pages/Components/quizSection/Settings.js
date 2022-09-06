@@ -11,7 +11,7 @@ const Settings = () => {
   if (loading) {
     return (
       <div>
-        <h1>loading</h1>
+        <h1 className="text-center text-orange-600 font-bold my-4">Loading...</h1>
       </div>
     );
   }
@@ -35,14 +35,23 @@ const Settings = () => {
   };
   return (
     <div>
-      <h2>Quiz App</h2>
-      <form onSubmit={handleSubmit}>
-        <SelectFields options={response.trivia_categories} label="Category" />
-        <SelectFields options={difficultyOptions} label="Difficulty" />
-        <SelectFields options={typeOptions} label="Type" />
-        <TextFieldComp />
+      <h2 className="text-center text-4xl m-6">Test Your Skills</h2>
+      <form className="bg-blue-200 w-1/2 mx-auto p-12 mb-10 rounded-xl shadow-xl " onSubmit={handleSubmit}>
+        <p className="bg-white shadow-md py-2 pl-4 font-semibold mt-4">
+          <SelectFields options={response.trivia_categories} label="Select Category :" />
+        </p>
+        <p className="bg-white shadow-md py-2 pl-4 font-semibold mt-4">
+          <SelectFields className="bg-gray-400" options={difficultyOptions} label="Select Difficulty :" />
+        </p>
+        <p className="bg-white shadow-md py-2 pl-4 font-semibold mt-4">
+          <SelectFields className="bg-gray-400" options={typeOptions} label="Select Type :" />
+        </p>
+        <p className="mt-3">
+
+        <TextFieldComp/>
+        </p>
         <div>
-          <button type="submit">Get Started</button>
+          <button className="btn-big w-[180px] mt-5 mx-auto" type="submit">Get Started</button>
         </div>
       </form>
     </div>
