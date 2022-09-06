@@ -12,12 +12,14 @@ import { BiUserCircle } from "react-icons/bi";
 
 
 
-const Header = () => {
+const Header = ({ activate, setActivate }) => {
 
   const [user] = useAuthState(auth);
   const logout = () => {
     signOut(auth);
   };
+
+
 
 
   return (
@@ -96,12 +98,12 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link to='/' className="btn btn-ghost normal-case text-2xl text-neutral"><span><img className="logo" src={logo} alt="" /></span>oders Clinic</Link>
+          <Link to='/' className="btn btn-ghost normal-case text-2xl text-neutral"><span ><img className="logo" src={logo} alt="" /></span> <span className={activate && 'text-white'}>oders Clinic</span> </Link>
         </div>
         <div className="navbar-end mr-10 hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li tabIndex="0">
-              <Link to='/courses' className=" text-neutral">
+              <Link to='/courses' className={`${activate ? 'text-white' : 'text-neutral'}`}>
                 Course
                 <svg
                   className="fill-current"
@@ -113,20 +115,20 @@ const Header = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </Link >
-              <ul className="p-2 z-20 text-neutral">
-                <li className="">
+              <ul className={`p-2 z-20 ${activate ? 'bg-gray-700' : 'text-neutral'}`}>
+                <li className={`${activate && 'text-white'}`}>
                   <Link to='/courses'>HTML</Link>
                 </li>
-                <li className="">
+                <li className={`${activate && 'text-white'}`}>
                   <Link to='/jsCourses'>Javascript</Link>
                 </li>
-                <li className="">
+                <li className={`${activate && 'text-white'}`}>
                   <Link to='/CssCourses' >CSS</Link>
                 </li>
               </ul>
             </li>
             <li tabIndex="0">
-              <p className="text-neutral">
+              <p className={`${activate ? 'text-white' : 'text-neutral'}`}>
                 Interview
                 <svg
                   className="fill-current"
@@ -138,11 +140,11 @@ const Header = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </p>
-              <ul className="p-2 z-20 text-neutral">
-                <li className="">
+              <ul className={`p-2 z-20 ${activate ? 'bg-gray-700' : 'text-neutral'}`}>
+                <li className={`${activate && 'text-white'}`}>
                   <Link to='/quiz'>Skill Tests</Link>
                 </li>
-                <li className="">
+                <li className={`${activate && 'text-white'}`}>
                   <Link to='/interview-prep' >Interview Preparation</Link>
                 </li>
 
@@ -150,7 +152,15 @@ const Header = () => {
             </li>
 
             <li>
+
+              <button onClick={() => setActivate(!activate)}> {activate ? <span className="text-white">Light Mode</span> : <span>Dark Mode</span>} </button>
+            </li>
+
+            <li>
+              <Link to='/adminDashboard/adminHome' ><img style={{ width: '40px' }} src={admin} alt="" /></Link>
+
               <Link to='/adminDashboard/adminHome' ><img style={{ width: '30px' }} src={admin} alt="" /></Link>
+
             </li>
             <li tabIndex="0" className=" relative z-30">
               {user ? <><div>{user.photoURL ? <img className="icon p-0 rounded-full" src="https://i.ibb.co/3Bb4sSV/nury-6cedf1776f60d6c11f34.png" alt="user" /> : <img className="icon p-0 rounded-full" src={user_2} alt="user" />}</div>
