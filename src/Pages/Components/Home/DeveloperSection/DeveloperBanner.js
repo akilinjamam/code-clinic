@@ -34,7 +34,7 @@ const DeveloperBanner = () => {
                 navigate("/settings");
               }}
             >
-              7 day's free trial
+              Test Your Skills
             </button>
           </div>
           <div className="divider md:divider-horizontal"></div>

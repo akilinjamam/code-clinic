@@ -43,9 +43,9 @@ const JavascriptCourse = () => {
 
   return (
     <div>
-      <h2 className="text-4xl text-primary mb-4">Javascript Course</h2>
+      <h2 className="text-4xl text-black pl-5">Javascript Course</h2>
       <div align="right">
-        <Link to="/jsCourses/jsCourseModify" className='btn btn-secondary mx-5'>Edit & Delete</Link>
+        <Link to="/jsCourses/jsCourseModify" className='btn btn-secondary shadow-md text-white mx-5'>Edit & Delete</Link>
 
       </div>
       <div>
@@ -56,7 +56,7 @@ const JavascriptCourse = () => {
 
               <br /><br />
 
-              <div className='bg-gray-100' style={{ padding: '20px', borderRadius: '10px' }}>
+              <div className='bg-green-200' style={{ padding: '20px', borderRadius: '10px' }}>
                 {dataFlow.topic && <p className="text-3xl font-bold">  {dataFlow.topic} </p>}
                 <br />
                 {dataFlow.title1 && <p className="text-2xl font-bold mb-3"> {dataFlow.title1} </p>}
