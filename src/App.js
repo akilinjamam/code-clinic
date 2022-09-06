@@ -101,7 +101,7 @@ import HtmlStyleModify16 from "./Pages/Components/Courses/HtmlCourse/HtmlStyleMo
 
 function App() {
   return (
-    <div className="mx-auto bg-green-100">
+    <div className="mx-auto bg-white">
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
