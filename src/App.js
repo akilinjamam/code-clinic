@@ -25,8 +25,6 @@ import JsSyntex from "./Pages/Components/Courses/JavascriptCourse/JsSyntex";
 import JsVariables from "./Pages/Components/Courses/JavascriptCourse/JsVariables";
 import JsLet from "./Pages/Components/Courses/JavascriptCourse/JsLet";
 import JsConst from "./Pages/Components/Courses/JavascriptCourse/JsConst";
-import CplusplusCourses from "./Pages/Components/Courses/CplusplusCourses";
-
 import JavascriptQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/JavascriptQa";
 import HtmlQa from "./Pages/Components/Home/CompilerHome/InterviewPrep/HtmlQa";
 
