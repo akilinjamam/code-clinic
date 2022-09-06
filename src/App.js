@@ -135,8 +135,13 @@ function App() {
 
   const [activate, setActivate] = useState(false)
   return (
+
     <div className={`mx-auto  ${activate ? 'bg-gray-800' : 'bg-green-100'} `}>
       <Header activate={activate} setActivate={setActivate} />
+
+    <div className="mx-auto bg-white">
+      <Header />
+
       <Routes>
         <Route path="/" element={<Home activate={activate} setActivate={setActivate} />}></Route>
         <Route path="/login" element={<Login />}></Route>
