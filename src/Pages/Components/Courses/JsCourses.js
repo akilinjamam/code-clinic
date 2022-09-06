@@ -4,11 +4,11 @@ import { Link, Outlet } from 'react-router-dom';
 const JsCourses = () => {
     return (
         <div>
-            <div class="drawer drawer-mobile z-10 bg-slate-500">
+            <div class="drawer drawer-mobile z-10 bg-green-200">
                 <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content flex flex-col ">
 
-                    <h2 className="text-6xl flex justify-center font-bold text-slate-800">
+                    <h2 className="text-6xl flex justify-center font-bold text-green-500">
                         Courses
                     </h2>
                     <Outlet></Outlet>
@@ -22,36 +22,36 @@ const JsCourses = () => {
                 <div class="drawer-side">
                     <label for="my-drawer-2" class="drawer-overlay"></label>
 
-                    <ul class="menu p-4 overflow-y-auto w-80 bg-slate-800 text-white shadow-sm shadow-white">
+                    <ul class="menu p-4 overflow-y-auto w-80 bg-green-200 text-white shadow-sm shadow-white">
                         {/* Sidebar Content */}
-                        <button className="btn btn-slate-500 disabled"> <Link to="/jsCourses">Javascript Course</Link> </button>
+                        <button className="p-4 rounded-md bg-green-500 disabled"> <Link to="/jsCourses">Javascript Tutorial</Link> </button>
 
 
 
                         <li>
-                            <Link to="/jsCourses" className="font-bold hover:bg-slate-500">
+                            <Link to="/jsCourses" className="font-bold hover:bg-slate-200 hover:text-black">
                                 Introduction
                             </Link>
                         </li>
                         <li>
-                            <Link to="/jsCourses/jsSyntex" className="font-bold hover:bg-slate-500">
+                            <Link to="/jsCourses/jsSyntex" className="font-bold hover:bg-slate-200 hover:text-black">
                                 js Syntex
                             </Link>
                         </li>
                         <li>
-                            <Link to="/jsCourses/jsVariables" className="font-bold hover:bg-slate-500">
+                            <Link to="/jsCourses/jsVariables" className="font-bold hover:text-black hover:bg-slate-200">
                                 js Variables
                             </Link>
                         </li>
 
                         <li>
-                            <Link to="/jsCourses/jsLet" className="font-bold hover:bg-slate-500">
+                            <Link to="/jsCourses/jsLet" className="font-bold hover:text-black hover:bg-slate-200">
                                 js Let
                             </Link>
                         </li>
 
                         <li>
-                            <Link to="/jsCourses/jsConst" className="font-bold hover:bg-slate-500">
+                            <Link to="/jsCourses/jsConst" className="font-bold hover:text-black hover:bg-slate-200">
                                 js const
                             </Link>
                         </li>

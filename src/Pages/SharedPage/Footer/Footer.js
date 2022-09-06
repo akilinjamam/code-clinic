@@ -27,7 +27,7 @@ const Footer = () => {
           <a class="link link-hover">Cookie policy</a>
         </div>
       </footer>
-      <footer className="footer justify-items-center md:justify-items-start md:px-10 lg:px-20 text-white lg:bg-gray-50 footerr py-10">
+      <footer className="footer bg-base-100 border-t border-black justify-items-center md:justify-items-start md:px-10 lg:px-20 text-black py-10">
         <div className="flex gap-8 pt-4">
           <Link to="contactUs" className="hover:underline hover:font-semibold">Contact Us</Link>
           <Link to="about" className="hover:underline hover:font-semibold">About</Link>
@@ -70,7 +70,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div><p>©{date} - All Right Reserved By<span className="pl-2 text-orange-500 font-semibold">Coders Clinic</span> </p></div>
+          <div><p>©{date} - All Right Reserved By<span className="pl-2 text-blue-600 font-semibold">Coders Clinic</span> </p></div>
 
 
         </div>
