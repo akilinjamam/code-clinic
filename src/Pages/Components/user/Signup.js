@@ -11,10 +11,11 @@ import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../../SharedPage/Footer/Loader";
 import { Link, useNavigate } from "react-router-dom";
+import useToken from "../../SharedPage/useToken";
 
 const Signup = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  const [signInWithGithub,, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
+  const [signInWithGithub, , gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
   const {
     register,
     formState: { errors },
@@ -25,14 +26,21 @@ const Signup = () => {
 
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
+
   const navigate = useNavigate();
   let signInError;
 
+
+  const [token] = useToken(user || gUser || gitUser)
+
+  console.log(user)
   if (loading || gLoading || gitLoading || updating) {
     return <Loading></Loading>;
   }
 
-  if (error || gError ||   gitError  || updateError) {
+
+
+  if (error || gError || gitError || updateError) {
     signInError = (
       <p className="text-red-500">
         <small>
@@ -46,11 +54,18 @@ const Signup = () => {
     console.log(user || gUser);
   }
 
+  if (token) {
+
+  }
+
   const onSubmit = async (data) => {
     await createUserWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name });
     console.log("update done");
+    console.log(data)
     navigate("/");
+
+
   };
 
   return (
@@ -159,16 +174,16 @@ const Signup = () => {
           </p>
           <div className="divider text-red-700">OR</div>
           <div className=" flex justify-evenly items-center">
-          <button
-            onClick={() => signInWithGoogle()}
-          >
-            <img src={google} alt=''></img>
-          </button>
-          <button
-            onClick={() => signInWithGithub()}
-          >
-          <img style={{width:'50px', height:'50px'}} src={github} alt=''></img>
-          </button>
+            <button
+              onClick={() => signInWithGoogle()}
+            >
+              <img src={google} alt=''></img>
+            </button>
+            <button
+              onClick={() => signInWithGithub()}
+            >
+              <img style={{ width: '50px', height: '50px' }} src={github} alt=''></img>
+            </button>
           </div>
         </div>
       </div>

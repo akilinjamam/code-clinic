@@ -18,7 +18,7 @@ const Courses = ({ activate }) => {
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
 
-        <ul className={`menu p-4 overflow-y-auto w-80 ${activate ? 'text-gray-800' : 'bg-base-100'} text-base-content`}>
+        <ul className={`menu p-4 overflow-y-auto w-80 mb-5 mr-5 rounded ${activate ? 'text-gray-800' : 'bg-base-100'} text-base-content`}>
           {/* <!-- Sidebar content here --> */}
           <button className="btn btn-primary disabled"> <Link to="/courses">HTML Course</Link> </button>
           <li>
