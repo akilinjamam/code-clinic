@@ -9,6 +9,8 @@ import admin from "../../../Assets/icons/admin.png";
 import user_2 from "../../../Assets/icons/user_2.png";
 import { BiLogOutCircle } from "react-icons/bi";
 import { BiUserCircle } from "react-icons/bi";
+import day from '../../../Assets/icons/sunny.png'
+import night from '../../../Assets/icons/moon.png'
 
 
 
@@ -102,7 +104,9 @@ const Header = ({ activate, setActivate }) => {
         </div>
         <div className="navbar-end mr-10 hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
+            <button onClick={() => setActivate(!activate)}>{activate ? <span className="text-white"><img style={{ width: '30px' }} src={day} alt="" /></span> : <span> <img style={{ width: '30px' }} src={night} alt="" /> </span>}</button>
             <li tabIndex="0">
+
               <Link to='/courses' className={`${activate ? 'text-white' : 'text-neutral'}`}>
                 Course
                 <svg
@@ -115,7 +119,7 @@ const Header = ({ activate, setActivate }) => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </Link >
-              <ul className={`p-2 z-20 ${activate ? 'bg-gray-700' : 'text-neutral'}`}>
+              <ul className={`p-2 z-20 ${activate ? 'bg-gray-700' : 'text-neutral bg-gray-200'}`}>
                 <li className={`${activate && 'text-white'}`}>
                   <Link to='/courses'>HTML</Link>
                 </li>
@@ -140,7 +144,7 @@ const Header = ({ activate, setActivate }) => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </p>
-              <ul className={`p-2 z-20 ${activate ? 'bg-gray-700' : 'text-neutral'}`}>
+              <ul className={`p-2 z-20  ${activate ? 'bg-gray-700' : 'text-neutral bg-gray-200'}`}>
                 <li className={`${activate && 'text-white'}`}>
                   <Link to='/quiz'>Skill Tests</Link>
                 </li>

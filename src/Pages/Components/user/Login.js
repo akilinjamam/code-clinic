@@ -49,25 +49,6 @@ const Login = () => {
     console.log(data);
     signInWithEmailAndPassword(data.email, data.password);
 
-
-
-    fetch('http://localhost:5000/user', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-
-      },
-      body: JSON.stringify({ user: data?.email })
-
-    })
-
-      .then(res => res.json())
-      .then(data => {
-        console.log(data)
-        if (data.insertedId) {
-          // toast.success(' Thaks for Giving a Review')
-        }
-      })
   };
 
   return (

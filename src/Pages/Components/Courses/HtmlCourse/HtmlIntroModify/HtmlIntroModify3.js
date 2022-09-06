@@ -62,7 +62,7 @@ const HtmlIntroModify3 = () => {
                     <br />
                     <div className='bg-gray-300 p-5 rounded'>
                         {dataaIntro && <label className="label">
-                            <span className="label-text font-bold">Sub-Section Topic:</span>
+                            <span className="label-text font-bold">Description:</span>
                         </label>}
                         <p> {dataaIntro.map(d => d.description1)} </p>
                         <br />
