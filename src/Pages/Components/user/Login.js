@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  useAuthState,
   useSignInWithEmailAndPassword,
   useSignInWithGithub,
   useSignInWithGoogle,
@@ -14,7 +15,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  const [signInWithGithub,, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
+  const [signInWithGithub, , gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
 
   const {
     register,
@@ -23,7 +24,9 @@ const Login = () => {
   } = useForm();
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
-
+  console.log(user)
+  const [theUser] = useAuthState(auth)
+  console.log(theUser)
   let signInError;
 
   if (loading || gLoading || gitLoading) {
@@ -45,6 +48,26 @@ const Login = () => {
   const onSubmit = (data) => {
     console.log(data);
     signInWithEmailAndPassword(data.email, data.password);
+
+
+
+    fetch('http://localhost:5000/user', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+
+      },
+      body: JSON.stringify({ user: data?.email })
+
+    })
+
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+        if (data.insertedId) {
+          // toast.success(' Thaks for Giving a Review')
+        }
+      })
   };
 
   return (
@@ -52,7 +75,7 @@ const Login = () => {
       <div className="card w-96 bg-base-100 bg-transparent shadow-2xl">
         <div className="card-body">
           <h2 className="text-center text-2xl font-bold">Login</h2>
-          <form 
+          <form
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="form-control w-full max-w-xs">
@@ -128,7 +151,7 @@ const Login = () => {
           </form>
           <p>
             <small >
-              New to Coder Clinic? 
+              New to Coder Clinic?
               <Link className="text-green-500 ml-2" to="/SignUp">
                 Create New Account
               </Link>
@@ -136,16 +159,16 @@ const Login = () => {
           </p>
           <div className="divider">OR</div>
           <div className=" flex justify-evenly items-center">
-          <button
-            onClick={() => signInWithGoogle()}
-          >
-            <img src={google} alt=''></img>
-          </button>
-          <button
-            onClick={() => signInWithGithub()}
-          >
-          <img style={{width:'50px', height:'50px'}} src={github} alt=''></img>
-          </button>
+            <button
+              onClick={() => signInWithGoogle()}
+            >
+              <img src={google} alt=''></img>
+            </button>
+            <button
+              onClick={() => signInWithGithub()}
+            >
+              <img style={{ width: '50px', height: '50px' }} src={github} alt=''></img>
+            </button>
           </div>
         </div>
       </div>
