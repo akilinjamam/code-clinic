@@ -8,17 +8,23 @@ import OthersSaying from "./OthersSaying/OthersSaying";
 import Summary from "./OthersSaying/Summary";
 import PaidCourse from "./PaidCourse/PaidCourse";
 
-const Home = () => {
+const Home = ({ activate, setActivate }) => {
   return (
     <div>
-      <Banner/>
+      <Banner activate={activate} setActivate={setActivate} />
       <DeveloperBanner />
-      <FreeCourses/>
+      <FreeCourses />
       <PaidCourse />
+
+      <CompilerHome />
+      <OthersSaying />
+      <Summary />
+
       <CompilerHome/>
       <OthersSaying/>
       <Summary/>
       <ScrollBtn/>
+
     </div>
   );
 };

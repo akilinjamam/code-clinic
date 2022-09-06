@@ -62,15 +62,15 @@ const HtmlImage = () => {
                             <div style={{ padding: '20px', borderRadius: '10px' }}>
                                 {dataFlow.topic1 && <div className='flex items-center hoverVisible'>
                                     <p className="text-3xl font-bold ">  {dataFlow.topic1} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/topic1/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/topic1/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.title1 && <div className='flex items-center hoverVisible'>
                                     <p className="text-2xl font-bold"> {dataFlow.title1} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/title1/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/title1/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.description1 && <div className='flex items-center hoverVisible'>
                                     <p className='mb-3'> {dataFlow.description1} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/description1/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/description1/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
                                 {dataFlow.example1 && <div className='flex items-center hoverVisible'>
@@ -80,22 +80,22 @@ const HtmlImage = () => {
                                         <CopyToClipboard text={dataFlow.example1}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
 
                                     </div>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/example1/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/example1/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
 
 
                                 {dataFlow.topic2 && <div className='flex items-center hoverVisible'>
                                     <p className="text-3xl font-bold ">  {dataFlow.topic2} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/topic2/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/topic2/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.title2 && <div className='flex items-center hoverVisible'>
                                     <p className="text-2xl font-bold"> {dataFlow.title2} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/title2/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/title2/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.description2 && <div className='flex items-center hoverVisible'>
                                     <p className='mb-3'> {dataFlow.description2} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/description2/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/description2/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
                                 {dataFlow.example2 && <div className='flex items-center hoverVisible'>
@@ -105,21 +105,21 @@ const HtmlImage = () => {
                                         <CopyToClipboard text={dataFlow.example2}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
 
                                     </div>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/example2/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/example2/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
 
                                 {dataFlow.topic3 && <div className='flex items-center hoverVisible'>
                                     <p className="text-3xl font-bold ">  {dataFlow.topic3} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/topic3/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/topic3/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.title3 && <div className='flex items-center hoverVisible'>
                                     <p className="text-2xl font-bold"> {dataFlow.title3} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/title3/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/title3/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.description3 && <div className='flex items-center hoverVisible'>
                                     <p className='mb-3'> {dataFlow.description3} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/description3/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/description3/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
                                 {dataFlow.example3 && <div className='flex items-center hoverVisible'>
@@ -129,21 +129,21 @@ const HtmlImage = () => {
                                         <CopyToClipboard text={dataFlow.example3}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
 
                                     </div>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/example3/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/example3/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
 
                                 {dataFlow.topic4 && <div className='flex items-center hoverVisible'>
                                     <p className="text-3xl font-bold ">  {dataFlow.topic4} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/topic4/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/topic4/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.title4 && <div className='flex items-center hoverVisible'>
                                     <p className="text-2xl font-bold"> {dataFlow.title4} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/title4/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/title4/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.description4 && <div className='flex items-center hoverVisible'>
                                     <p className='mb-3'> {dataFlow.description4} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/description4/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/description4/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
                                 {dataFlow.example4 && <div className='flex items-center hoverVisible'>
@@ -153,21 +153,21 @@ const HtmlImage = () => {
                                         <CopyToClipboard text={dataFlow.example4}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
 
                                     </div>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/example4/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/example4/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
 
                                 {dataFlow.topic5 && <div className='flex items-center hoverVisible'>
                                     <p className="text-3xl font-bold ">  {dataFlow.topic5} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/topic5/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/topic5/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.title5 && <div className='flex items-center hoverVisible'>
                                     <p className="text-2xl font-bold"> {dataFlow.title5} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/title5/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/title5/${dataFlow._id}`}>Update</Link>
                                 </div>}
                                 {dataFlow.description5 && <div className='flex items-center hoverVisible'>
                                     <p className='mb-3'> {dataFlow.description5} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/description5/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/description5/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
                                 {dataFlow.example5 && <div className='flex items-center hoverVisible'>
@@ -177,7 +177,7 @@ const HtmlImage = () => {
                                         <CopyToClipboard text={dataFlow.example5}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
 
                                     </div>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/image/example5/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/htmlImage/example5/${dataFlow._id}`}>Update</Link>
                                 </div>}
                             </div>
                         </div>)

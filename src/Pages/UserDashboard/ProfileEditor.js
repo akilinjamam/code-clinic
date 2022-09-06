@@ -36,7 +36,7 @@ const ProfileEditor = () => {
                     <form onSubmit={handleSubmit(onSubmit)} className='w-[90%] mx-auto'>
                         <div class="flex items-end space-x-[-110px] mb-5 justify-center">
                             <div class="relative">
-                                <img class="h-32 w-32 object-cover rounded-3xl" src={photoURL} alt="" />
+                                <img class="h-32 w-32 object-cover rounded-3xl" src="https://i.ibb.co/3Bb4sSV/nury-6cedf1776f60d6c11f34.png" alt="" />
                                 <input type="file" class="block hover:cursor-pointer absolute top-24 mt-1 left-5 text-bold file:bg-[#fefeff57] w-[90px] font-semibold file:rounded-full file:border-0 file:text-sm" />
                             </div>
                         </div>
