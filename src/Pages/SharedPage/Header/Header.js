@@ -152,13 +152,6 @@ const Header = ({ activate, setActivate }) => {
             </li>
 
             <li>
-
-              <button onClick={() => setActivate(!activate)}> {activate ? <span className="text-white">Light Mode</span> : <span>Dark Mode</span>} </button>
-            </li>
-
-            <li>
-              <Link to='/adminDashboard/adminHome' ><img style={{ width: '40px' }} src={admin} alt="" /></Link>
-
               <Link to='/adminDashboard/adminHome' ><img style={{ width: '30px' }} src={admin} alt="" /></Link>
 
             </li>
