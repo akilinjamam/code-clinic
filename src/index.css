@@ -52,19 +52,18 @@
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   persepctive: 1000px;
-  margin: 20px;
   margin-top: 50px;
 }
 .summary .box {
   transform: rotateY(-40deg);
   height: auto;
-  width: 250px;
+  width: 200px;
   background-color: #BFDBFE ;
 }
 .summary:before {
   content: "";
   top: -15px;
-  position: absolute;
+  /* position: absolute; */
   width: 50px;
   height: auto;
   background-color:whitesmoke;

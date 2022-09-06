@@ -28,8 +28,35 @@ export default class OthersSaying extends Component {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       };
+      
       return (
         <div className='p-20 '>
           <h2 className='text-4xl  text-info text-center mb-3'>What Our Client Says</h2>
@@ -45,7 +72,7 @@ export default class OthersSaying extends Component {
                 </figure>
                  <img className='w-60 place-self-center' src={star} alt="Shoes" />
               <div class="card-body text-center">
-                <p>"I received my certificate,and i would like to thank you for your support. your course was challenging,but you were awalys there supporting me and ready to help.I enjoyed your class tremendously."</p>
+                <p>"I received my certificate,and i would like to thank you for your support.I enjoyed your class tremendously."</p>
               </div>
             </div>
             </div>
@@ -60,7 +87,7 @@ export default class OthersSaying extends Component {
                 </figure>
                  <img className='w-60 place-self-center' src={star} alt="Shoes" />
               <div class="card-body text-center">
-                <p>"I received my certificate,and i would like to thank you for your support. your course was challenging,but you were awalys there supporting me and ready to help.I enjoyed your class tremendously."</p>
+               <p>"I received my certificate,and i would like to thank you for your support.I enjoyed your class tremendously."</p>
               </div>
             </div>
             </div>
@@ -75,7 +102,7 @@ export default class OthersSaying extends Component {
                 </figure>
                  <img className='w-60 place-self-center' src={star} alt="Shoes" />
               <div class="card-body text-center">
-                <p>"I received my certificate,and i would like to thank you for your support. your course was challenging,but you were awalys there supporting me and ready to help.I enjoyed your class tremendously."</p>
+               <p>"I received my certificate,and i would like to thank you for your support.I enjoyed your class tremendously."</p>
               </div>
             </div>
             </div>
@@ -90,7 +117,7 @@ export default class OthersSaying extends Component {
                 </figure>
                  <img className='w-60 place-self-center' src={star} alt="Shoes" />
               <div class="card-body text-center">
-                <p>"I received my certificate,and i would like to thank you for your support. your course was challenging,but you were awalys there supporting me and ready to help.I enjoyed your class tremendously."</p>
+               <p>"I received my certificate,and i would like to thank you for your support.I enjoyed your class tremendously."</p>
               </div>
             </div>
             </div>
@@ -105,7 +132,7 @@ export default class OthersSaying extends Component {
                 </figure>
                  <img className='w-60 place-self-center' src={star} alt="Shoes" />
               <div class="card-body text-center">
-                <p>"I received my certificate,and i would like to thank you for your support. your course was challenging,but you were awalys there supporting me and ready to help.I enjoyed your class tremendously."</p>
+               <p>"I received my certificate,and i would like to thank you for your support.I enjoyed your class tremendously."</p>
               </div>
             </div>
             </div>
@@ -120,7 +147,7 @@ export default class OthersSaying extends Component {
                 </figure>
                  <img className='w-60 place-self-center' src={star} alt="Shoes" />
               <div class="card-body text-center">
-                <p>"I received my certificate,and i would like to thank you for your support. your course was challenging,but you were awalys there supporting me and ready to help.I enjoyed your class tremendously."</p>
+               <p>"I received my certificate,and i would like to thank you for your support.I enjoyed your class tremendously."</p>
               </div>
             </div>
             </div>

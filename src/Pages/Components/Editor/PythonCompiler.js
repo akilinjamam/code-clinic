@@ -21,7 +21,7 @@ const PythonCompiler = () => {
 
   return (
     <div className="mx-auto">
-      <h2 className="p-3 text-center text-3xl">Start Your Python Code.</h2>
+      <h2 className="p-3 text-center text-3xl">Start Your Code.</h2>
       <div>
         <div className="border-gray-400 border-8 mb-4 mx-auto w-4/6">
           {testCases.map((testCase, i) => {

@@ -15,11 +15,6 @@ const Home = ({ activate, setActivate }) => {
       <DeveloperBanner />
       <FreeCourses />
       <PaidCourse />
-
-      <CompilerHome />
-      <OthersSaying />
-      <Summary />
-
       <CompilerHome/>
       <OthersSaying/>
       <Summary/>
