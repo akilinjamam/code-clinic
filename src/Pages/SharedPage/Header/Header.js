@@ -104,7 +104,7 @@ const Header = ({ activate, setActivate }) => {
         </div>
         <div className="navbar-end mr-10 hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
-            <button onClick={() => setActivate(!activate)}>{activate ? <span className="text-white"><img style={{ width: '30px' }} src={day} alt="" /></span> : <span> <img style={{ width: '30px' }} src={night} alt="" /> </span>}</button>
+            <button onClick={() => setActivate(!activate)}>{activate ? <span className="text-white"><img title="Day Mode" style={{ width: '30px' }} src={day} alt="" /></span> : <span> <img title="Night Mode" style={{ width: '30px' }} src={night} alt="" /> </span>}</button>
             <li tabIndex="0">
 
               <Link to='/courses' className={`${activate ? 'text-white' : 'text-neutral'}`}>
