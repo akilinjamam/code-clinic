@@ -5,6 +5,7 @@ const AttributeModify4 = () => {
     const { id } = useParams();
     const [dataaAtt, setDataaAtt] = useState([])
 
+    const data = dataaAtt.find(f => f._id === id)
 
     useEffect(() => {
         const url = 'http://localhost:5000/htmlAtt';
@@ -23,12 +24,12 @@ const AttributeModify4 = () => {
     const handleModify = event => {
         event.preventDefault()
         console.log(id)
-        const title3 = event.target.title3.value
+        const example = event.target.example.value
         const updateHtmlData4 = {
-            title3: title3,
+            example: example,
         }
         // sending data to server
-        const url = `http://localhost:5000/htmlAtt/title3/${id}`
+        const url = `http://localhost:5000/htmlAtt/example/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -61,12 +62,12 @@ const AttributeModify4 = () => {
                     <br />
                     <div className='bg-gray-300 p-5 rounded'>
                         {dataaAtt && <label className="label">
-                            <span className="label-text font-bold"> Title:</span>
+                            <span className="label-text font-bold"> Example:</span>
                         </label>}
-                        <p> {dataaAtt.map(d => d.title3)} </p>
+                        <p> {data?.example} </p>
                         <br />
                         {dataaAtt && <div className=' flex'>
-                            <input required type="text" name='title3' className="input input-bordered input-primary w-full max-w-xs" />
+                            <textarea placeholder={data?.example} required type="text" name='example' className="input input-bordered input-primary w-full" />
 
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 
