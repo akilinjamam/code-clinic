@@ -25,16 +25,16 @@ const AttributeModify = () => {
     const handleModify = event => {
         event.preventDefault()
         console.log(id)
-        const topic1 = event.target.topic1.value
+        const topic = event.target.topic1.value
 
         const updateHtmlData = {
-            topic1: topic1,
+            topic: topic,
 
 
         }
 
         // sending data to server
-        const url = `http://localhost:5000/htmlAtt/topic1/${id}`
+        const url = `http://localhost:5000/htmlAtt/topic/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -65,7 +65,7 @@ const AttributeModify = () => {
                         {dataaAtt && <label className="label">
                             <span className="label-text font-bold">Sub-Section Topic:</span>
                         </label>}
-                        <p> {dataaAtt.map(d => d.topic1)} </p>
+                        <p> {dataaAtt.map(d => d.topic)} </p>
                         <br />
                         {dataaAtt && <div className=' flex'>
                             <input required type="text" name='topic1' className="input input-bordered input-primary w-full max-w-xs" />

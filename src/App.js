@@ -64,18 +64,7 @@ import JsVariablesModify from "./Pages/Components/Courses/JavascriptCourse/JsVar
 import AttributeModify2 from "./Pages/Components/Courses/HtmlCourse/AttributeModify2";
 import AttributeModify3 from "./Pages/Components/Courses/HtmlCourse/AttributeModify3";
 import AttributeModify4 from "./Pages/Components/Courses/HtmlCourse/AttributeModify4";
-import AttributeModify5 from "./Pages/Components/Courses/HtmlCourse/AttributeModify5";
-import AttributeModify6 from "./Pages/Components/Courses/HtmlCourse/AttributeModify6";
-import AttributeModify7 from "./Pages/Components/Courses/HtmlCourse/AttributeModify7";
-import AttributeModify8 from "./Pages/Components/Courses/HtmlCourse/AttributeModify8";
-import AttributeModify9 from "./Pages/Components/Courses/HtmlCourse/AttributeModify9";
-import AttributeModify10 from "./Pages/Components/Courses/HtmlCourse/AttributeModify10";
-import AttributeModify11 from "./Pages/Components/Courses/HtmlCourse/AttributeModify11";
-import AttributeModify12 from "./Pages/Components/Courses/HtmlCourse/AttributeModify12";
-import AttributeModify13 from "./Pages/Components/Courses/HtmlCourse/AttributeModify13";
-import AttributeModify14 from "./Pages/Components/Courses/HtmlCourse/AttributeModify14";
-import AttributeModify15 from "./Pages/Components/Courses/HtmlCourse/AttributeModify15";
-import AttributeModify16 from "./Pages/Components/Courses/HtmlCourse/AttributeModify16";
+
 
 import RequireAuth from "./Pages/Components/user/RequireAuth";
 import CssCourses from "./Pages/Components/Courses/CplusplusCourses";
@@ -146,70 +135,23 @@ function App() {
           />
 
           <Route
-            path="/courses/attribute/topic1/:id"
+            path="/courses/attribute/topic/:id"
             element={<AttributeModify />}
           />
           <Route
-            path="/courses/attribute/title1/:id"
+            path="/courses/attribute/title/:id"
             element={<AttributeModify2 />}
           />
 
           <Route
-            path="/courses/attribute/title2/:id"
+            path="/courses/attribute/description/:id"
             element={<AttributeModify3 />}
           />
           <Route
-            path="/courses/attribute/title3/:id"
+            path="/courses/attribute/example/:id"
             element={<AttributeModify4 />}
           />
-          <Route
-            path="/courses/attribute/title4/:id"
-            element={<AttributeModify5 />}
-          />
-          <Route
-            path="/courses/attribute/title5/:id"
-            element={<AttributeModify6 />}
-          />
-          <Route
-            path="/courses/attribute/description1/:id"
-            element={<AttributeModify7 />}
-          />
-          <Route
-            path="/courses/attribute/description2/:id"
-            element={<AttributeModify8 />}
-          />
-          <Route
-            path="/courses/attribute/description3/:id"
-            element={<AttributeModify9 />}
-          />
-          <Route
-            path="/courses/attribute/description4/:id"
-            element={<AttributeModify10 />}
-          />
-          <Route
-            path="/courses/attribute/description5/:id"
-            element={<AttributeModify11 />}
-          />
-          <Route
-            path="/courses/attribute/example1/:id"
-            element={<AttributeModify12 />}
-          />
-          <Route
-            path="/courses/attribute/example2/:id"
-            element={<AttributeModify13 />}
-          />
-          <Route
-            path="/courses/attribute/example3/:id"
-            element={<AttributeModify14 />}
-          />
-          <Route
-            path="/courses/attribute/example4/:id"
-            element={<AttributeModify15 />}
-          />
-          <Route
-            path="/courses/attribute/example5/:id"
-            element={<AttributeModify16 />}
-          />
+
 
           {/* ----------------------------------------------------- */}
 

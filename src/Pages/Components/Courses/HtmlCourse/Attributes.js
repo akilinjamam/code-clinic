@@ -64,32 +64,32 @@ const Attributes = () => {
                     dataaAtt.map((dataFlow) =>
                         <div>
                             <div style={{ padding: '20px', borderRadius: '10px' }}>
-                                {dataFlow.topic1 && <div className='flex items-center hoverVisible'>
-                                    <p className="text-3xl font-bold ">  {dataFlow.topic1} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/attribute/topic1/${dataFlow._id}`}>Update</Link>
+                                {dataFlow.topic && <div className='flex items-center hoverVisible'>
+                                    <p className="text-3xl font-bold ">  {dataFlow.topic} </p>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/attribute/topic/${dataFlow._id}`}>Update</Link>
                                 </div>}
-                                {dataFlow.title1 && <div className='flex items-center hoverVisible'>
-                                    <p className="text-2xl font-bold"> {dataFlow.title1} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/attribute/title1/${dataFlow._id}`}>Update</Link>
+                                {dataFlow.title && <div className='flex items-center hoverVisible'>
+                                    <p className="text-2xl font-bold"> {dataFlow.title} </p>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/attribute/title/${dataFlow._id}`}>Update</Link>
                                 </div>}
-                                {dataFlow.description1 && <div className='flex items-center hoverVisible'>
-                                    <p className='mb-3'> {dataFlow.description1} </p>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/attribute/description1/${dataFlow._id}`}>Update</Link>
+                                {dataFlow.description && <div className='flex items-center hoverVisible'>
+                                    <p className='mb-3'> {dataFlow.description} </p>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/attribute/description/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
-                                {dataFlow.example1 && <div className='flex items-center hoverVisible'>
+                                {dataFlow.example && <div className='flex items-center hoverVisible'>
                                     <div className='flex bg-black justify-between p-2 rounded w-full'>
-                                        <pre > <code className=" mt-3  text-green-500 rounded"> {dataFlow.example1}
+                                        <pre > <code className=" mt-3  text-green-500 rounded"> {dataFlow.example}
                                         </code></pre>
-                                        <CopyToClipboard text={dataFlow.example1}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
+                                        <CopyToClipboard text={dataFlow.example}><button className='btn btn-circle items-center' >copy</button ></CopyToClipboard>
 
                                     </div>
-                                    <Link className='hoverButton italic ml-5' to={`/courses/attribute/example1/${dataFlow._id}`}>Update</Link>
+                                    <Link className='hoverButton italic ml-5' to={`/courses/attribute/example/${dataFlow._id}`}>Update</Link>
                                 </div>}
 
 
 
-                                {dataFlow.topic2 && <div className='flex items-center hoverVisible'>
+                                {/* {dataFlow.topic2 && <div className='flex items-center hoverVisible'>
                                     <p className="text-3xl font-bold ">  {dataFlow.topic2} </p>
                                     <Link className='hoverButton italic ml-5' to={`/courses/attribute/topic2/${dataFlow._id}`}>Update</Link>
                                 </div>}
@@ -182,7 +182,7 @@ const Attributes = () => {
 
                                     </div>
                                     <Link className='hoverButton italic ml-5' to={`/courses/attribute/example5/${dataFlow._id}`}>Update</Link>
-                                </div>}
+                                </div>} */}
                             </div>
                         </div>)
 
