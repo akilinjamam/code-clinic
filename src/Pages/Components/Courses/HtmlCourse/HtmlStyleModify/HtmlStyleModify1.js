@@ -23,14 +23,14 @@ const HtmlStyleModify1 = () => {
     const handleModify = event => {
         event.preventDefault()
         console.log(id)
-        const topic1 = event.target.topic1.value
+        const topic = event.target.topic.value
 
         const updateStyleData1 = {
-            topic1: topic1,
+            topic: topic,
         }
 
         // sending data to server
-        const url = `http://localhost:5000/htmlStyle/topic1/${id}`
+        const url = `http://localhost:5000/htmlStyle/topic/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -61,10 +61,10 @@ const HtmlStyleModify1 = () => {
                         {dataaStyle && <label className="label">
                             <span className="label-text font-bold">Sub-Section Topic:</span>
                         </label>}
-                        <p> {dataaStyle.map(d => d.topic1)} </p>
+                        <p> {dataaStyle.map(d => d.topic)} </p>
                         <br />
                         {dataaStyle && <div className=' flex'>
-                            <input required type="text" name='topic1' className="input input-bordered input-primary w-full max-w-xs" />
+                            <input required type="text" name='topic' className="input input-bordered input-primary w-full max-w-xs" />
 
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 

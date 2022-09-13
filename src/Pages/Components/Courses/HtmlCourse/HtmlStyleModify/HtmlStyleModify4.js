@@ -18,19 +18,19 @@ const HtmlStyleModify4 = () => {
             .then(data => setDataaStyle(data))
     }, [dataaStyle])
 
-
+    const data = dataaStyle.find(f => f._id === id)
 
     const handleModify = event => {
         event.preventDefault()
         console.log(id)
-        const title3 = event.target.title3.value
+        const example = event.target.example.value
 
         const updateStyleData4 = {
-            title3: title3,
+            example: example,
         }
 
         // sending data to server
-        const url = `http://localhost:5000/htmlStyle/title3/${id}`
+        const url = `http://localhost:5000/htmlStyle/example/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -61,10 +61,10 @@ const HtmlStyleModify4 = () => {
                         {dataaStyle && <label className="label">
                             <span className="label-text font-bold">Title:</span>
                         </label>}
-                        <p> {dataaStyle.map(d => d.title3)} </p>
+                        <p> {data?.example} </p>
                         <br />
                         {dataaStyle && <div className=' flex'>
-                            <input required type="text" name='title3' className="input input-bordered input-primary w-full max-w-xs" />
+                            <textarea placeholder={data?.example} required type="text" name='example' className="input input-bordered input-primary w-full " />
 
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 
