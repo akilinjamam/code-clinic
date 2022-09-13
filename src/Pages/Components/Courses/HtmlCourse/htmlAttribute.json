@@ -1,32 +1,11 @@
 [
     {
-        "topic": "Attributes",
-        "title": "href Attributes",
-        "description": "The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:",
-        "example": "<a href='https://www.facebook.com'>Visit W3Schools</a"
+        "topic": "Introduction"
     },
     {
-        "topic": "",
-        "title": "The src Attribute",
-        "description": "The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:",
-        "example": "<img src='img_girl.jpg'>"
+        "title": "What is HTML"
     },
     {
-        "topic": "",
-        "title": "The width and height Attributes",
-        "description": "The <img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels)",
-        "example": "<img src='img_girl.jpg' width='500' height='600'>"
-    },
-    {
-        "topic": "",
-        "title": "The alt Attribute",
-        "description": "The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.",
-        "example": "<img src='img_girl.jpg' alt='Girl with a jacket'>"
-    },
-    {
-        "topic": "",
-        "title": "The style Attribute",
-        "description": "The style attribute is used to add styles to an element, such as color, font, size, and more.",
-        "example": "<p style='color:red;'>This is a red paragraph.</p>"
+        "description": "*HTML stands for Hyper Text Markup Language.* HTML describes the structure of a Web page.* HTML consists of a series of elements.* HTML elements tell the browser how to display the content. <br> * HTML elements tell the browser how to display the content.* HTML is the standard markup language for creating Web pages.* HTML is the standard markup language for creating Web pages"
     }
 ]

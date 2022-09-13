@@ -19,19 +19,19 @@ const HtmlCceModify4 = () => {
             .then(data => setDataaCce(data))
     }, [dataaCce])
 
-
+    const data = dataaCce.find(f => f._id === id)
 
     const handleModify = event => {
         event.preventDefault()
         console.log(id)
-        const title3 = event.target.title3.value
+        const example = event.target.example.value
 
         const updateCceData4 = {
-            title3: title3,
+            example: example,
         }
 
         // sending data to server
-        const url = `http://localhost:5000/htmlCce/title3/${id}`
+        const url = `http://localhost:5000/htmlCce/example/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -60,12 +60,12 @@ const HtmlCceModify4 = () => {
                     <br />
                     <div className='bg-gray-300 p-5 rounded'>
                         {dataaCce && <label className="label">
-                            <span className="label-text font-bold">Title:</span>
+                            <span className="label-text font-bold">Example:</span>
                         </label>}
-                        <p> {dataaCce.map(d => d.title3)} </p>
+                        <p> {data?.example} </p>
                         <br />
                         {dataaCce && <div className=' flex'>
-                            <input required type="text" name='title3' className="input input-bordered input-primary w-full max-w-xs" />
+                            <input required type="text" name='example' className="input input-bordered input-primary w-full max-w-xs" />
 
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 

@@ -19,21 +19,22 @@ const HtmlIntroModify3 = () => {
             .then(data => setdataaIntro(data))
     }, [dataaIntro])
 
+    const data = dataaIntro.find(f => f._id === id)
 
 
     const handleModify = event => {
         event.preventDefault()
         console.log(id)
-        const description1 = event.target.description1.value
+        const description = event.target.description.value
 
         const updateIntroData3 = {
-            description1: description1,
+            description: description,
 
 
         }
 
         // sending data to server
-        const url = `http://localhost:5000/htmlIntro/description1/${id}`
+        const url = `http://localhost:5000/htmlIntro/description/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -64,10 +65,10 @@ const HtmlIntroModify3 = () => {
                         {dataaIntro && <label className="label">
                             <span className="label-text font-bold">Description:</span>
                         </label>}
-                        <p> {dataaIntro.map(d => d.description1)} </p>
+                        <p> {data?.description} </p>
                         <br />
                         {dataaIntro && <div className=' flex'>
-                            <textarea required type="text" name='description1' className="input input-bordered input-primary w-full" />
+                            <textarea placeholder={data?.description} required type="text" name='description' className="input input-bordered input-primary w-full" />
 
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 
