@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const HtmlStyleModify2 = () => {
     const { id } = useParams()
@@ -69,6 +69,10 @@ const HtmlStyleModify2 = () => {
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 
                         </div>}
+
+                        <br />
+
+                        <Link to="/courses/htmlStyle"> <button className='btn btn-secondary text-white'>back</button> </Link>
                     </div>
                 </div>
             </form>

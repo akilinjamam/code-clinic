@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 const HtmlImageModify4 = () => {
     const { id } = useParams()
     // import {useParams} from 'react-router-dom'
@@ -59,7 +59,7 @@ const HtmlImageModify4 = () => {
                     <br />
                     <div className='bg-gray-300 p-5 rounded'>
                         {dataaStyle && <label className="label">
-                            <span className="label-text font-bold">Title:</span>
+                            <span className="label-text font-bold">Example:</span>
                         </label>}
                         <p> {data?.example} </p>
                         <br />
@@ -68,6 +68,10 @@ const HtmlImageModify4 = () => {
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 
                         </div>}
+
+                        <br />
+
+                        <Link to="/courses/htmlImage"> <button className='btn btn-secondary text-white'>back</button> </Link>
                     </div>
                 </div>
             </form>

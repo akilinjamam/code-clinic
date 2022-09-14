@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 const HtmlIntroModify3 = () => {
     // import { useParams } from 'react-router-dom'
 
@@ -73,6 +73,10 @@ const HtmlIntroModify3 = () => {
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 
                         </div>}
+
+                        <br />
+
+                        <Link to="/courses"> <button className='btn btn-secondary text-white'>back</button> </Link>
                     </div>
                 </div>
             </form>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "../../Courses/hoverButton.css"
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const AttributeModify = () => {
 
@@ -73,6 +73,10 @@ const AttributeModify = () => {
                             <input className='btn btn-primary ml-10  text-white   ' type="submit" value="update" />
 
                         </div>}
+
+                        <br />
+
+                        <Link to="/courses/attribute"> <button className='btn btn-secondary text-white'>back</button> </Link>
                     </div>
                 </div>
             </form>

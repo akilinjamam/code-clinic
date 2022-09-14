@@ -44,16 +44,11 @@ import JavascriptCourseInput from "./Pages/Components/Courses/JavascriptCourseIn
 import CssCourseInput from "./Pages/Components/Courses/CssCourseInput/CssCourseInput";
 import CPlusPlusCourseInput from "./Pages/Components/Courses/CPlusPlusCourseInput/CPlusPlusCourseInput";
 import AttributeModify from "./Pages/Components/Courses/HtmlCourse/AttributeModify";
-
 import AddReview from "./Pages/UserDashboard/AddReview";
-
-
 import Settings from "./Pages/Components/quizSection/Settings";
 import Questions from "./Pages/Components/quizSection/Questions";
 import FinalScreen from "./Pages/Components/quizSection/FinalScreen";
 import HtmlStyleModify from "./Pages/Components/Courses/HtmlCourse/HtmlStyleModify";
-import HtmlImageModify from "./Pages/Components/Courses/HtmlCourse/HtmlImageModify";
-import HtmlCceModify from "./Pages/Components/Courses/HtmlCourse/HtmlCceModify";
 import IntroModify1 from "./Pages/Components/Courses/HtmlCourse/HtmlIntroModify/HtmlIntroModify1";
 import IntroModify2 from "./Pages/Components/Courses/HtmlCourse/HtmlIntroModify/HtmlIntroModify2";
 import IntroModify3 from "./Pages/Components/Courses/HtmlCourse/HtmlIntroModify/HtmlIntroModify3";
@@ -62,11 +57,9 @@ import JsConstModify from "./Pages/Components/Courses/JavascriptCourse/JsConstMo
 import JsLetModify from "./Pages/Components/Courses/JavascriptCourse/JsLetModify";
 import JsSyntexModify from "./Pages/Components/Courses/JavascriptCourse/JsSyntexModify";
 import JsVariablesModify from "./Pages/Components/Courses/JavascriptCourse/JsVariablesModify";
-
 import AttributeModify2 from "./Pages/Components/Courses/HtmlCourse/AttributeModify2";
 import AttributeModify3 from "./Pages/Components/Courses/HtmlCourse/AttributeModify3";
 import AttributeModify4 from "./Pages/Components/Courses/HtmlCourse/AttributeModify4";
-
 
 import RequireAuth from "./Pages/Components/user/RequireAuth";
 import CssCourses from "./Pages/Components/Courses/CplusplusCourses";
